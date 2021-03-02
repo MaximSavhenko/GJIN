@@ -1,0 +1,63 @@
+@mixin b($point) {
+    @if $point == desktop {
+        @media (max-width: 1366px) {
+            @content;
+        }
+
+    } @else if $point == tablet {
+        @media (max-width: 1023px) {
+            @content;
+        }
+
+    } @else if $point == mobile {
+        @media (max-width: 767px) {
+            @content;
+        }
+
+    } @else {
+        @media (max-width: $point + 'px') {
+            @content;
+        }
+
+    }
+
+    
+
+}
+
+@mixin bmin($point) {
+    @if $point == desktop {
+        @media (min-width: 1366px) {
+            @content;
+        }
+
+    } @else if $point == tablet {
+        @media (min-width: 1023px) {
+            @content;
+        }
+
+    } @else if $point == mobile {
+        @media (min-width: 767px) {
+            @content;
+        }
+
+    } @else {
+        @media (min-width: $point + 'px') {
+            @content;
+        }
+
+    }
+
+    
+
+}
+
+@mixin  trs {
+    transition: all .3s;
+}
+
+@mixin flex_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

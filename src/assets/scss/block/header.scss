@@ -1,0 +1,77 @@
+.header {
+  border-top: 42px solid #fff;
+
+  &__wrap {
+      display: flex;
+  }
+
+  &__logo {
+    margin-top: -42px;
+    background-color: #45aaa7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 163px;
+    height: 163px;
+  }
+
+  &__btn-menu {
+    position: relative;
+    z-index: 30;
+    height: 25px;
+    width: 40px;
+    margin: 40px;
+
+    &.animationClose {
+      span {
+        &:nth-child(1) {
+          top: 10px;
+          transform: rotate(-45deg);
+          background-color: #4ec4c0;
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          top: 10px;
+          transform: rotate(45deg);
+          background-color: #4ec4c0;
+        }
+      }
+    }
+
+    span {
+      @include trs;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 40px;
+      height: 3px;
+      z-index: 15;
+      background-color: #4ec4c0;
+      &:nth-child(2) {
+        top: 11px;
+      }
+      &:nth-child(3) {
+        top: 20px;
+      }
+      @include b(500) {
+        width: 18px;
+      }
+    }
+  }
+  &__title{
+      padding-top: 36px;
+      p,span {
+          font-size: 15px;
+          line-height: 1.2;
+          text-transform: uppercase;
+          font-weight: 700;
+      }
+      p {
+        color:#45aaa7;
+      }
+  }
+}
