@@ -1,0 +1,135 @@
+.dashboard {
+    padding: 155px 0;
+    &__wrapp {
+        display: flex;
+    }
+
+    &__text {
+        max-width: 623px;
+        width: 50%;
+    }
+
+    &__descr {
+        span {
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #45aaa7;
+            font-weight: 600;
+            display: block;
+        }
+        p {
+            font-size: 48px;
+            line-height: 1.27;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__postscr {
+        span {
+            text-transform: uppercase;
+            font-size: 40px;
+            display: block;
+        }
+        p {
+            text-transform: uppercase;
+            font-size: 40px;
+            color: #45aaa7;
+            font-weight: 600;
+        }
+    }
+
+    &__board {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__percent , &__auf , &__interes {
+        width: 400px;
+        height: 100%;
+        max-height: 400px;
+        box-shadow: 0px 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
+        background-color: #fff;
+        padding: 50px 0px 0px 50px;
+    }
+
+    &__percent-title {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__percent-num {
+        font-size: 94px; 
+        line-height: 0.9;
+        color: #45aaa7 ;
+        margin-bottom: 17px;
+    }
+
+    &__percent-postscr {
+        display: block;
+        font-size: 22px;
+        max-width: 230px;
+    }
+
+    &__auf {
+        background-color: #45aaa7;
+        display: flex;
+        flex-direction: column;
+        img {
+            max-width: 120px;
+            max-height: 120px;
+            object-fit: contain;
+            display: flex;
+            margin-bottom: 29px;
+        }
+    }
+
+    &__auf-title {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 22px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    &__auf-descr {
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        margin-bottom: 17px;
+        font-weight: 600;
+    }
+
+    &__auf-postscr {
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.42;
+        max-width: 280px;
+    }
+
+    &__interes {
+        background-color: #777777;
+        span {
+            font-size: 20px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 23px;
+            display: block;
+        }
+
+        p {
+            font-size: 14px;
+            max-width: 271px;
+            color: #fff;
+        }
+    }
+
+    .button {
+        max-width: 150px;
+        margin-bottom: 103px;
+    }
+}
+
+  

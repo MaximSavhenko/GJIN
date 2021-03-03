@@ -91,11 +91,12 @@ body {
   margin: 0;
   min-width: 320px;
   font-size: 18px;
-  font-family: "Atlan Thin It", sans-serif, Arial;
+  font-family: "Atlan", sans-serif, Arial;
   font-weight: 400;
   line-height: 1.25;
   background-color: #fff;
   border-right: 25px solid #45aaa7;
+  color: #424242;
 }
 
 @include b(tablet) {
@@ -164,7 +165,7 @@ h2 {
 
 .container {
   max-width: 1630px;
-  padding: 0 45px;
+  padding: 0 15px;
   margin: 0 auto;
   position: relative;
   @include b(500) {
@@ -376,8 +377,13 @@ img {
 
 
 
+@import "block/select.scss";
 @import "block/header.scss";
 @import "block/hero.scss";
 @import "block/footer.scss";
+@import "block/filter.scss";
+@import "block/list.scss";
+@import "block/dashboard.scss";
+@import "block/logo.scss";
 
 

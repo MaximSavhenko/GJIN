@@ -1,1 +1,122 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t){function n(e,t){var n;if("undefined"==typeof Symbol||null==e[Symbol.iterator]){if(Array.isArray(e)||(n=function(e,t){if(!e)return;if("string"==typeof e)return r(e,t);var n=Object.prototype.toString.call(e).slice(8,-1);"Object"===n&&e.constructor&&(n=e.constructor.name);if("Map"===n||"Set"===n)return Array.from(e);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return r(e,t)}(e))||t&&e&&"number"==typeof e.length){n&&(e=n);var o=0,u=function(){};return{s:u,n:function(){return o>=e.length?{done:!0}:{done:!1,value:e[o++]}},e:function(e){throw e},f:u}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,l=!0,c=!1;return{s:function(){n=e[Symbol.iterator]()},n:function(){var e=n.next();return l=e.done,e},e:function(e){c=!0,i=e},f:function(){try{l||null==n.return||n.return()}finally{if(c)throw i}}}}function r(e,t){(null==t||t>e.length)&&(t=e.length);for(var n=0,r=new Array(t);n<t;n++)r[n]=e[n];return r}var o,u,i,l;(o=document.querySelector(".header__btn-menu")).onclick=function(){document.body.classList.toggle("overflow"),o.classList.toggle("animationClose")},(u=document.getElementById("openSettingLang")).onclick=function(){u.classList.toggle("transformArrow")},function(){var e=document.querySelectorAll(".topMenu__hiddenMenu-item");arrowSub=document.querySelectorAll(".topMenu__hiddenMenu-sub-item");var t,r=n(e);try{var o=function(){var e=t.value;e.onclick=function(){e.classList.toggle("activeArrow")}};for(r.s();!(t=r.n()).done;)o()}catch(e){r.e(e)}finally{r.f()}var u,i=n(arrowSub);try{var l=function(){var e=u.value;e.onclick=function(){e.classList.toggle("activeArrowSub")}};for(i.s();!(u=i.n()).done;)l()}catch(e){i.e(e)}finally{i.f()}}(),i=document.querySelector(".footer__scrollUp"),l=document.querySelector("#up"),i.addEventListener("click",(function(){var e;e=l,window.scroll({left:0,top:e.offsetTop,behavior:"smooth"})}))}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/assets/js/app.js":
+/*!******************************!*\
+  !*** ./src/assets/js/app.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function toggleMobileMenu() {\r\n  var btnMenu = document.querySelector(\".header__btn-menu\");\r\n\r\n  btnMenu.onclick = function () {\r\n    document.body.classList.toggle(\"overflow\");\r\n    btnMenu.classList.toggle(\"animationClose\");\r\n  };\r\n}\r\n\r\ntoggleMobileMenu();\r\n\r\nfunction openSubLang() {\r\n  var spanBtn = document.getElementById(\"openSettingLang\");\r\n\r\n  spanBtn.onclick = function () {\r\n    spanBtn.classList.toggle(\"transformArrow\");\r\n  };\r\n}\r\n\r\nopenSubLang();\r\n\r\nfunction openArrow() {\r\n  let arrow = document.querySelectorAll(\".topMenu__hiddenMenu-item\");\r\n  arrowSub = document.querySelectorAll(\".topMenu__hiddenMenu-sub-item\");\r\n\r\n  for (let elem of arrow) {\r\n    elem.onclick = function () {\r\n      elem.classList.toggle(\"activeArrow\");\r\n    };\r\n  }\r\n  for (let elem of arrowSub) {\r\n    elem.onclick = function () {\r\n      elem.classList.toggle(\"activeArrowSub\");\r\n    };\r\n  }\r\n}\r\n\r\nopenArrow();\r\n\r\nfunction scrollUp() {\r\n  function scrollTo(element) {\r\n    window.scroll({\r\n      left: 0,\r\n      top: element.offsetTop,\r\n      behavior: \"smooth\",\r\n    });\r\n  }\r\n\r\n  var button = document.querySelector(\".footer__scrollUp\");\r\n  var header = document.querySelector(\"#up\");\r\n\r\n  button.addEventListener(\"click\", () => {\r\n    scrollTo(header);\r\n  });\r\n}\r\n\r\nscrollUp();\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/select.js":
+/*!*********************************!*\
+  !*** ./src/assets/js/select.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function customSelect() {\r\n  let btnSelect = document.querySelectorAll(\".select__btn\"),\r\n    listSelect = document.querySelectorAll(\".select__list\"),\r\n    itemsSelect = document.querySelectorAll(\".select__item\"),\r\n    inputSelect = document.querySelectorAll(\".select__input\");\r\n\r\n    console.log(\"Привет\")\r\n\r\n  for (let i = 0; i < btnSelect.length; i++) {\r\n    btnSelect[i].onclick = function () {\r\n      listSelect[i].classList.toggle(\"active\");\r\n    };\r\n  }\r\n\r\n  for (let i = 0; i < listSelect.length; i++) {\r\n    listSelect[i].addEventListener(\r\n      \"click\",\r\n      (function (i) {\r\n        return function (event) {\r\n          btnSelect[i].innerText = event.target.innerText;\r\n          inputSelect[i].value = event.target.dataset.value;\r\n        };\r\n      })(i)\r\n    );\r\n  }\r\n\r\n  for (let j = 0; j < listSelect.length; j++) {\r\n    window.addEventListener(\r\n      \"click\",\r\n      (function (j) {\r\n        return function (event) {\r\n          if (!event.target.matches(\".select__btn\")) {\r\n            listSelect[j].classList.remove(\"active\");\r\n          }\r\n        };\r\n      })(j)\r\n    );\r\n  }\r\n}\r\n\r\ncustomSelect();\r\n\n\n//# sourceURL=webpack:///./src/assets/js/select.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!**************************************************************!*\
+  !*** multi ./src/assets/js/app.js ./src/assets/js/select.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! C:\\Users\\usp_m\\Desktop\\GJIN\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\usp_m\\Desktop\\GJIN\\src\\assets\\js\\select.js */\"./src/assets/js/select.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/select.js?");
+
+/***/ })
+
+/******/ });

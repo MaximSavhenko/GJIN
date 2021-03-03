@@ -1,0 +1,99 @@
+.filter {
+    padding-bottom: 100px;
+    &__wrapp {
+
+    }
+
+    &__select-wrapp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__description {
+        max-width: 800px;
+        span {
+            color: #4dbbb8;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 26px;
+            display: block;
+        }
+
+        p {
+            line-height: 1.55;
+            color: #424242;
+            font-weight: 300;
+            margin-bottom: 35px;
+        }
+
+    }
+
+    &__select {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 36px;
+        .select {
+            
+            &:last-child {
+                border-right: 1px solid #4dbbb8;
+            }
+            
+            &__btn {
+                width: 200px;
+                &:nth-child(odd) {
+                    border-right: none;
+                }
+            }
+        }
+    }
+
+    &__card {
+       padding-bottom: 77px;
+    }
+    
+    &__card-item {
+        padding-bottom: 28px; 
+        &:nth-last-child(-n + 4) {
+            padding-bottom: 0;
+        }       
+    }
+
+    &__card-item-inner{
+        height: 250px;
+        padding: 44px 0px 38px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0px 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
+    }
+
+
+    &__card-descr {
+        font-size: 18px;
+        text-transform: uppercase;
+        p {
+            color: #4dbbb8;
+        }
+        span {
+            font-weight: 600;
+            color: #424242;
+        }
+    }
+
+    &__card-postscrip {
+        max-width: 257px;
+        color: #424242;
+    }
+
+    .button {
+        max-width: 126px;
+        margin: 0 auto;
+    }
+    
+}
+  
+
+
