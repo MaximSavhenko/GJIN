@@ -298,6 +298,9 @@ h2 {
       border-left: 24px solid #fff;
       background-size: 368px 460px;
       background-position: center 241px; } }
+  @media (max-width: 400px) {
+    .decoration {
+      background-size: 250px 250px; } }
 
 .button {
   display: flex;
@@ -526,17 +529,23 @@ img {
     width: 163px;
     height: 163px;
     position: relative;
-    z-index: 1; }
+    z-index: 3; }
     @media (max-width: 767px) {
       .header__logo {
         margin-top: -21px;
-        margin-left: -24px; } }
+        margin-left: -24px;
+        width: 120px;
+        height: 100px; } }
   .header__btn-menu {
     position: relative;
     z-index: 30;
     height: 25px;
     width: 40px;
     margin: 40px; }
+    @media (max-width: 767px) {
+      .header__btn-menu {
+        width: 20px;
+        height: 20px; } }
     .header__btn-menu.animationClose span:nth-child(1) {
       top: 10px;
       transform: rotate(-45deg);
@@ -566,7 +575,10 @@ img {
   .header__title {
     padding-top: 36px;
     position: relative;
-    z-index: 1; }
+    z-index: 3; }
+    @media (max-width: 767px) {
+      .header__title {
+        padding-top: 20px; } }
     .header__title p, .header__title span {
       font-size: 15px;
       line-height: 1.2;
@@ -590,7 +602,8 @@ img {
   padding-top: 42px;
   border-right: 25px solid #45aaa7;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  z-index: 2; }
   .burger.activeBurger {
     left: 0; }
   .burger__wrapp {
@@ -635,6 +648,9 @@ img {
     .hero {
       min-height: auto;
       padding: 72px 0px 172px 0px; } }
+  @media (max-width: 400px) {
+    .hero {
+      padding: 40px 0 60px 0; } }
   .hero__wrapp {
     max-width: 500px;
     margin: 0 auto; }
@@ -650,6 +666,9 @@ img {
     line-height: 1.14;
     margin-bottom: 32px;
     color: #424242; }
+    @media (max-width: 400px) {
+      .hero__descr {
+        font-size: 20px; } }
   .hero__caption {
     font-weight: 300;
     color: #424242;
@@ -695,8 +714,11 @@ img {
         margin-bottom: 47px; } }
     .footer__nav ul {
       display: flex;
-      flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .footer__nav ul {
+          flex-direction: column; } }
     .footer__nav li {
       margin-right: 23px; }
       @media (max-width: 767px) {
@@ -980,6 +1002,9 @@ img {
     @media (max-width: 767px) {
       .dashboard__descr p {
         margin-bottom: 63px; } }
+    @media (max-width: 400px) {
+      .dashboard__descr p {
+        font-size: 30px; } }
   .dashboard__postscr span {
     text-transform: uppercase;
     font-size: 40px;
@@ -1022,6 +1047,9 @@ img {
     @media (max-width: 767px) {
       .dashboard__percent, .dashboard__auf, .dashboard__interes {
         width: 100%; } }
+    @media (max-width: 400px) {
+      .dashboard__percent, .dashboard__auf, .dashboard__interes {
+        padding: 30px 0 0 30px; } }
   .dashboard__percent {
     margin-bottom: 152px; }
     @media (max-width: 1440px) {
@@ -1152,3 +1180,42 @@ img {
     @media (max-width: 767px) {
       .logo .button {
         max-width: 180px; } }
+
+.impressum {
+  padding: 222px 0 148px 0; }
+  .impressum span {
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block; }
+  .impressum p {
+    font-size: 18px;
+    line-height: 1.55; }
+  .impressum .container {
+    max-width: 956px; }
+  .impressum__name span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4dbbb8;
+    margin-bottom: 26px; }
+  .impressum__name p {
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 35px; }
+  .impressum__addres {
+    margin-bottom: 36px; }
+  .impressum__addres-indent {
+    margin-bottom: 35px; }
+  .impressum__kontakt {
+    margin-bottom: 35px; }
+  .impressum__text-block {
+    margin-bottom: 65px; }
+    .impressum__text-block span {
+      margin-bottom: 35px;
+      font-weight: 600; }
+    .impressum__text-block p {
+      margin-bottom: 35px; }
+      .impressum__text-block p:last-child {
+        margin-bottom: 0; }
+  .impressum__quelle p {
+    font-weight: 700; }

@@ -207,6 +207,9 @@ h2 {
       background-size: 368px 460px;
       background-position: center 241px ;
   }
+  @include b(400) {
+    background-size: 250px 250px;
+  }
 }
 
 .button {
@@ -405,5 +408,6 @@ img {
 @import "block/list.scss";
 @import "block/dashboard.scss";
 @import "block/logo.scss";
+@import "block/impressum.scss";
 
 

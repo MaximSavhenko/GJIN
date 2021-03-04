@@ -39,6 +39,9 @@
             @include b(mobile) {
                 margin-bottom: 63px;
             }
+            @include b(400) {
+                font-size: 30px;
+            }
         }
     }
 
@@ -90,6 +93,10 @@
         padding: 50px 0px 0px 50px;
         @include b(mobile) {
             width: 100%;
+        }
+
+        @include b(400) {
+            padding: 30px 0 0 30px;
         }
     }
 

@@ -17,10 +17,12 @@
     width: 163px;
     height: 163px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
     @include b(mobile) {
         margin-top: -21px;
         margin-left: -24px;
+        width: 120px;
+        height: 100px;
     }
   }
 
@@ -30,6 +32,11 @@
     height: 25px;
     width: 40px;
     margin: 40px;
+
+    @include b(mobile) {
+        width: 20px;
+        height: 20px;
+    }
 
     &.animationClose {
       span {
@@ -74,7 +81,10 @@
   &__title{
       padding-top: 36px;
       position: relative;
-      z-index: 1;
+      z-index: 3;
+      @include b(mobile) {
+          padding-top: 20px;
+      }
       p,span {
           font-size: 15px;
           line-height: 1.2;

@@ -349,6 +349,12 @@ h2 {
     }
 }
 
+@media (max-width: 400px) {
+    .decoration {
+        background-size: 250px 250px;
+    }
+}
+
 .button {
     display: -ms-flexbox;
     display: flex;
@@ -361,7 +367,7 @@ h2 {
     height: 27px;
     font-size: 14px;
     text-transform: uppercase;
-    font-family: "Atlan Thin It", sans-serif, Arial;
+    font-family: "Atlan", sans-serif, Arial;
     background-color: #4dbbb8;
     color: #ffff;
     font-weight: 400;
@@ -707,13 +713,15 @@ img {
     width: 163px;
     height: 163px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
 }
 
 @media (max-width: 767px) {
     .header__logo {
         margin-top: -21px;
         margin-left: -24px;
+        width: 120px;
+        height: 100px;
     }
 }
 
@@ -723,6 +731,13 @@ img {
     height: 25px;
     width: 40px;
     margin: 40px;
+}
+
+@media (max-width: 767px) {
+    .header__btn-menu {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .header__btn-menu.animationClose span:nth-child(1) {
@@ -771,7 +786,13 @@ img {
 .header__title {
     padding-top: 36px;
     position: relative;
-    z-index: 1;
+    z-index: 3;
+}
+
+@media (max-width: 767px) {
+    .header__title {
+        padding-top: 20px;
+    }
 }
 
 .header__title p, .header__title span {
@@ -805,6 +826,7 @@ img {
     display: flex;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    z-index: 2;
 }
 
 .burger.activeBurger {
@@ -886,6 +908,12 @@ img {
     }
 }
 
+@media (max-width: 400px) {
+    .hero {
+        padding: 40px 0 60px 0;
+    }
+}
+
 .hero__wrapp {
     max-width: 500px;
     margin: 0 auto;
@@ -905,6 +933,12 @@ img {
     line-height: 1.14;
     margin-bottom: 32px;
     color: #424242;
+}
+
+@media (max-width: 400px) {
+    .hero__descr {
+        font-size: 20px;
+    }
 }
 
 .hero__caption {
@@ -1472,6 +1506,12 @@ img {
     }
 }
 
+@media (max-width: 400px) {
+    .dashboard__descr p {
+        font-size: 30px;
+    }
+}
+
 .dashboard__postscr span {
     text-transform: uppercase;
     font-size: 40px;
@@ -1540,6 +1580,12 @@ img {
 @media (max-width: 767px) {
     .dashboard__percent, .dashboard__auf, .dashboard__interes {
         width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .dashboard__percent, .dashboard__auf, .dashboard__interes {
+        padding: 30px 0 0 30px;
     }
 }
 
@@ -1695,6 +1741,8 @@ img {
         justify-content: flex-start;
         -ms-flex-align: start;
         align-items: flex-start;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 }
 
