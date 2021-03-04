@@ -95,8 +95,14 @@ body {
   font-weight: 400;
   line-height: 1.25;
   background-color: #fff;
-  border-right: 25px solid #45aaa7;
   color: #424242;
+  border-right: 25px solid #45aaa7;
+  @include b(tablet) {
+    border-right: 9px solid #45aaa7;
+  }
+    &.overflow {
+        overflow: hidden;
+    }
 }
 
 @include b(tablet) {
@@ -164,7 +170,7 @@ h2 {
 }
 
 .container {
-  max-width: 1630px;
+  max-width: 1681px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
@@ -186,8 +192,21 @@ h2 {
   justify-content: space-between;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0 35px 0 58px;
   background-color: #f4f4f4;
+}
+
+.decoration {
+  border-right: 34px solid #fff;
+  border-left: 58px solid #fff;
+  background-image: url(../images/index/bg.png);
+  background-position: center -120px ;
+  background-repeat: no-repeat;
+  @include b(tablet) {
+      border-right: 23px solid #fff;
+      border-left: 24px solid #fff;
+      background-size: 368px 460px;
+      background-position: center 241px ;
+  }
 }
 
 .button {
@@ -199,7 +218,7 @@ h2 {
   height: 27px;
   font-size: 14px;
   text-transform: uppercase;
-  font-family: "Atlan Thin It", sans-serif, Arial;
+  font-family: "Atlan", sans-serif, Arial;
   background-color: #4dbbb8;
   color: #ffff;
   font-weight: 400;
@@ -379,6 +398,7 @@ img {
 
 @import "block/select.scss";
 @import "block/header.scss";
+@import "block/burger.scss";
 @import "block/hero.scss";
 @import "block/footer.scss";
 @import "block/filter.scss";

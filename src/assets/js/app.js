@@ -1,41 +1,19 @@
-function toggleMobileMenu() {
-  var btnMenu = document.querySelector(".header__btn-menu");
+function burger() {
+  var btnMenu = document.querySelector(".header__btn-menu"),
+      burger = document.querySelector('.burger')
+
+      console.log(burger);
+      
 
   btnMenu.onclick = function () {
     document.body.classList.toggle("overflow");
     btnMenu.classList.toggle("animationClose");
+    burger.classList.toggle('activeBurger');
   };
 }
 
-toggleMobileMenu();
+burger();
 
-function openSubLang() {
-  var spanBtn = document.getElementById("openSettingLang");
-
-  spanBtn.onclick = function () {
-    spanBtn.classList.toggle("transformArrow");
-  };
-}
-
-openSubLang();
-
-function openArrow() {
-  let arrow = document.querySelectorAll(".topMenu__hiddenMenu-item");
-  arrowSub = document.querySelectorAll(".topMenu__hiddenMenu-sub-item");
-
-  for (let elem of arrow) {
-    elem.onclick = function () {
-      elem.classList.toggle("activeArrow");
-    };
-  }
-  for (let elem of arrowSub) {
-    elem.onclick = function () {
-      elem.classList.toggle("activeArrowSub");
-    };
-  }
-}
-
-openArrow();
 
 function scrollUp() {
   function scrollTo(element) {

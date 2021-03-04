@@ -1,12 +1,23 @@
 .dashboard {
-    padding: 155px 0;
+    height: 100%;
+
     &__wrapp {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include b(tablet) {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     }
 
     &__text {
         max-width: 623px;
-        width: 50%;
+        width: 40%;
+        @include b(mobile) {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 
     &__descr {
@@ -17,11 +28,17 @@
             color: #45aaa7;
             font-weight: 600;
             display: block;
+            @include b(mobile) {
+                margin-bottom: 22px;
+            }
         }
         p {
             font-size: 48px;
             line-height: 1.27;
             margin-bottom: 25px;
+            @include b(mobile) {
+                margin-bottom: 63px;
+            }
         }
     }
 
@@ -30,28 +47,68 @@
             text-transform: uppercase;
             font-size: 40px;
             display: block;
+            @include b(mobile) {
+                font-size: 22px;
+            }
         }
         p {
             text-transform: uppercase;
             font-size: 40px;
             color: #45aaa7;
             font-weight: 600;
+            @include b(mobile) {
+                font-size: 22px;
+            }
         }
     }
 
     &__board {
-        width: 50%;
+        width: 60%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: -52px;
+        padding-top: 28px;
+        @include b(1440) {
+            margin-bottom: 20px;
+            width: 50%;
+        }
+        @include b(mobile) {
+            width: 100%;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
     }
 
     &__percent , &__auf , &__interes {
         width: 400px;
         height: 100%;
-        max-height: 400px;
+        min-height: 400px;
         box-shadow: 0px 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
         background-color: #fff;
         padding: 50px 0px 0px 50px;
+        @include b(mobile) {
+            width: 100%;
+        }
+    }
+
+    &__percent {
+        margin-bottom: 152px;
+        @include b(1440) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__board-wrapp {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        @include b(mobile) {
+            justify-content: flex-start;
+            width: 100%;
+        }
     }
 
     &__percent-title {
@@ -77,6 +134,11 @@
         background-color: #45aaa7;
         display: flex;
         flex-direction: column;
+        margin-bottom: 23px;
+        margin-left: 21px;
+        @include b(mobile) {
+           margin-left: 0;
+        }
         img {
             max-width: 120px;
             max-height: 120px;
@@ -129,6 +191,9 @@
     .button {
         max-width: 150px;
         margin-bottom: 103px;
+        @include b(mobile) {
+            margin-bottom: 63px;
+        }
     }
 }
 
