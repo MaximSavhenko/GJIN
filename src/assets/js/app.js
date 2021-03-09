@@ -1,14 +1,15 @@
 function burger() {
   var btnMenu = document.querySelector(".header__btn-menu"),
-      burger = document.querySelector('.burger')
+      burger = document.querySelector('.burger'),
+      header = document.querySelector('.header')
 
-      console.log(burger);
       
 
   btnMenu.onclick = function () {
     document.body.classList.toggle("overflow");
     btnMenu.classList.toggle("animationClose");
     burger.classList.toggle('activeBurger');
+    header.classList.toggle('activePadding');
   };
 }
 

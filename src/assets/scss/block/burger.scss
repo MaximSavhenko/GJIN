@@ -20,18 +20,19 @@
     &__wrapp {
         display: flex;
         justify-content: center;
-        align-items: center;
+        // align-items: center;
+        padding-left: 171px;
         flex-direction: column;
         height: 100%;
         background-color: #f4f4f4;
         width: 100%;
         max-width: 1207px;
         margin-right: 36px;
+        position: relative;
     }
 
     &__nav {
         margin-bottom: 30px;
-        
         ul {
             display: flex;
             flex-direction: column;
@@ -54,14 +55,22 @@
     }
 
     &__sicial {
+        margin-bottom: 40px;
         img {
             max-width: 25px;
             max-height: 25px;
+            &:first-child {
+                margin-right: 14px;
+            }
         }
     }
 
     &__link {
         display: flex;
         flex-direction: column;
+        text-transform: uppercase;
+        a {
+            margin-bottom: 13px;
+        }
     }
 }

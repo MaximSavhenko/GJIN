@@ -631,24 +631,31 @@ img {
     max-height: 100%;
 }
 
+.jcf-select {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 1px 0 0;
+    outline: 1px solid #4dbbb8;
+    cursor: pointer;
+    color: #4dbbb8;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 100%;
+    padding: 14px 0 10px 14px;
+    position: relative;
+}
+
 .jcf-select-drop {
     position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 1px;
     background-color: #fff;
     z-index: 2;
-    width: 132px !important;
     border-radius: 4px;
     box-shadow: 3px 5px 20px rgba(141, 141, 141, 0.1);
     border: 1px solid rgba(228, 228, 228, 0.5);
     padding: 11px 0 11px 13px;
-}
-
-.jcf-select-header__setting-items {
-    line-height: 0.9;
-}
-
-.jcf-select-text {
-    font-size: 14px;
-    max-width: 132px;
 }
 
 .jcf-option {
@@ -661,90 +668,27 @@ img {
 }
 
 .jcf-select-opener {
-    padding-left: 10px;
+    position: relative;
 }
 
 .jcf-select-opener::before {
     content: '';
-    top: 0;
-    right: 0;
     display: inline-block;
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    width: 8px;
-    height: 8px;
-    margin-bottom: 2px;
-    transition: all .2s;
-}
-
-.jcf-drop-active .jcf-select-opener {
-    padding-left: 10px;
-}
-
-.jcf-drop-active .jcf-select-opener::before {
-    -webkit-transform: rotate(135deg);
-    transform: rotate(135deg);
-    margin-bottom: -3px;
-}
-
-.select {
-    position: relative;
-    z-index: 1;
-}
-
-.select__btn {
-    position: relative;
-    outline: 1px solid #4dbbb8;
-    cursor: pointer;
-    color: #4dbbb8;
-    text-transform: uppercase;
-    font-size: 15px;
-    width: 100%;
-    padding: 14px 0 10px 14px;
-}
-
-.select__btn:after {
-    content: '';
     position: absolute;
-    top: 17px;
-    right: 40px;
+    top: 5px;
+    right: -24px;
     border: 10px solid transparent;
     border-top: 10px solid #45aaa7;
 }
 
-.select__list {
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 5px;
-    margin-top: -1px;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-}
-
-.select__list.active {
-    display: block;
-}
-
-.select__item {
-    padding: 5px 10px;
-    border-bottom: 1px solid #000;
-    cursor: pointer;
-}
-
-.select__item:hover {
-    color: red;
-}
-
-.select__item:last-child {
-    border-bottom: none;
+.jcf-drop-active .jcf-select-opener::before {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    top: -5px;
 }
 
 .header {
+    transition: all .3s;
     border-top: 42px solid #fff;
 }
 
@@ -757,6 +701,7 @@ img {
 .header__wrap {
     display: -ms-flexbox;
     display: flex;
+    transition: all .3s;
 }
 
 .header__logo {
@@ -896,8 +841,7 @@ img {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
+    padding-left: 171px;
     -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
@@ -905,6 +849,7 @@ img {
     width: 100%;
     max-width: 1207px;
     margin-right: 36px;
+    position: relative;
 }
 
 .burger__nav {
@@ -937,9 +882,17 @@ img {
     font-weight: 600;
 }
 
+.burger__sicial {
+    margin-bottom: 40px;
+}
+
 .burger__sicial img {
     max-width: 25px;
     max-height: 25px;
+}
+
+.burger__sicial img:first-child {
+    margin-right: 14px;
 }
 
 .burger__link {
@@ -947,6 +900,11 @@ img {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
+    text-transform: uppercase;
+}
+
+.burger__link a {
+    margin-bottom: 13px;
 }
 
 .hero {
@@ -1884,25 +1842,29 @@ img {
 }
 
 .impressum .container {
-    max-width: 956px;
+    max-width: 1068px;
 }
 
 .impressum__name span {
     font-size: 20px;
     font-weight: 600;
     color: #4dbbb8;
-    margin-bottom: 26px;
+    margin-bottom: 6px;
 }
 
 .impressum__name p {
     font-size: 35px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 35px;
+    margin-bottom: 14px;
 }
 
 .impressum__addres {
-    margin-bottom: 36px;
+    margin-bottom: 29px;
+}
+
+.impressum__addres-title {
+    padding: 0px 0px 33px 0px;
 }
 
 .impressum__addres-indent {
@@ -1911,6 +1873,19 @@ img {
 
 .impressum__kontakt {
     margin-bottom: 35px;
+}
+
+.impressum__kontakt a {
+    display: block;
+    margin-bottom: 7px;
+}
+
+.impressum__kontakt-title {
+    padding: 0px 0px 35px 0px;
+}
+
+.impressum__kontakt-link {
+    padding: 0px 0px 23px 0px;
 }
 
 .impressum__text-block {
