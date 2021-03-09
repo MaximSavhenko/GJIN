@@ -15,24 +15,24 @@ function burger() {
 burger();
 
 
-function scrollUp() {
-  function scrollTo(element) {
-    window.scroll({
-      left: 0,
-      top: element.offsetTop,
-      behavior: "smooth",
-    });
-  }
+// function scrollUp() {
+//   function scrollTo(element) {
+//     window.scroll({
+//       left: 0,
+//       top: element.offsetTop,
+//       behavior: "smooth",
+//     });
+//   }
 
-  var button = document.querySelector(".footer__scrollUp");
-  var header = document.querySelector("#up");
+//   var button = document.querySelector(".footer__scrollUp");
+//   var header = document.querySelector("#up");
 
-  button.addEventListener("click", () => {
-    scrollTo(header);
-  });
-}
+//   button.addEventListener("click", () => {
+//     scrollTo(header);
+//   });
+// }
 
-scrollUp();
+// scrollUp();
 
 
 

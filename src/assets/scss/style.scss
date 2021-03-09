@@ -1,5 +1,5 @@
 @import "block/fonts.scss";
-@import "block/helpers/mixins";
+@import "helpers/mixins";
 
 html,
 body,
@@ -399,6 +399,7 @@ img {
 
 
 
+@import "block/jcf.scss";
 @import "block/select.scss";
 @import "block/header.scss";
 @import "block/burger.scss";

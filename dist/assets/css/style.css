@@ -631,6 +631,64 @@ img {
     max-height: 100%;
 }
 
+.jcf-select-drop {
+    position: absolute;
+    background-color: #fff;
+    z-index: 2;
+    width: 132px !important;
+    border-radius: 4px;
+    box-shadow: 3px 5px 20px rgba(141, 141, 141, 0.1);
+    border: 1px solid rgba(228, 228, 228, 0.5);
+    padding: 11px 0 11px 13px;
+}
+
+.jcf-select-header__setting-items {
+    line-height: 0.9;
+}
+
+.jcf-select-text {
+    font-size: 14px;
+    max-width: 132px;
+}
+
+.jcf-option {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.jcf-list-content {
+    display: block;
+}
+
+.jcf-select-opener {
+    padding-left: 10px;
+}
+
+.jcf-select-opener::before {
+    content: '';
+    top: 0;
+    right: 0;
+    display: inline-block;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    width: 8px;
+    height: 8px;
+    margin-bottom: 2px;
+    transition: all .2s;
+}
+
+.jcf-drop-active .jcf-select-opener {
+    padding-left: 10px;
+}
+
+.jcf-drop-active .jcf-select-opener::before {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-bottom: -3px;
+}
+
 .select {
     position: relative;
     z-index: 1;
