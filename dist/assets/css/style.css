@@ -2150,4 +2150,10 @@ img {
     font-size: 14px;
     line-height: 1;
     text-transform: uppercase;
+    margin-bottom: 37px;
+}
+
+.form .button {
+    max-width: 108px;
+    margin-bottom: 37px;
 }
