@@ -19,6 +19,7 @@
       }
       @include b(tablet) {
         align-items: center;
+        flex-wrap: wrap;
       }
 
       &--burger {

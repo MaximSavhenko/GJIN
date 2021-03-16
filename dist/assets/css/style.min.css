@@ -306,6 +306,8 @@ h2 {
     @media (max-width: 1118px) {
       .decoration--left {
         background-position: center 241px; } }
+  .decoration--noBg {
+    background-image: none; }
 
 .button {
   display: flex;
@@ -332,14 +334,12 @@ input[type="password"],
 input[type="number"] {
   display: block;
   width: 100%;
-  height: 48px;
-  padding: 13px 19px;
-  border: 1px solid #E4E4E4;
-  border-radius: 4px;
+  height: 43px;
+  padding: 16px 0 14px 18px;
+  border: 1px solid #424242;
   background: none;
   font-size: 14px;
   font-family: inherit;
-  color: #303030;
   transition: all 0.1s; }
   @media (max-width: 490px) {
     input[type="search"],
@@ -360,14 +360,8 @@ input[type="number"] {
   input[type="email"]::placeholder,
   input[type="password"]::placeholder,
   input[type="number"]::placeholder {
-    color: rgba(48, 48, 48, 0.5);
+    color: #424242;
     font-weight: normal; }
-  input[type="search"]:focus,
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="password"]:focus,
-  input[type="number"]:focus {
-    box-shadow: 0 0 3px 1px #68a8e0; }
 
 input[type="search"] {
   border-radius: 0;
@@ -383,10 +377,9 @@ input[type="file"] {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 48px;
-  border: 1px solid #303030;
+  height: 43px;
+  border: 1px solid #f4f4f4;
   background: none;
-  border-radius: 4px;
   font-size: 14px;
   text-transform: uppercase;
   font-family: inherit;
@@ -422,25 +415,23 @@ input[type="number"] {
 textarea {
   display: block;
   width: 100%;
-  height: 170px;
+  height: 300px;
   resize: none;
   padding: 16px;
   border: none;
-  border: 1px solid #E4E4E4;
-  border-radius: 4px;
+  padding: 16px 0 14px 18px;
+  border: 1px solid #424242;
   background: none;
   font-size: 14px;
   font-family: inherit;
   font-weight: 400;
-  color: #303030;
+  color: #424242;
   transition: all 0.2s; }
   @media (max-width: 490px) {
     textarea {
       font-size: 12px; } }
   textarea::placeholder {
-    color: rgba(48, 48, 48, 0.5); }
-  textarea:focus {
-    box-shadow: 0 0 3px 1px #68a8e0; }
+    color: #424242; }
 
 input[type=checkbox] {
   display: none; }
@@ -454,23 +445,22 @@ input[type=checkbox] {
   .checkbox:before {
     content: '';
     display: inline-block;
-    border: 1px solid #E4E4E4;
-    border-radius: 4px;
-    width: 16px;
-    height: 16px;
+    background-color: #424242;
+    width: 11px;
+    height: 11px;
     margin-right: 8px;
     transition: all .1s; }
   .checkbox::after {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 6px;
-    border-bottom: 2px solid #000;
-    border-left: 2px solid #000;
+    width: 8px;
+    height: 5px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
     transform: rotate(-45deg);
     opacity: 0;
-    top: 6px;
-    left: 4px;
+    top: 4px;
+    left: 2px;
     transition: all .2s;
     display: block; }
 
@@ -542,7 +532,8 @@ img {
           justify-content: flex-start; } }
     @media (max-width: 1023px) {
       .header__wrap {
-        align-items: center; } }
+        align-items: center;
+        flex-wrap: wrap; } }
     .header__wrap--burger {
       position: absolute;
       top: 0;
@@ -1269,3 +1260,128 @@ img {
         margin-bottom: 0; }
   .impressum__quelle p {
     font-weight: 700; }
+
+.event {
+  padding: 233px 0 20px 0;
+  border-bottom: 35px solid #fff; }
+  .event span {
+    display: block; }
+  .event__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .event__header {
+    margin-bottom: 34px; }
+  .event__header-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.75;
+    color: #4dbbb8; }
+  .event__header-descr {
+    line-height: 1.14;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700; }
+  .event__date {
+    margin-bottom: 80px; }
+    .event__date ul {
+      border-top: 2px solid #4dbbb8;
+      border-bottom: 2px solid #4dbbb8;
+      padding: 10px 0 18px 0; }
+    .event__date li {
+      display: flex;
+      align-items: center; }
+      .event__date li p {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.95;
+        text-transform: uppercase;
+        padding-left: 20px; }
+      .event__date li svg {
+        width: 26px;
+        height: 26px;
+        fill: #45aaa7; }
+  .event__date-title {
+    font-weight: 300;
+    line-height: 1.55;
+    margin-bottom: 54px; }
+  .event__body-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 37px; }
+  .event__body-list {
+    margin-bottom: 29px; }
+    .event__body-list li {
+      font-weight: 300;
+      line-height: 1.55;
+      display: flex;
+      align-items: center; }
+      .event__body-list li:before {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background-color: #000;
+        border-radius: 50%;
+        margin-right: 9px; }
+  .event__body-descr {
+    margin-bottom: 28px; }
+    .event__body-descr span {
+      font-weight: 600;
+      line-height: 1.55; }
+  .event__postscr {
+    font-weight: 300;
+    margin-bottom: 6px;
+    line-height: 1.55; }
+  .event__footer .button {
+    max-width: 174px; }
+  .event .logo {
+    background-color: transparent; }
+  .event .container {
+    max-width: 991px; }
+
+.form {
+  padding: 20px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .form input {
+    width: 100%;
+    margin-bottom: 32px; }
+  .form .jcf-select {
+    max-width: 100%;
+    height: 43px;
+    outline: none;
+    border: 1px solid #424242;
+    margin-bottom: 32px; }
+  .form .jcf-select-text {
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: none;
+    color: #424242;
+    line-height: 1;
+    position: relative; }
+  .form .jcf-select-opener {
+    position: static; }
+    .form .jcf-select-opener:before {
+      content: '';
+      right: 18px;
+      top: 50%; }
+  .form .jcf-drop-active .jcf-select-opener::before {
+    transform: rotate(180deg);
+    top: 5px; }
+  .form__wrap {
+    width: 100%;
+    max-width: 776px; }
+  .form__inner {
+    display: flex;
+    justify-content: space-between; }
+  .form__left, .form__right {
+    width: 48%; }
+  .form__textarea {
+    margin-bottom: 37px; }
+  .form__checkbox {
+    color: #45aaa7;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase; }

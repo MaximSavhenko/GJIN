@@ -1,0 +1,73 @@
+.form {
+    padding: 20px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    input {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .jcf-select {
+        max-width: 100%;
+        height: 43px;
+        outline: none;
+        border: 1px solid #424242;
+        margin-bottom: 32px;
+    }
+
+    .jcf-select-text {
+        font-weight: 300;
+        font-size: 18px;
+        text-transform: none;
+        color: #424242;
+        line-height: 1;
+        position: relative;
+    }
+
+    .jcf-select-opener{
+        position: static;
+        &:before {
+            content:'';
+            right: 18px;
+            top: 50%;
+        }
+
+    }
+
+    .jcf-drop-active {
+        .jcf-select-opener {
+            &::before {
+                transform: rotate(180deg);
+                top: 5px;
+            }
+        }
+    }
+
+    &__wrap{
+        width: 100%;
+        max-width: 776px;
+    }
+    
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__left , &__right{
+        width: 48%;
+    }
+    
+    &__right{}
+
+    &__textarea{
+        margin-bottom: 37px;
+    }
+    
+    &__checkbox {
+        color: #45aaa7;
+        font-size: 14px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+}

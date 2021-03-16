@@ -1,0 +1,125 @@
+.event {
+    padding: 233px 0 20px 0;
+    border-bottom: 35px solid #fff;
+
+    span {
+        display: block;
+    }
+
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__header{
+        margin-bottom: 34px;
+    }
+
+    &__header-title{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.75;
+        color: #4dbbb8;
+    }
+
+    &__header-descr{
+        line-height: 1.14;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    &__date{
+        margin-bottom: 80px;
+        ul {
+            border-top: 2px solid #4dbbb8;
+            border-bottom: 2px solid #4dbbb8;
+            padding: 10px 0 18px 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1.95;
+                text-transform: uppercase;
+                padding-left: 20px;
+            }
+
+            svg {
+                width: 26px;
+                height: 26px;
+                fill: #45aaa7;
+            }
+        }
+    }
+
+    &__date-title{
+        font-weight: 300;
+        line-height: 1.55;
+        margin-bottom: 54px;
+    }
+
+    &__body{
+
+    }
+
+    &__body-title{
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 37px;
+    }
+
+    &__body-list{
+        margin-bottom: 29px;
+        li { 
+            font-weight: 300;
+            line-height: 1.55;
+            display: flex;
+            align-items: center;
+            &:before {
+                content:'';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                background-color: #000;
+                border-radius: 50%;
+                margin-right:9px;
+            }
+        }
+    }
+
+    &__body-descr{
+        margin-bottom: 28px;
+        span {
+            font-weight: 600;
+            line-height: 1.55;
+        }
+    }
+
+
+    &__postscr{
+        font-weight: 300;
+        margin-bottom: 6px;
+        line-height: 1.55;
+    }
+
+    &__footer{
+        .button {
+            max-width: 174px;
+        }
+    }
+
+    .logo {
+        background-color: transparent;
+    }
+
+    
+
+    .container {
+        max-width: 991px;
+    }
+
+}
