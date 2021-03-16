@@ -1,16 +1,20 @@
 function burger() {
-  var btnMenu = document.querySelector(".header__btn-menu"),
-      burger = document.querySelector('.burger'),
-      header = document.querySelector('.header')
+  header = document.querySelectorAll('.header__wrap');
+  
 
-      
+  header.forEach(header => {
+    let btnMenu = header.querySelector(".header__btn-menu"),
+        burger = document.querySelector('.burger'),
+        navbar = header.querySelector(".navbar-mobile")
 
-  btnMenu.onclick = function () {
-    document.body.classList.toggle("overflow");
-    btnMenu.classList.toggle("animationClose");
-    burger.classList.toggle('activeBurger');
-    header.classList.toggle('activePadding');
-  };
+    btnMenu.onclick = function () {
+      document.body.classList.toggle("overflow");
+      burger.classList.toggle('activeBurger');
+      // navbar.classList.toggle("animationClose");
+    };
+  });
+
+  
 }
 
 burger();

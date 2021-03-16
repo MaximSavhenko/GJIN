@@ -212,6 +212,13 @@ h2 {
   @include b(400) {
     background-size: 250px 250px;
   }
+
+  &--left {
+    background-position: 52px -120px;
+    @include b(1118) {
+      background-position: center 241px ;
+    }
+  }
 }
 
 .button {

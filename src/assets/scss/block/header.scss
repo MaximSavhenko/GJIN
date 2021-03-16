@@ -1,21 +1,43 @@
 .header {
-  transition: all .3s;
-  // &.activePadding {
-  //   position: absolute;
-  //   left: 33%;
-  // }
-
-  border-top: 42px solid #fff;
+  border-top: 42px solid rgba(255, 255, 255, .5);
 
 
   @include b(tablet) {
-      border-top: 21px solid #fff;
+      border-top: 21px solid rgba(255, 255, 255, .5);
   }
 
   &__wrap {
       display: flex;
-      transition: all .3s;
-      
+      transition: all .2s;
+      &.activePadding {
+        justify-content: flex-end;
+        margin-right: 760px;
+        @include b(1362) {
+          margin-right: 0;
+          justify-content: flex-start;
+        }
+      }
+      @include b(tablet) {
+        align-items: center;
+      }
+
+      &--burger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include b(428) {
+          width: 100%;
+        }
+        
+        .header__btn-menu {
+          z-index: 300;
+        }
+
+        .header__logo {
+          margin: -42px 0px 0px 0px;
+        }
+
+      }
   }
 
   &__logo {
@@ -27,22 +49,23 @@
     width: 163px;
     height: 163px;
     position: relative;
-    z-index: 3;
+    // z-index: 3;
     
     @include b(mobile) {
         margin-top: -21px;
         margin-left: -24px;
-        width: 120px;
-        height: 100px;
+        width: 158px;
+        height: 158px;
     }
   }
 
   &__btn-menu {
     position: relative;
-    z-index: 30;
+    // z-index: 30;
     height: 25px;
     width: 40px;
     margin: 40px;
+    cursor: pointer;
 
     @include b(mobile) {
         width: 20px;
@@ -76,7 +99,7 @@
       left: 0;
       width: 40px;
       height: 3px;
-      z-index: 15;
+      // z-index: 15;
       background-color: #4ec4c0;
       &:nth-child(2) {
         top: 11px;
@@ -85,25 +108,22 @@
         top: 20px;
       }
       @include b(500) {
-        width: 18px;
+        // width: 18px;
       }
     }
   }
   &__title{
       padding-top: 36px;
       position: relative;
-      z-index: 3;
-      @include b(mobile) {
-          padding-top: 20px;
+      // z-index: 3;
+      @include b(tablet) {
+          padding-top: 0px;
       }
       p,span {
           font-size: 15px;
           line-height: 1.2;
           text-transform: uppercase;
           font-weight: 600;
-          @include b(mobile) {
-
-          }
       }
       p {
         color:#45aaa7;
