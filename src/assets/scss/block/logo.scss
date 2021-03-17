@@ -5,6 +5,26 @@
     @include b(mobile) {
         padding: 68px 0px 57px 0px;
     }
+
+    &--form {
+        background-color: transparent;
+        padding-top: 0;
+        .logo__wrap {
+            align-items: stretch;
+            padding-bottom: 113px;
+        }
+        .logo__btn{
+            width: 100%;
+            max-width: 324px;
+            margin: 0 auto;
+           
+            .button {
+                padding: 12px 0px 12px 0px;
+                height: auto;
+                font-size: 26px;
+            }
+        }
+    }
     
     &__wrap {
         display: flex;
@@ -35,7 +55,21 @@
             line-height: 1.55;
             max-width: 300px;
             margin-bottom: 32px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
+        .button {
+            max-width: 152px;
+            @include b(mobile) {
+                max-width: 180px;
+            }
+        }
+    }
+
+    &__postscr{
+        font-weight: 600;
+        margin-bottom: 0;
     }
 
     &__img {
@@ -59,10 +93,5 @@
         }
     }
 
-    .button {
-        max-width: 152px;
-        @include b(mobile) {
-            max-width: 180px;
-        }
-    }
+    
 }
