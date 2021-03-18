@@ -1,6 +1,9 @@
 .event {
     padding: 233px 0 20px 0;
     border-bottom: 35px solid #fff;
+    @include b(mobile) {
+        padding-top: 50px;
+    }
 
     span {
         display: block;

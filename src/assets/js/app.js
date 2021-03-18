@@ -20,6 +20,25 @@ function burger() {
 burger();
 
 
+
+function onload() {
+
+
+    let prealoader = document.querySelector('.preloader')
+
+  
+    prealoader.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      prealoader.classList.add('loaded');
+      prealoader.classList.remove('loaded_hiding');
+    }, 5000);
+  
+  
+}
+
+onload ();
+
+
 // function scrollUp() {
 //   function scrollTo(element) {
 //     window.scroll({
