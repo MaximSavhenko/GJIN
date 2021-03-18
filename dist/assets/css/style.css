@@ -695,6 +695,87 @@ img {
     max-height: 100%;
 }
 
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+    z-index: 10;
+}
+
+.preloader.loaded_hiding {
+    transition: 1s opacity;
+    opacity: 0;
+}
+
+.preloader.loaded {
+    display: none;
+}
+
+.preloader span {
+    display: block;
+}
+
+.preloader__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    -webkit-animation: hello 10s ease;
+    animation: hello 10s ease;
+    opacity: 0;
+}
+
+.preloader__descr {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4dbbb8;
+    -webkit-animation: hello 10s ease;
+    animation: hello 10s ease;
+    opacity: 0;
+}
+
+@-webkit-keyframes hello {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hello {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.preloader span:nth-child(1) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.preloader span:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
 .jcf-select {
     display: -ms-flexbox;
     display: flex;

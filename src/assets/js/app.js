@@ -23,15 +23,20 @@ burger();
 
 function onload() {
 
+  document.body.onload = function () {
 
-    let prealoader = document.querySelector('.preloader')
-
-  
-    prealoader.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-      prealoader.classList.add('loaded');
-      prealoader.classList.remove('loaded_hiding');
+    setTimeout(function () {
+      let prealoader = document.querySelector('.preloader');
+      if (!prealoader.classList.contains('loaded_hiding') ) 
+      {
+        prealoader.classList.add('loaded_hiding')
+      }
     }, 5000);
+    
+  }
+
+
+    
   
   
 }
