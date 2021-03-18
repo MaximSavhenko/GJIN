@@ -6,12 +6,22 @@
         padding: 68px 0px 57px 0px;
     }
 
+    // mod for form on page "become_a_partner" class mod - "logo--form" ---
+
     &--form {
         background-color: transparent;
         padding-top: 0;
+        @include b(1000) {
+            padding: 68px 0px 57px 0px;
+        }
         .logo__wrap {
             align-items: stretch;
             padding-bottom: 113px;
+            @include b(1000) {
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+            }
         }
         .logo__btn{
             width: 100%;
@@ -24,7 +34,29 @@
                 font-size: 26px;
             }
         }
+
+        .logo__img {
+            @include b(1000) {
+                order: -1;
+                border-left: none;
+                border-right: none;
+                margin: 0px 0px 0px 0px;
+                padding: 0px 0px 71px 0px;
+                margin: 0 auto;
+            }
+        }
+
+        .logo__text {
+            p {
+                @include b(1000) {
+                    max-width: 100%;
+                }
+            }
+        }
     }
+
+    // mod for form on page "become_a_partner" class mod - "logo--form" ---
+
     
     &__wrap {
         display: flex;

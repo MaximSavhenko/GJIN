@@ -6,28 +6,19 @@
     input {
         width: 100%;
         margin-bottom: 32px;
+        @include b(mobile) {
+            height: 50px;
+        }
     }
 
+
+    // mod for form on page "become_a_partner" class mod - "form--become" ---
     &--become {
         flex-direction: column;
         align-items: center;
-
-        .form__hints {
-            color: #45aaa7;
-            font-size: 20px;
-            text-transform: uppercase;
-            line-height: 1.3;
-        }
-
-        .form__wrap {
-            max-width: 1118px;
-        }
-
-        .form__inquiry {
-            display: flex;
-            justify-content: space-between;
-            input {
-                max-width: 670px;
+        input  {
+            @include b(mobile) {
+                margin-bottom: 13px;
             }
         }
 
@@ -37,7 +28,12 @@
             span {
                 display: block;
             }
+
+            @include b(mobile) {
+                padding-bottom: 67px;
+            }
         }
+
         .form__title {
             color: #4dbbb8;
             font-size: 20px;
@@ -45,6 +41,10 @@
             line-height: 1.75;
             text-transform: uppercase;
             margin-bottom: 10px;
+            @include b(mobile) {
+                font-size: 24px;
+
+            }
         }
     
         .form__descr {
@@ -53,35 +53,118 @@
             font-weight: 700;
             line-height: 1.14;
             margin-bottom: 19px;
+
+            @include b(mobile) {
+                font-size: 42px;
+                letter-spacing: .3px;
+                margin-bottom: 30px;
+            }
         }
     
         .form__postscr {
             font-weight: 300;
             line-height: 1.55;
             max-width: 405px;
+
+            @include b(mobile) {
+                font-size: 22px;
+                max-width: 100%;
+            }
         }
+        .form__hints {
+            color: #45aaa7;
+            font-size: 20px;
+            text-transform: uppercase;
+            line-height: 1.3;
+            @include b(mobile) {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+        }
+
+        .form__wrap {
+            max-width: 1118px;
+        }
+
+        .form__inner {
+            justify-content: flex-start;
+            @include b(mobile) {
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+            }
+            .form__hints {
+                @include b(mobile) {
+                    max-width: 400px;
+                }
+            }
+        }
+
+        .form__inquiry {
+            display: flex;
+            justify-content: space-between;
+            @include b(mobile) {
+                flex-wrap: wrap;
+                margin-bottom: 12px;
+            }
+            input {
+                max-width: 670px;
+            }
+        }
+
 
         .form__left , .form__right {
             max-width: 321px;
-            
+            @include b(mobile) {
+               width: 100%;
+               max-width: 100%; 
+            }
             input {
-                max-width: 321px;
+                width: 321px;
+                @include b(mobile) {
+                    width: 100%;
+                    max-width: 100%;
+                }
             } 
+
+            // style for defolt selector -----
             .jcf-select {
                 max-width: 321px;
+                font-weight: 300;
+                @include b(mobile) {
+                    max-width: 100%;
+                    margin-bottom: 13px;
+                    height: 50px;
+                }
             }
+            // style for defolt selector -----
         }
 
         .form__left {
             margin-right: 28px;
+            @include b(mobile) {
+                margin-right: 0;
+            }
         } 
 
         .form__textarea {
             display: flex;
             justify-content: space-between;
+            width: 100%;
+            @include b(mobile) {
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+            .form__hints {
+                @include b(mobile) {
+                    max-width: 350px;
+                }
+            }
             textarea {
-                max-width: 670px;
-                max-height: 512px;
+                width: 670px;
+                height: 512px;
+                @include b(mobile) {
+                    height: 490px;
+                }
             }
         }
 
@@ -91,20 +174,57 @@
             .form__hints {
                 margin-bottom: 34px;
                 display: flex;
+                @include b(mobile) {
+                    font-size: 21px;
+                    line-height: 1.24;
+                    max-width: 100%;
+                    text-align: justify;
+                }
             }
         }
         
         .form__checkbox {
             display: flex;
             justify-content: flex-end;
+            @include b(mobile) {
+                margin-bottom: 28px;
+            }
+            .checkbox {
+                @include b(mobile) {
+                    align-items: flex-start;
+                    font-size: 18px;
+                    line-height: 1.33;
+                    &::before {
+                        content:'';
+                        min-width: 11px;
+                        margin: 7px 20px 0px 0px;
+                    }
+
+                    &:after {
+                        content:'';
+                        top: 9px;
+                    }
+                }
+            }
         }
 
         .form__btn{
             max-width: 670px;
             text-align: right;
             margin-left: auto;
+            .button {
+                @include b(mobile) {
+                    font-size: 19px;
+                    font-weight: 300;
+                    max-width: 170px;
+                    height: auto;
+                    padding: 10px 0px 10px 0px;
+                }
+            }
         }
     }
+
+    // mod for form on page "become_a_partner" class mod - "form--become" ---
 
     .jcf-select {
         max-width: 100%;

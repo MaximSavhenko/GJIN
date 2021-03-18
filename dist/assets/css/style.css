@@ -1907,6 +1907,12 @@ img {
     border-bottom: 35px solid #fff;
 }
 
+@media (max-width: 767px) {
+    .impressum {
+        padding: 70px 0;
+    }
+}
+
 .impressum span {
     text-transform: uppercase;
     font-size: 18px;
@@ -1914,12 +1920,17 @@ img {
 }
 
 .impressum p {
-    font-size: 18px;
     line-height: 1.55;
 }
 
 .impressum .container {
     max-width: 1068px;
+}
+
+@media (max-width: 767px) {
+    .impressum .container {
+        padding: 0 28px;
+    }
 }
 
 .impressum__name span {
@@ -1929,6 +1940,14 @@ img {
     margin-bottom: 6px;
 }
 
+@media (max-width: 767px) {
+    .impressum__name span {
+        font-size: 24px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+}
+
 .impressum__name p {
     font-size: 35px;
     font-weight: 600;
@@ -1936,16 +1955,41 @@ img {
     margin-bottom: 14px;
 }
 
+@media (max-width: 767px) {
+    .impressum__name p {
+        font-size: 42px;
+    }
+}
+
 .impressum__addres {
     margin-bottom: 29px;
 }
 
 .impressum__addres-title {
-    padding: 0px 0px 33px 0px;
+    padding-bottom: 33px;
+}
+
+@media (max-width: 767px) {
+    .impressum__addres-title {
+        font-size: 22px;
+        padding-bottom: 28px;
+    }
 }
 
 .impressum__addres-indent {
     margin-bottom: 35px;
+}
+
+.impressum__addres-indent span {
+    font-weight: 600;
+}
+
+@media (max-width: 767px) {
+    .impressum__addres-indent span {
+        font-size: 21px;
+        letter-spacing: .3px;
+        max-width: 350px;
+    }
 }
 
 .impressum__kontakt {
@@ -2211,7 +2255,6 @@ img {
     display: flex;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 34px;
 }
 
 .form--become .form__textarea textarea {
@@ -2221,14 +2264,26 @@ img {
 
 .form--become .form__clarification {
     width: 100%;
+    max-width: 670px;
+}
+
+.form--become .form__clarification .form__hints {
+    margin-bottom: 34px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.form--become .form__checkbox {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
-.form--become .form__clarification .form__hints {
-    max-width: 666px;
+.form--become .form__btn {
+    max-width: 670px;
+    text-align: right;
+    margin-left: auto;
 }
 
 .form .jcf-select {

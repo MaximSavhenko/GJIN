@@ -16,6 +16,12 @@
     &.activeBurger {
         left: 0;
     }
+
+    @include b(400) {
+        padding-top: 21px;
+    }
+
+    
     
     &__wrapp {
         display: flex;
@@ -33,6 +39,11 @@
             padding-left: 0;
             align-items: center;
         }
+
+        @include b(400) {
+            margin-right: 10px;
+        }
+        
     }
 
     &__nav {
@@ -77,4 +88,33 @@
             margin-bottom: 13px;
         }
     }
+
+    // login btn --- responsive option
+    
+    .header {
+
+		&__btn-login {
+            display: none;
+            @include b(800) {
+                padding-top: 40px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 100%;
+                max-width: 100%;
+                margin: 0px 0px 0px 0px;
+            }
+		}
+
+		&__checkin {
+            margin-bottom: 13px;
+		}
+
+		&__logout {
+		}
+    }
+
+    // login btn --- responsive option
+
+
 }

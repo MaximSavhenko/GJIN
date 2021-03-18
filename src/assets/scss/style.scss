@@ -176,8 +176,12 @@ h2 {
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
-  @include b(500) {
-    padding: 0 15px;
+  @include b(600) {
+    padding: 0 27px;
+  }
+
+  @include b(400) {
+      padding: 0 15px;
   }
 
   &--page {
@@ -211,6 +215,8 @@ h2 {
   }
   @include b(400) {
     background-size: 250px 250px;
+    border-right: 10px solid #fff;
+    border-left: 10px solid #fff;
   }
 
   &--left {
@@ -242,6 +248,16 @@ h2 {
   cursor: pointer;
   @include trs;
 
+
+  &--grin {
+    background-color: #f4f4f4;
+    border: 1px solid #4dbbb8;
+    color: #4dbbb8;
+    height: auto;
+    padding: 9px 0;
+    text-transform: none;
+  }
+
   &:hover {
     color: inherit;
   }
@@ -259,19 +275,20 @@ input[type="number"]
   padding: 16px 0 14px 18px;
   border: 1px solid #424242;
   background: none;
-  font-size: 14px;
   font-family: inherit;
+  color: inherit;
   transition: all 0.1s;
-  @include b(490) {
-    font-size: 12px;
-  }
-  @include b(tablet) {
-    font-size: 14px;
+  font-weight: 300;
+  @include b(mobile) {
+    font-size: 22px;
   }
   &::placeholder {
     color: #424242;
     font-weight: 300;
     font-size: 18px;
+    @include b(mobile) {
+      font-size: 22px;
+    }
   }
   // &:focus {
   //   box-shadow: 0 0 3px 1px #68a8e0;
@@ -344,17 +361,21 @@ textarea {
   padding: 16px 0 14px 18px;
   border: 1px solid #424242;
   background: none;
-  font-size: 14px;
   font-family: inherit;
-  font-weight: 400;
-  color: #424242;
+  font-weight: 300;
+  color: inherit;
   transition: all 0.2s;
-  @include b(490) {
-    font-size: 12px;
+  @include b(mobile) {
+    font-size: 22px;
+    padding: 8px 0px 0px 18px;
   }
 
   &::placeholder {
     color: #424242;
+    font-weight: 300;
+    @include b(mobile) {
+      font-size: 22px;
+    }
   }
   // &:focus {
   //   box-shadow: 0 0 3px 1px #68a8e0;

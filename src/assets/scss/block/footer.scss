@@ -22,7 +22,7 @@
             margin-right: 20px;
             display: inline-block;
             @include b(mobile) {
-                margin-right: 32px;
+                margin-right: 49px;
             }
             &:last-child {
                 margin-right: 0;
@@ -31,7 +31,11 @@
         img {
             max-width: 33px;
             max-height: 33px;
-            display: inline-block;
+            display: flex;
+            @include b(mobile) {
+                max-width: 56px;
+                max-height: 56px;
+            }
         }
     }
 
