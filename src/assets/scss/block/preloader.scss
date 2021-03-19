@@ -1,80 +1,72 @@
 .preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  z-index: 10;
+  visibility: visible;
+  transition: 1s all;
+  border-right: 25px solid #45aaa7;
 
-    &.loaded_hiding  {
-        transition:  1s opacity;
-        opacity: 0;
-      }
-      
-    &.loaded  {
-    display: none;
-    }
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #000;
-    z-index: 10;
-    
-    span {
-        display: block;
-    }
-
-    &__title {
-        text-transform: uppercase;
-        font-size: 24px;
-        font-weight: 500;
-        color: #fff;
-        animation: hello 10s ease;
-        opacity: 0;
-
-    }
-
-    &__descr {
-        text-transform: uppercase;
-        font-size: 24px;
-        font-weight: 500;
-        color: #4dbbb8;
-        animation: hello 10s ease;
-        opacity: 0;
-
-    }
-
-
-
-
-
-    @keyframes hello {
-        0% {
-            opacity: 0;
-        }
-       
-        
-        100% {
-            opacity: 1;
-        }
-    }
-
-    // Loop from 1-2.
-    @for $i from 1 through 2 {
-        span {
-        
-        // :nth-child(1-9) 
-        &:nth-child(#{$i}) {
-            
-            // Delay the animation. Delay increases as items loop.
-            animation-delay: $i * (1s / 1);
-            }
-        }
+  &.loaded_hiding {
+    opacity: 0;
+    visibility: hidden;
   }
 
+  span {
+    display: block;
+    transition: 5s all;
+    
+    &.animated{
+      opacity: 1;
+    }
 
+  }
+
+  &.loaded {
+    display: none;
+  }
   
+  &__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    animation: hello 6s ease;
+    opacity: 0;
+  }
 
+  &__descr {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4dbbb8;
+    animation: hello 6s ease;
+    animation-delay: 1s;
+    opacity: 0;
+  }
 
+  // @keyframes hello {
+  //   0% {
+  //     opacity: 0;
+  //   }
+
+  //   100% {
+  //     opacity: 1;
+  //   }
+  // }
+
+  // @for $i from 1 through 2 {
+  //   span {
+  //     &:nth-child(#{$i}) {
+  //       animation-delay: $i * (1s / 2);
+  //     }
+  //   }
+  // }
 }

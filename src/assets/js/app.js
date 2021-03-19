@@ -1,48 +1,38 @@
+// js for burger
 function burger() {
-  header = document.querySelectorAll('.header__wrap');
-  
+  header = document.querySelectorAll(".header__wrap");
 
-  header.forEach(header => {
+  header.forEach((header) => {
     let btnMenu = header.querySelector(".header__btn-menu"),
-        burger = document.querySelector('.burger'),
-        navbar = header.querySelector(".navbar-mobile")
+      burger = document.querySelector(".burger"),
+      navbar = header.querySelector(".navbar-mobile");
 
     btnMenu.onclick = function () {
       document.body.classList.toggle("overflow");
-      burger.classList.toggle('activeBurger');
-      // navbar.classList.toggle("animationClose");
+      burger.classList.toggle("activeBurger");
     };
   });
-
-  
 }
 
 burger();
 
-
+// js for preloader
 
 function onload() {
 
   document.body.onload = function () {
-
     setTimeout(function () {
-      let prealoader = document.querySelector('.preloader');
-      if (!prealoader.classList.contains('loaded_hiding') ) 
-      {
-        prealoader.classList.add('loaded_hiding')
+      let prealoader = document.querySelector(".preloader");
+      if (!prealoader.classList.contains("loaded_hiding")) {
+        prealoader.classList.add("loaded_hiding");
       }
-    }, 5000);
-    
-  }
-
-
-    
-  
-  
+    }, 2500);
+  };
 }
 
-onload ();
 
+
+onload();
 
 // function scrollUp() {
 //   function scrollTo(element) {
@@ -62,14 +52,3 @@ onload ();
 // }
 
 // scrollUp();
-
-
-
-
-
-
-
-
-
-
-

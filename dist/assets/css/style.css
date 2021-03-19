@@ -711,19 +711,21 @@ img {
     min-height: 100vh;
     background-color: #000;
     z-index: 10;
+    visibility: visible;
+    transition: 1s all;
 }
 
 .preloader.loaded_hiding {
-    transition: 1s opacity;
     opacity: 0;
-}
-
-.preloader.loaded {
-    display: none;
+    visibility: hidden;
 }
 
 .preloader span {
     display: block;
+}
+
+.preloader.loaded {
+    display: none;
 }
 
 .preloader__title {
@@ -731,9 +733,8 @@ img {
     font-size: 24px;
     font-weight: 500;
     color: #fff;
-    -webkit-animation: hello 10s ease;
-    animation: hello 10s ease;
-    opacity: 0;
+    -webkit-animation: hello 2s ease;
+    animation: hello 2s ease;
 }
 
 .preloader__descr {
@@ -741,9 +742,8 @@ img {
     font-size: 24px;
     font-weight: 500;
     color: #4dbbb8;
-    -webkit-animation: hello 10s ease;
-    animation: hello 10s ease;
-    opacity: 0;
+    -webkit-animation: hello 2s ease;
+    animation: hello 2s ease;
 }
 
 @-webkit-keyframes hello {
@@ -767,13 +767,13 @@ img {
 }
 
 .preloader span:nth-child(1) {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .preloader span:nth-child(2) {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .jcf-select {
