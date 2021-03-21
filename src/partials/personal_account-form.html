@@ -1,45 +1,46 @@
-<div class="form form--text collapse" id="form__partner" >
+<div class="form form--text collapse" id="form__personal_account">
     <form accept="" class="form__wrap">
         <div class="form__header">
             <div class="form__header-wrap">
-                <span class="form__title">GJIN – ANFRAGE ERSTELLEN </span>
+                <span class="form__title">GJIN – ANFRAGE ERSTELLEN  </span>
                 <span class="form__descr">Wir können es kaum erwarten Ihre Anfrage zu prüfen und online zu stellen.</span>
                 <span class="form__postscr">Erstellen Sie jetzt ihre Anfrage mit unserem einfachen GJIN Anfrageformular.</span>
             </div>
         </div>
         <div class="form__one-input">
             <label class="form__hints">Geben Sie den Titel Ihrer Anfrage ein </label>
-            <input type="text" placeholder="Betreff">
+            <input type="text" placeholder="Titel Ihrer Jobausschreibung">
         </div>
         <div class="form__inputs">
             <label class="form__hints">
                 Überprüfen und ergänzen Sie Ihre Kontaktdaten und Kundennummer 
             </label>
             <div class="form__left">
-                <input type="text" placeholder="Firma">
                 <select>
-                    <option value="">Anrede1</option>
-                    <option value="">Anrede2</option>
-                    <option value="">Anrede3</option>
-                    <option value="">Anrede4</option>
-                    <option value="">Anrede5</option>
-                    <option value="">Anrede6</option>
+                    <option value="">Kategorie</option>
+                    <option value="">Kategorie1</option>
+                    <option value="">Kategorie2</option>
+                    <option value="">Kategorie3</option>
+                    <option value="">Kategorie4</option>
+                    <option value="">Kategorie5</option>
                 </select>
-                <input type="text" placeholder="Vorname">
-                <input type="text" placeholder="Telefonnummer">
-                <input type="text" placeholder="Straße">
+                
+                <input type="text" placeholder="Datum">
             </div>
             <div class="form__right">
-                <input type="text" placeholder="Position im Unternehmen">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="E-Mail Adresse">
-                <input type="text" placeholder="Stadt">
-                <input type="text" placeholder="PLZ & Ort">
+                <select>
+                    <option value="">Standort</option>
+                    <option value="">Premium</option>
+                </select>
+                <input type="text" placeholder="Nutzername">
             </div>
         </div>
         <div class="form__textarea">
             <label class="form__hints">Geben Sie Die Details zu Ihrer Anfrage ein</label>
-            <textarea placeholder="Nachricht"></textarea>
+            <div class="form__textarea-wrap">
+                <textarea placeholder="Kurzbechreibung" class="form__short-descr"></textarea>
+                <textarea placeholder="Detaileingabe" class="form__detailed-descr"></textarea>
+            </div>
         </div>
         <div class="form__checkbox">
             <div class="form__clarification">

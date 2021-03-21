@@ -399,9 +399,7 @@ input[type=checkbox] {
   &:before {
       content:'';
       display: inline-block;
-      // border: 1px solid #E4E4E4;
       background-color: #424242;
-      // border-radius: 4px;
       width: 11px;
       height: 11px;
       margin-right: 8px;
@@ -428,12 +426,6 @@ img {
   max-height: 100%;
 }
 
-
-
-
-
-
-
 @import "block/preloader.scss";
 @import "block/jcf.scss";
 @import "block/header.scss";
@@ -448,6 +440,10 @@ img {
 @import "block/event.scss";
 @import "block/form.scss";
 @import "block/become.scss";
+@import "block/log_in.scss";
+@import "block/forgot_password.scss";
+@import "block/personal_account.scss";
+@import "block/news.scss";
 
 
 

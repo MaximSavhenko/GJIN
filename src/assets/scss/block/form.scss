@@ -13,7 +13,7 @@
 
 
     // mod for form on page "become_a_partner" class mod - "form--become" ---
-    &--become {
+    &--text {
         flex-direction: column;
         align-items: center;
         input  {
@@ -23,8 +23,9 @@
         }
 
         .form__header {
-            max-width: 504px;
             padding-bottom: 101px;
+            max-width: 679px;
+            margin-left: auto;
             span {
                 display: block;
             }
@@ -32,6 +33,10 @@
             @include b(mobile) {
                 padding-bottom: 67px;
             }
+        }
+
+        .form__header-wrap {
+            max-width: 504px;
         }
 
         .form__title {
@@ -86,7 +91,7 @@
             max-width: 1118px;
         }
 
-        .form__inner {
+        .form__inputs {
             justify-content: flex-start;
             @include b(mobile) {
                 flex-wrap: wrap;
@@ -99,7 +104,7 @@
             }
         }
 
-        .form__inquiry {
+        .form__one-input {
             display: flex;
             justify-content: space-between;
             @include b(mobile) {
@@ -164,6 +169,8 @@
                 height: 512px;
                 @include b(mobile) {
                     height: 490px;
+                    width: 100%;
+                    max-width: 100%;
                 }
             }
         }
@@ -272,7 +279,7 @@
         max-width: 776px;
     }
     
-    &__inner{
+    &__inputs{
         display: flex;
         justify-content: space-between;
         @include b(mobile) {

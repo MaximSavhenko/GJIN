@@ -19,7 +19,6 @@ burger();
 // js for preloader
 
 function onload() {
-
   document.body.onload = function () {
     setTimeout(function () {
       let prealoader = document.querySelector(".preloader");

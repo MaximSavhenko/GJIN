@@ -1,8 +1,17 @@
 .footer {
 
-    background-color: #f4f4f4;
     padding-top: 36px;
     position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -9999px;
+        bottom: 0;
+        left: -9999px;
+        background-color: #f4f4f4;
+        z-index: 1;
+    }
     @include b(mobile) {
         padding-top: 41px;
     }
@@ -11,6 +20,8 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        position: relative;
+        z-index: 2;
     }
 
     &__social {
@@ -87,7 +98,16 @@
         font-size: 12px;
         position: relative;
         z-index: 5;
-        background-color: #5fb6b3;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -9999px;
+            bottom: 0;
+            left: -9999px;
+            background-color: #5fb6b3;
+            z-index: -1;
+        }
     }
 
     &__descr-desc{

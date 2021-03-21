@@ -1,0 +1,11 @@
+.log-in {
+    min-height: calc(100vh - 121px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 45px solid #fff;
+    &__wrap {
+        width: 100%;
+    }
+}

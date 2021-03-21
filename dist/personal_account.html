@@ -16,11 +16,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>become</title></head>
+    <title>personal account</title></head>
 
 <body>
+
     <div class="wrapper">
-        <div class="decoration">
+        <div class="decoration decoration--noBg">
             <header class="header" id="up">
                 <div class="header__wrap">
                     <div class="header__logo">
@@ -42,86 +43,111 @@
                 </div>
             </header>
             
-            <div class="become">
+            <div class="account">
                 <div class="container">
-                    <div class="become__wrap">
-                        <div class="become__header">
-                            <span class="become__title">GJIN – Partner werden</span>
-                            <span class="become__descr">Vielen Dank, dass Sie sich für eine Partnerschaft bei GJIN interessieren. </span>
-                            <span class="become__postscr">GJIN ermöglicht es Unternehmen im Einkauf zu sparen und Umsatz zu generieren. </span>
+                    <div class="account__wrap">
+                        <div class="account__logo">
+                            <div class="account__logo-wrap">
+                                <div class="account__logo-img">
+                                    <img src="./assets/images/index/logo.png" alt="">
+                                </div>
+                                <div class="account__logo-text">
+                                    <span>GJIN – ANFRAGE ERSTELLEN </span>
+                                    <p>Job offers overview</p>
+                                </div>
+                            </div>
+                            <div class="account__logo-add">
+                                <label>
+                                    Logo hochladen
+                                    <input type="file" >
+                                </label>
+                            </div>
                         </div>
-                        <div class="logo logo--form">
-                            <div class="logo__wrap">
-                                <div class="logo__text">
-                                    <span>VORTEILE EINKAUF</span>
-                                    <p>Ihre Anfrage bekommt über GJIN eine enorme Reichweite.
-                                        Mit GJIN erreichen Sie zum einen die GJIN Community per E-Mail aber auch unzählige Unternehmen über
-                                        unsere Webseite, welche haben, was Sie suchen.
-                                        Bei einer Premiumsuche kontaktieren wir potenzielle Lieferanten auch per Telefon. Sämtliche Angebote auf
-                                        Ihre Anfrage laufen über uns.
-                                        Sie erhalten alle Angebote per Mail und können, dass für Sie am besten passenden Angebot auswählen und
-                                        den Anbieter kontaktieren.
-                                    </p>
-                                    <p class="logo__postscr">In diesem ganzen Prozess bleiben Sie komplett anonym und selbstverständlich im
-                                        Kontakt mit uns.</p>
-                                </div>
-                                <div class="logo__img">
-                                    <img src="./assets/images/index/logo.png" alt="logo">
-                                </div>
-                                <div class="logo__text">
-                                    <span>VORTEILE VERKAUF</span>
-                                    <p>Wenn Sie der GJIN- Community beitreten erhalten Sie bei Anfragen, in denen Produkte und Dienstleistungen
-                                        gesucht werden, welche Sie anbieten, automatisch eine Benachrichtigung.
-                                        So kann auch Ihr Vertrieb von einer Partnerschaft bei GJIN profitieren. </p>
-                                    <p class="logo__postscr">GJIN erschafft neue Geschäftsbeziehungen! GJIN spart im Einkauf! GJIN bringt
-                                        Umsatz! GJIN spart Zeit! </p>
-                                </div>
+                        <div class="account__table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Kategorien von Stellenangeboten</th>
+                                        <th>Erstellungsdatum</th>
+                                        <th>status</th>
+                                        <th>Premium oder Standard</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Raum Nürnberg</td>
+                                        <td>Dienstleistung</td>
+                                        <td>20 März 2020</td>
+                                        <td>Neu</td>
+                                        <td>Standard</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bielefeld</td>
+                                        <td>Event/Gastronomie</td>
+                                        <td>16 April 2020</td>
+                                        <td>Veröffentlicht</td>
+                                        <td>Premium</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Raum Leipzig</td>
+                                        <td>Handwerk/Sanitär</td>
+                                        <td>04 August 2020</td>
+                                        <td>Abgelehnt</td>
+                                        <td>Standard</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="account__btn">
+                            <div class="account__btn-wrap">
+                                <span data-toggle="collapse" href="#form__personal_account" role="button">+</span>
+                                <p>ein Stellenangebot erstellen</p>
                             </div>
-                            <div class="logo__btn">
-                                <button class="button" data-toggle="collapse" href="#form__partner" role="button">JETZT PARTNER WERDEN</button>
-                            </div>
-                        </div>            <div class="form form--text collapse" id="form__partner" >
+                        </div>
+                        <div class="form form--text collapse" id="form__personal_account">
                             <form accept="" class="form__wrap">
                                 <div class="form__header">
                                     <div class="form__header-wrap">
-                                        <span class="form__title">GJIN – ANFRAGE ERSTELLEN </span>
+                                        <span class="form__title">GJIN – ANFRAGE ERSTELLEN  </span>
                                         <span class="form__descr">Wir können es kaum erwarten Ihre Anfrage zu prüfen und online zu stellen.</span>
                                         <span class="form__postscr">Erstellen Sie jetzt ihre Anfrage mit unserem einfachen GJIN Anfrageformular.</span>
                                     </div>
                                 </div>
                                 <div class="form__one-input">
                                     <label class="form__hints">Geben Sie den Titel Ihrer Anfrage ein </label>
-                                    <input type="text" placeholder="Betreff">
+                                    <input type="text" placeholder="Titel Ihrer Jobausschreibung">
                                 </div>
                                 <div class="form__inputs">
                                     <label class="form__hints">
                                         Überprüfen und ergänzen Sie Ihre Kontaktdaten und Kundennummer 
                                     </label>
                                     <div class="form__left">
-                                        <input type="text" placeholder="Firma">
                                         <select>
-                                            <option value="">Anrede1</option>
-                                            <option value="">Anrede2</option>
-                                            <option value="">Anrede3</option>
-                                            <option value="">Anrede4</option>
-                                            <option value="">Anrede5</option>
-                                            <option value="">Anrede6</option>
+                                            <option value="">Kategorie</option>
+                                            <option value="">Kategorie1</option>
+                                            <option value="">Kategorie2</option>
+                                            <option value="">Kategorie3</option>
+                                            <option value="">Kategorie4</option>
+                                            <option value="">Kategorie5</option>
                                         </select>
-                                        <input type="text" placeholder="Vorname">
-                                        <input type="text" placeholder="Telefonnummer">
-                                        <input type="text" placeholder="Straße">
+                                        
+                                        <input type="text" placeholder="Datum">
                                     </div>
                                     <div class="form__right">
-                                        <input type="text" placeholder="Position im Unternehmen">
-                                        <input type="text" placeholder="Name">
-                                        <input type="text" placeholder="E-Mail Adresse">
-                                        <input type="text" placeholder="Stadt">
-                                        <input type="text" placeholder="PLZ & Ort">
+                                        <select>
+                                            <option value="">Standort</option>
+                                            <option value="">Premium</option>
+                                        </select>
+                                        <input type="text" placeholder="Nutzername">
                                     </div>
                                 </div>
                                 <div class="form__textarea">
                                     <label class="form__hints">Geben Sie Die Details zu Ihrer Anfrage ein</label>
-                                    <textarea placeholder="Nachricht"></textarea>
+                                    <div class="form__textarea-wrap">
+                                        <textarea placeholder="Kurzbechreibung" class="form__short-descr"></textarea>
+                                        <textarea placeholder="Detaileingabe" class="form__detailed-descr"></textarea>
+                                    </div>
                                 </div>
                                 <div class="form__checkbox">
                                     <div class="form__clarification">
@@ -140,6 +166,49 @@
                 </div>
             </div>
             
+            <div class="news">
+                <div class="container">
+                    <span class="news__caption">News</span>
+                    <div class="row">
+                        <div class="news__item col-sm-12 col-md-6 col-xl-4">
+                            <div class="news__item-wrap">
+                                <span class="news__itme-title">Neuer Kunde</span>
+                                <span class="news__itme-date">20 März 2020</span>
+                                <p class="news__itme-descr">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                                    At vero eos et accusam et justo duo dolores et ea rebum. 
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                                </p>
+                                <a href="#" class="news__itme-btn button">Detailansicht</a>
+                            </div>
+                        </div>
+                        <div class="news__item col-sm-12 col-md-6 col-xl-4">
+                            <div class="news__item-wrap">
+                                <span class="news__itme-title">Neuer Kunde</span>
+                                <span class="news__itme-date">20 März 2020</span>
+                                <p class="news__itme-descr">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                                    At vero eos et accusam et justo duo dolores et ea rebum. 
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                                </p>
+                                <a href="#" class="news__itme-btn button">Detailansicht</a>
+                            </div>
+                        </div>
+                        <div class="news__item col-sm-12 col-md-6 col-xl-4">
+                            <div class="news__item-wrap ">
+                                <span class="news__itme-title">Neuer Kunde</span>
+                                <span class="news__itme-date">20 März 2020</span>
+                                <p class="news__itme-descr">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                                    At vero eos et accusam et justo duo dolores et ea rebum. 
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                                </p>
+                                <a href="#" class="news__itme-btn button">Detailansicht</a>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
             <footer class="footer">
                 <div class="footer__wrap">
                     <div class="footer__social">
