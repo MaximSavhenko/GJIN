@@ -902,7 +902,7 @@ img {
 @media (max-width: 767px) {
     .header__logo {
         margin-top: -21px;
-        margin-left: -24px;
+        margin-left: -10px;
         width: 158px;
         height: 158px;
     }
@@ -1151,7 +1151,7 @@ img {
         flex-direction: column;
         width: 100%;
         max-width: 100%;
-        margin: 0px 0px 0px 0px;
+        margin: 0;
     }
 }
 
@@ -1261,7 +1261,7 @@ img {
 }
 
 .footer__social {
-    margin-bottom: 30px;
+    margin-bottom: 21px;
 }
 
 @media (max-width: 767px) {
@@ -1286,8 +1286,8 @@ img {
 }
 
 .footer__social img {
-    max-width: 33px;
-    max-height: 33px;
+    max-width: 31px;
+    max-height: 31px;
     display: -ms-flexbox;
     display: flex;
 }
@@ -1325,7 +1325,7 @@ img {
 }
 
 .footer__nav li {
-    margin-right: 23px;
+    margin-right: 20px;
 }
 
 @media (max-width: 767px) {
@@ -2316,6 +2316,10 @@ img {
     }
 }
 
+.event .form {
+    padding-top: 50px;
+}
+
 .event span {
     display: block;
 }
@@ -2732,6 +2736,12 @@ img {
     margin-left: auto;
 }
 
+.form--text .form__btn .button {
+    max-width: 120px;
+    font-size: 16px;
+    height: 37px;
+}
+
 @media (max-width: 767px) {
     .form--text .form__btn .button {
         font-size: 19px;
@@ -2899,6 +2909,22 @@ img {
     width: 100%;
 }
 
+.log-in .form .form__header {
+    padding-bottom: 58px;
+}
+
+.log-in .form .form__btn .button {
+    max-width: 120px;
+    font-size: 16px;
+    height: 37px;
+}
+
+.log-in .form .form__one-input .form__hints {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 2.2;
+}
+
 .forgot-password {
     min-height: calc(100vh - 121px);
     width: 100%;
@@ -2919,17 +2945,42 @@ img {
     padding-bottom: 51px;
 }
 
+.forgot-password .form .form__btn .button {
+    max-width: 120px;
+    font-size: 16px;
+    height: 37px;
+}
+
+.forgot-password .form .form__one-input .form__hints {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 2.2;
+}
+
 .account {
     padding: 202px 0px 93px 0px;
     border-bottom: 48px solid #fff;
 }
 
+@media (max-width: 767px) {
+    .account {
+        padding: 74px 0px 57px 0px;
+        border-bottom: 32px solid #fff;
+    }
+}
+
 .account .container {
-    max-width: 1349px;
+    max-width: 1356px;
 }
 
 .account__logo {
-    padding-bottom: 119px;
+    padding-bottom: 113px;
+}
+
+@media (max-width: 767px) {
+    .account__logo {
+        padding-bottom: 123px;
+    }
 }
 
 .account__logo-wrap {
@@ -2937,9 +2988,18 @@ img {
     display: flex;
 }
 
+@media (max-width: 767px) {
+    .account__logo-wrap {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
 .account__logo-img {
     width: 100%;
-    max-width: 338px;
+    max-width: 388px;
     padding: 28px 0 32px 0;
     margin-right: 77px;
     display: -ms-flexbox;
@@ -2951,9 +3011,35 @@ img {
     background-color: #fff;
 }
 
+@media (max-width: 767px) {
+    .account__logo-img {
+        max-width: 235px;
+        margin-right: 0;
+        padding: 17px 0 19px 0;
+    }
+}
+
 .account__logo-img img {
     max-width: 154px;
     max-height: 154px;
+}
+
+@media (max-width: 767px) {
+    .account__logo-img img {
+        max-width: 93px;
+        max-height: 93px;
+    }
+}
+
+.account__logo-text {
+    padding-top: 13px;
+}
+
+@media (max-width: 767px) {
+    .account__logo-text {
+        padding-top: 42px;
+        text-align: center;
+    }
 }
 
 .account__logo-text span {
@@ -2961,6 +3047,14 @@ img {
     font-size: 20px;
     font-weight: 700;
     line-height: 1.75;
+    margin-bottom: 10px;
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .account__logo-text span {
+        font-size: 24px;
+    }
 }
 
 .account__logo-text p {
@@ -2969,21 +3063,33 @@ img {
     line-height: 1.14;
 }
 
+@media (max-width: 767px) {
+    .account__logo-text p {
+        font-size: 42px;
+    }
+}
+
 .account__logo-add {
-    padding-top: 17px;
+    padding-top: 14px;
+}
+
+@media (max-width: 767px) {
+    .account__logo-add {
+        display: none;
+    }
 }
 
 .account__logo-add label {
     color: #939393;
     position: relative;
-    padding-right: 20px;
+    cursor: pointer;
 }
 
 .account__logo-add label:before {
     content: '';
     position: absolute;
     top: 6px;
-    right: 20px;
+    right: -15px;
     display: inline-block;
     width: 1px;
     height: 12px;
@@ -2993,6 +3099,9 @@ img {
 .account__logo-add label:after {
     content: '';
     display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: -15px;
     width: 1px;
     height: 12px;
     background-color: #939393;
@@ -3013,8 +3122,24 @@ img {
     border-bottom: 1px solid #45aaa7;
 }
 
+@media (max-width: 767px) {
+    .account__table thead {
+        display: none;
+    }
+}
+
 .account__table tr {
     border-bottom: 1px dotted #d1d1d1;
+}
+
+@media (max-width: 767px) {
+    .account__table tr {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border-bottom: none;
+    }
 }
 
 .account__table th {
@@ -3024,9 +3149,98 @@ img {
     line-height: 1;
 }
 
+.account__table th:first-child {
+    width: 17%;
+}
+
 .account__table td {
     font-weight: 300;
-    padding: 29px 0;
+    padding: 26px 0;
+}
+
+@media (max-width: 767px) {
+    .account__table td {
+        width: auto;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0;
+        height: 77px;
+        -ms-flex-align: center;
+        align-items: center;
+        border-bottom: 1px dotted #d1d1d1;
+        font-size: 22px;
+    }
+
+    .account__table td:first-child {
+        border-top: 2px solid #45aaa7;
+    }
+
+    .account__table td:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .account__table td p {
+        width: 100%;
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 468px) {
+    .account__table td p {
+        font-size: 18px;
+        max-width: none;
+        text-align: end;
+    }
+}
+
+.account__table td span {
+    display: none;
+    color: #45aaa7;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 300px;
+}
+
+@media (max-width: 767px) {
+    .account__table td span {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 468px) {
+    .account__table td span {
+        font-size: 13px;
+        max-width: none;
+    }
+}
+
+.account__table-decor {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.account__table-decor:before {
+    content: '';
+    display: block;
+    margin-right: 8px;
+    width: 6px;
+    height: 6px;
+    background-color: #777777;
+}
+
+@media (max-width: 468px) {
+    .account__table-decor {
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
 }
 
 .account__btn {
@@ -3034,6 +3248,14 @@ img {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .account__btn {
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 .account__btn-wrap {
@@ -3050,6 +3272,14 @@ img {
     line-height: 1;
     text-transform: uppercase;
     margin-left: 25px;
+    max-width: 273px;
+}
+
+@media (max-width: 468px) {
+    .account__btn-wrap p {
+        font-size: 18px;
+        margin-left: 10px;
+    }
 }
 
 .account__btn-wrap span {
@@ -3069,6 +3299,13 @@ img {
     cursor: pointer;
 }
 
+@media (max-width: 468px) {
+    .account__btn-wrap span {
+        min-width: 50px;
+        height: 50px;
+    }
+}
+
 @media (max-width: 767px) {
     .account .form .form__textarea-wrap {
         width: 100%;
@@ -3085,8 +3322,14 @@ img {
 }
 
 .news {
-    border-bottom: 49px solid #fff;
+    border-bottom: 45px solid #fff;
     padding: 100px 0;
+}
+
+@media (max-width: 767px) {
+    .news {
+        padding: 44px 0 61px 0;
+    }
 }
 
 .news .container {
@@ -3100,6 +3343,12 @@ img {
     display: block;
     line-height: 1.27;
     margin-bottom: 38px;
+}
+
+@media (max-width: 767px) {
+    .news__caption {
+        margin-bottom: 46px;
+    }
 }
 
 @media (max-width: 1199px) {
@@ -3119,6 +3368,12 @@ img {
 
 @media (max-width: 767px) {
     .news__item-wrap {
+        padding: 36px 30px 40px 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    .news__item-wrap {
         padding: 15px 17px 20px 21px;
     }
 }
@@ -3133,11 +3388,25 @@ img {
     font-weight: 700;
 }
 
+@media (max-width: 767px) {
+    .news__itme-title {
+        font-size: 22px;
+        margin-bottom: 17px;
+    }
+}
+
 .news__itme-date {
     display: block;
     font-weight: 300;
     line-height: 1;
     margin-bottom: 26px;
+}
+
+@media (max-width: 767px) {
+    .news__itme-date {
+        font-size: 22px;
+        margin-bottom: 19px;
+    }
 }
 
 .news__itme-descr {
@@ -3146,7 +3415,30 @@ img {
     margin-bottom: 40px;
 }
 
+@media (max-width: 767px) {
+    .news__itme-descr {
+        font-size: 22px;
+        line-height: 1.20;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 468px) {
+    .news__itme-descr {
+        font-size: 18px;
+    }
+}
+
 .news__itme-btn {
     width: 100%;
     max-width: 144px;
+}
+
+@media (max-width: 767px) {
+    .news__itme-btn.button {
+        height: 44px;
+        font-size: 19px;
+        font-weight: 300;
+        max-width: 170px;
+    }
 }

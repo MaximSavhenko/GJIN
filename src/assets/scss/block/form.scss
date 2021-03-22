@@ -220,6 +220,9 @@
             text-align: right;
             margin-left: auto;
             .button {
+                max-width: 120px;
+                font-size: 16px;
+                height: 37px;
                 @include b(mobile) {
                     font-size: 19px;
                     font-weight: 300;
@@ -232,6 +235,8 @@
     }
 
     // mod for form on page "become_a_partner" class mod - "form--become" ---
+
+    
 
     .jcf-select {
         max-width: 100%;

@@ -25,7 +25,7 @@
     }
 
     &__social {
-        margin-bottom: 30px;
+        margin-bottom: 21px;
         @include b(mobile) {
             margin-bottom: 24px;
         }
@@ -40,8 +40,8 @@
             }
         }
         img {
-            max-width: 33px;
-            max-height: 33px;
+            max-width: 31px;
+            max-height: 31px;
             display: flex;
             @include b(mobile) {
                 max-width: 56px;
@@ -65,7 +65,7 @@
             }
         }
         li {
-            margin-right: 23px;
+            margin-right: 20px;
             @include b(mobile) {
                 margin-right: 0;
                 margin-bottom: 10px;
