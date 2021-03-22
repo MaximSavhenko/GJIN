@@ -1228,9 +1228,19 @@ img {
 }
 
 .footer {
-    background-color: #f4f4f4;
     padding-top: 36px;
     position: relative;
+}
+
+.footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -9999px;
+    bottom: 0;
+    left: -9999px;
+    background-color: #f4f4f4;
+    z-index: 1;
 }
 
 @media (max-width: 767px) {
@@ -1246,6 +1256,8 @@ img {
     align-items: center;
     -ms-flex-direction: column;
     flex-direction: column;
+    position: relative;
+    z-index: 2;
 }
 
 .footer__social {
@@ -1356,7 +1368,17 @@ img {
     font-size: 12px;
     position: relative;
     z-index: 5;
+}
+
+.footer__descr:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -9999px;
+    bottom: 0;
+    left: -9999px;
     background-color: #5fb6b3;
+    z-index: -1;
 }
 
 @media (max-width: 767px) {
@@ -2646,6 +2668,8 @@ img {
 @media (max-width: 767px) {
     .form--text .form__textarea textarea {
         height: 490px;
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -2895,8 +2919,17 @@ img {
     padding-bottom: 51px;
 }
 
+.account {
+    padding: 202px 0px 93px 0px;
+    border-bottom: 48px solid #fff;
+}
+
 .account .container {
     max-width: 1349px;
+}
+
+.account__logo {
+    padding-bottom: 119px;
 }
 
 .account__logo-wrap {
@@ -2936,6 +2969,10 @@ img {
     line-height: 1.14;
 }
 
+.account__logo-add {
+    padding-top: 17px;
+}
+
 .account__logo-add label {
     color: #939393;
     position: relative;
@@ -2967,8 +3004,17 @@ img {
     display: none;
 }
 
+.account__table table {
+    width: 100%;
+    margin-bottom: 48px;
+}
+
 .account__table thead {
     border-bottom: 1px solid #45aaa7;
+}
+
+.account__table tr {
+    border-bottom: 1px dotted #d1d1d1;
 }
 
 .account__table th {
@@ -2976,13 +3022,131 @@ img {
     text-transform: uppercase;
     padding-bottom: 30px;
     line-height: 1;
-    width: 20%;
 }
 
 .account__table td {
     font-weight: 300;
+    padding: 29px 0;
+}
+
+.account__btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.account__btn-wrap {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.account__btn-wrap p {
+    color: #45aaa7;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.account__btn-wrap span {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #45aaa7;
+    color: #fff;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: .1;
+    width: 94px;
+    height: 70px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .account .form .form__textarea-wrap {
+        width: 100%;
+    }
+}
+
+.account .form .form__textarea .form__hints {
+    max-width: 239px;
+}
+
+.account .form .form__short-descr {
+    margin-bottom: 37px;
+    height: 193px;
+}
+
+.news {
+    border-bottom: 49px solid #fff;
+    padding: 100px 0;
 }
 
 .news .container {
     max-width: 1349px;
+}
+
+.news__caption {
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    line-height: 1.27;
+    margin-bottom: 38px;
+}
+
+@media (max-width: 1199px) {
+    .news__item {
+        margin-bottom: 20px;
+    }
+
+    .news__item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.news__item-wrap {
+    box-shadow: 0 6px 19px 2px rgba(0, 0, 0, 0.21);
+    padding: 40px 50px 41px 30px;
+}
+
+@media (max-width: 767px) {
+    .news__item-wrap {
+        padding: 15px 17px 20px 21px;
+    }
+}
+
+.news__itme-title {
+    display: block;
+    font-size: 21px;
+    line-height: 1;
+    margin-bottom: 24px;
+    color: #45aaa7;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.news__itme-date {
+    display: block;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 26px;
+}
+
+.news__itme-descr {
+    font-weight: 300;
+    line-height: 1.28;
+    margin-bottom: 40px;
+}
+
+.news__itme-btn {
+    width: 100%;
+    max-width: 144px;
 }
