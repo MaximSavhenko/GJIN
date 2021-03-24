@@ -26,8 +26,7 @@
     &__wrapp {
         display: flex;
         justify-content: center;
-        // align-items: center;
-        padding-left: 171px;
+        padding-left: 195px;
         flex-direction: column;
         height: 100%;
         background-color: #f4f4f4;
@@ -46,6 +45,13 @@
         
     }
 
+    &__inner {
+        padding-top: 140px;
+        @include b(mobile) {
+            padding-top: 0;
+        }
+    }
+
     &__nav {
         margin-bottom: 30px;
         ul {
@@ -53,16 +59,17 @@
             flex-direction: column;
         }
         li {
-            margin-bottom: 23px;
+            margin-bottom: 14px;
             &:last-child {
                 margin-right: 0;
             }
         }
         a {
-            font-size: 18px;
             text-transform: uppercase;
             color: #424242;
             font-weight: 300;
+            font-size: 32px;
+            
             span {
                 font-weight: 600;
             }
@@ -85,7 +92,9 @@
         flex-direction: column;
         text-transform: uppercase;
         a {
-            margin-bottom: 13px;
+            margin-bottom: 9px;
+            font-size: 16px;
+            font-weight: 300;
         }
     }
 

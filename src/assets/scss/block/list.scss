@@ -15,12 +15,12 @@
     &__descr {
         text-align: center;
         span {
-            font-weight: 600;
+            font-weight: 700;
             font-size: 20px;
             position: relative;
             display: flex;
             justify-content: center;
-            padding-bottom: 20px;
+            padding-bottom: 17px;
             text-transform: uppercase;
             @include b(mobile) {
                 margin-bottom: 48px;
@@ -42,7 +42,7 @@
             font-size: 35px;
             line-height: 1.14;
             padding-top: 15px;
-            padding: 15px 0 115px 0;
+            padding: 15px 0 100px 0;
             @include b(mobile) {
                 display: none;
             }
@@ -59,7 +59,7 @@
 
     &__tr {
         border-bottom: 1px solid #000;
-        padding: 30px 95px 27px 0;
+        padding: 19px 95px 22px 0;
         display: flex;
         justify-content: space-between;
         @include b(mobile) {
@@ -69,14 +69,7 @@
         &:first-child {
             padding-top: 0;
         }
-        &:nth-child(even) {
-            span {
-                    font-weight: 400;
-                    @include b(mobile) {
-                        font-weight: 300;
-                    }
-            }
-        }
+
         &:last-child {
             border-bottom:  none;
         }
