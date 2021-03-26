@@ -10,19 +10,13 @@
       display: flex;
       align-items: center;
       transition: all .2s;
-      &.activePadding {
-        justify-content: flex-end;
-        margin-right: 760px;
-        @include b(1362) {
-          margin-right: 0;
-          justify-content: flex-start;
-        }
-      }
       @include b(tablet) {
         align-items: center;
+      }
+      @include b(359) {
         flex-wrap: wrap;
       }
-
+      //BURGER logo ----------
       &--burger {
         position: absolute;
         top: 0;
@@ -37,9 +31,20 @@
 
         .header__logo {
           margin: -42px 0px 0px 0px;
+          @include b(400) {
+            margin: -21px 0px 0px 0px;
+          }
+        }
+
+        .header__title {
+            @include b(348) {
+              margin: -30px 0px 0px 25px;
+            }
         }
 
       }
+      //BURGER logo ----------
+
   }
 
   &__logo {
@@ -58,6 +63,15 @@
         width: 158px;
         height: 158px;
     }
+
+    @include b(500) {
+        width: 80px;
+        height: 80px;
+        img {
+          max-width: 50px;
+          max-height: 50px;
+        }
+    }
   }
 
   &__btn-menu {
@@ -66,11 +80,6 @@
     width: 40px;
     margin: -30px 0px 0px 30px;
     cursor: pointer;
-
-    @include b(mobile) {
-        width: 20px;
-        height: 20px;
-    }
 
     &.animationClose {
       span {
@@ -106,6 +115,11 @@
       &:nth-child(3) {
         top: 20px;
       }
+
+      @include b(500) {
+        width: 30px;
+        height: 2px;
+      }
       
     }
   }
@@ -115,7 +129,10 @@
       @include b(tablet) {
           padding-top: 0px;
       }
-      @include b(430) {
+      @include b(500) {
+        margin: -30px 0px 0px 12px;
+      }
+      @include b(348) {
         margin: 0px 0px 0px 0px;
       }
       p,span {
@@ -124,6 +141,9 @@
           text-transform: uppercase;
           font-weight: 600;
           letter-spacing: .8px;
+          @include b(500) {
+            font-size: 14px;
+          }
       }
       span {
         font-weight: 300;
@@ -132,6 +152,9 @@
         color:#45aaa7;
         letter-spacing: 1px;
         font-size: 16px;
+        @include b(500) {
+          font-size: 14px;
+        }
       }
   }
 

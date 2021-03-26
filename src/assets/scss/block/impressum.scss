@@ -90,10 +90,11 @@
         margin-bottom: 65px;
         span {
             margin-bottom: 35px;
-            font-weight: 600;
+            font-weight: 500;
         }
         p {
             margin-bottom: 35px;
+            font-weight: 300;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -102,7 +103,8 @@
 
     &__quelle {
         p {
-            font-weight: 700;
+            font-weight: 400;
+            color: #000;
         }
     }
 }

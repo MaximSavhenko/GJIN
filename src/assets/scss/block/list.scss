@@ -65,6 +65,9 @@
         @include b(mobile) {
             flex-direction: column;
         }
+        @include b(500) {
+            padding: 19px 0px 22px 0;
+        }
         
         &:first-child {
             padding-top: 0;
@@ -77,7 +80,9 @@
             font-size: 35px;
             font-weight: 300;
             text-transform: uppercase;
-            
+            @include b(500) {
+                font-size:30px;
+            }
         }
         p {
             max-width: 463px;

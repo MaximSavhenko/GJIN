@@ -9,6 +9,19 @@
         @include b(mobile) {
             height: 50px;
         }
+        @include b(500) {
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
+    }
+
+    textarea {
+        @include b(500) {
+            &::placeholder {
+                font-size: 16px;
+            }
+        }
     }
 
 
@@ -85,6 +98,9 @@
                 font-size: 24px;
                 margin-bottom: 15px;
             }
+            @include b(500) {
+                font-size: 16px;
+            }
         }
 
         .form__wrap {
@@ -93,7 +109,7 @@
 
         .form__inputs {
             justify-content: flex-start;
-            @include b(mobile) {
+            @include b(tablet) {
                 flex-wrap: wrap;
                 margin-bottom: 10px;
             }
@@ -107,7 +123,7 @@
         .form__one-input {
             display: flex;
             justify-content: space-between;
-            @include b(mobile) {
+            @include b(tablet) {
                 flex-wrap: wrap;
                 margin-bottom: 12px;
             }
@@ -155,7 +171,7 @@
             display: flex;
             justify-content: space-between;
             width: 100%;
-            @include b(mobile) {
+            @include b(tablet) {
                 flex-wrap: wrap;
                 margin-bottom: 20px;
             }
@@ -187,6 +203,9 @@
                     max-width: 100%;
                     text-align: justify;
                 }
+                @include b(500) {
+                    font-size: 16px;
+                }
             }
         }
         
@@ -201,10 +220,16 @@
                     align-items: flex-start;
                     font-size: 18px;
                     line-height: 1.33;
+                    @include b(500) {
+                        font-size: 16px;
+                    }
                     &::before {
                         content:'';
                         min-width: 11px;
                         margin: 7px 20px 0px 0px;
+                        @include b(500) {
+                            margin-right: 10px;
+                        }
                     }
 
                     &:after {
@@ -217,8 +242,10 @@
 
         .form__btn{
             max-width: 670px;
-            text-align: right;
             margin-left: auto;
+            @include b(tablet) {
+                margin-left: 0;
+            }
             .button {
                 max-width: 120px;
                 font-size: 16px;

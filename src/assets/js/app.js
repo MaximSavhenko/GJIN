@@ -19,14 +19,16 @@ burger();
 // js for preloader
 
 function onload() {
-  document.body.onload = function () {
-    setTimeout(function () {
-      let prealoader = document.querySelector(".preloader");
-      if (!prealoader.classList.contains("loaded_hiding")) {
-        prealoader.classList.add("loaded_hiding");
-      }
-    }, 2500);
-  };
+  let prealoader = document.querySelector(".preloader");
+  if (prealoader) {
+    document.body.onload = function () {
+      setTimeout(function () {
+        if (!prealoader.classList.contains("loaded_hiding")) {
+          prealoader.classList.add("loaded_hiding");
+        }
+      }, 2500);
+    };
+  }
 }
 
 
