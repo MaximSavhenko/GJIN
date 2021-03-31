@@ -11,16 +11,16 @@
   background-color: #000;
   z-index: 10;
   visibility: visible;
-  transition: 1s all;
+  transition: .5s all;
   border-right: 25px solid #45aaa7;
 
   &.loaded_hiding {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
+    top: -100%;
   }
 
   span {
-    display: block;
     transition: 5s all;
     
     &.animated{
@@ -33,40 +33,41 @@
     display: none;
   }
   
-  &__title {
+  &__title , #typed-entry {
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 500;
     color: #fff;
-    animation: hello 6s ease;
-    opacity: 0;
+    // opacity: 0;
+    
   }
 
-  &__descr {
-    text-transform: uppercase;
+.typed-cursor {
+    opacity: 1;
     font-size: 24px;
-    font-weight: 500;
-    color: #4dbbb8;
-    animation: hello 6s ease;
-    animation-delay: 1s;
-    opacity: 0;
-  }
+    color: #fff;
+    animation: blink 0.7s infinite;
+    &:after {
+      content:'';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #FF7F50;
+      margin-left: 5px;
+    }
+}
 
-  // @keyframes hello {
-  //   0% {
-  //     opacity: 0;
-  //   }
 
-  //   100% {
-  //     opacity: 1;
-  //   }
-  // }
 
-  // @for $i from 1 through 2 {
-  //   span {
-  //     &:nth-child(#{$i}) {
-  //       animation-delay: $i * (1s / 2);
-  //     }
-  //   }
-  // }
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 }

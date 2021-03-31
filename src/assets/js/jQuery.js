@@ -11,9 +11,18 @@ $(document).ready(function () {
     fakeDropInBody: false,
   });
 
-  $(".preloader span").each(function (i, e) {
-    setTimeout(function () {
-      $(e).addClass("animated");
-    }, i * 500);
-  });
+  // $(".preloader span").each(function (i, e) {
+  //   setTimeout(function () {
+  //     $(e).addClass("animated");
+  //   }, i * 500);
+  // });
+  
+  var oTyped = new Typed('#typed-entry', {
+    strings: ["EVERY", "BUSINESS", "NEEDS", "SOMETHING"],
+    typeSpeed: 20,
+    backSpeed: 20,
+    startDelay: 200,
+    backDelay: 1200
+});
+  
 });
