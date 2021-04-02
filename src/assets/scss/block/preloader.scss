@@ -33,27 +33,22 @@
     display: none;
   }
   
-  &__title , #typed-entry {
+  #typed-entry {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 60px;
     font-weight: 500;
     color: #fff;
-    // opacity: 0;
-    
+    @include b(mobile) {
+      font-size: 30px;
+    }
   }
 
 .typed-cursor {
-    opacity: 1;
-    font-size: 24px;
+    font-size: 60px;
     color: #fff;
     animation: blink 0.7s infinite;
-    &:after {
-      content:'';
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      background-color: #FF7F50;
-      margin-left: 5px;
+    @include b(mobile) {
+      font-size: 30px;
     }
 }
 

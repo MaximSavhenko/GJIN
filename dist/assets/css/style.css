@@ -732,28 +732,30 @@ img {
     display: none;
 }
 
-.preloader__title, .preloader #typed-entry {
+.preloader #typed-entry {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 60px;
     font-weight: 500;
     color: #fff;
 }
 
+@media (max-width: 767px) {
+    .preloader #typed-entry {
+        font-size: 30px;
+    }
+}
+
 .preloader .typed-cursor {
-    opacity: 1;
-    font-size: 24px;
+    font-size: 60px;
     color: #fff;
     -webkit-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
 
-.preloader .typed-cursor:after {
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #FF7F50;
-    margin-left: 5px;
+@media (max-width: 767px) {
+    .preloader .typed-cursor {
+        font-size: 30px;
+    }
 }
 
 @-webkit-keyframes blink {
