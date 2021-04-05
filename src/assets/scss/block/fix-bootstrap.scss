@@ -1,0 +1,5 @@
+.col-20 {-ms-flex: 0 0 20%; flex: 0 0 20%; max-width: 20%;}
+@media (min-width: 576px) {.col-sm-20 {-ms-flex: 0 0 20%; flex: 0 0 20%; max-width: 20%;}}
+@media (min-width: 768px) {.col-md-20 {-ms-flex: 0 0 20%; flex: 0 0 20%; max-width: 20%;}}
+@media (min-width: 992px) {.col-lg-20 {-ms-flex: 0 0 20%; flex: 0 0 20%; max-width: 20%;}}
+@media (min-width: 1200px) {.col-xl-20 {-ms-flex: 0 0 20%; flex: 0 0 20%; max-width: 20%;}}

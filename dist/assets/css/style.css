@@ -1563,7 +1563,9 @@ img {
 .filter__card-feedback {
     display: -ms-flexbox;
     display: flex;
+    padding: 0 15px;
     height: 100%;
+    width: 100%;
     min-height: 250px;
     margin: 10px 0px 33px 0px;
 }
@@ -1579,7 +1581,7 @@ img {
     background-color: #45aaa7;
     padding: 46px 0px 0px 23px;
     width: 100%;
-    max-width: 389px;
+    max-width: 300px;
 }
 
 @media (max-width: 1023px) {
@@ -1661,16 +1663,16 @@ img {
     font-weight: 600;
 }
 
-.filter .row {
+.filter .col-xl-20 {
     padding-bottom: 28px;
 }
 
-.filter .row:last-child {
+.filter .col-xl-20:nth-last-child(-n+5) {
     padding-bottom: 0;
 }
 
 @media (max-width: 1199px) {
-    .filter .row {
+    .filter .col-xl-20 {
         padding-bottom: 0px;
     }
 }
@@ -3622,5 +3624,43 @@ img {
         font-size: 19px;
         font-weight: 300;
         max-width: 170px;
+    }
+}
+
+.col-20 {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+@media (min-width: 576px) {
+    .col-sm-20 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-20 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-20 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-xl-20 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
     }
 }

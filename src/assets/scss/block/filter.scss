@@ -66,7 +66,9 @@
 
     &__card-feedback {
         display: flex;
+        padding: 0 15px;
         height: 100%;
+        width: 100%;
         min-height: 250px;
         margin: 10px 0px 33px 0px;
         @include b(tablet) {
@@ -78,7 +80,7 @@
         background-color: #45aaa7;
         padding: 46px 0px 0px 23px;
         width: 100%;
-        max-width: 389px;
+        max-width: 300px;
         @include b(tablet) {
             max-width: 100%;
             padding-left: 26px;
@@ -144,14 +146,14 @@
         }
     }
 
-    .row {
+    .col-xl-20 {
         padding-bottom: 28px; 
-        &:last-child {
+        &:nth-last-child(-n+5) {
             padding-bottom: 0;
         } 
         @include b(1199) {
             padding-bottom: 0px;
-        }  
+        }
     }
     
     &__card-item {
