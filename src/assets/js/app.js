@@ -31,11 +31,6 @@ function onload() {
   }
 }
 
-
-
-
-
-
 onload();
 
 // function scrollUp() {

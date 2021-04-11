@@ -18,7 +18,7 @@ $(document).ready(function () {
   // });
   
   var oTyped = new Typed('#typed-entry', {
-    strings: ["EVERY", "BUSINESS", "NEEDS", "SOMETHING"],
+    strings: ["Because EVERY", "BUSINESS" , "NEEDS SOMETHING"],
     typeSpeed: 20,
     backSpeed: 20,
     startDelay: 200,
