@@ -37,10 +37,18 @@
 
         .form__header {
             padding-bottom: 101px;
-            max-width: 679px;
-            margin-left: auto;
+            width: 100%;
+            max-width: 1118px;
+            padding-left: 280px;
+            display: flex;
+            justify-content: center;
             span {
                 display: block;
+            }
+
+            @include b(1264) {
+                justify-content: flex-start;
+                padding-left: 0;
             }
 
             @include b(mobile) {
@@ -49,6 +57,7 @@
         }
 
         .form__header-wrap {
+            width: 100%;
             max-width: 504px;
         }
 
@@ -120,7 +129,7 @@
             }
         }
 
-        .form__one-input {
+        .form__single-input {
             display: flex;
             justify-content: space-between;
             @include b(tablet) {

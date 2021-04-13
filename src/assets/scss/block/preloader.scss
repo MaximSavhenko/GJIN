@@ -29,13 +29,18 @@
 
   }
 
+  p {
+    color: #45aaa7;
+    display: inline-block;
+  }
+
   &.loaded {
     display: none;
   }
   
   #typed-entry {
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 500;
     color: #fff;
     @include b(mobile) {
@@ -44,7 +49,7 @@
   }
 
 .typed-cursor {
-    font-size: 60px;
+    font-size: 30px;
     color: #fff;
     animation: blink 0.7s infinite;
     @include b(mobile) {

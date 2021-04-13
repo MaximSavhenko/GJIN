@@ -26,7 +26,7 @@ function onload() {
         if (!prealoader.classList.contains("loaded_hiding")) {
           prealoader.classList.add("loaded_hiding");
         }
-      }, 7000);
+      }, 5000);
     };
   }
 }

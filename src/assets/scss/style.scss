@@ -226,6 +226,12 @@ h2 {
     }
   }
 
+  &--none {
+    @include b(mobile) {
+        background: none;
+    }
+  }
+
   &--noBg {
     background-image: none;
   }
