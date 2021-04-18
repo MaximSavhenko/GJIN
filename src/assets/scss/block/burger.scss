@@ -31,7 +31,7 @@
         height: 100%;
         background-color: #f4f4f4;
         width: 100%;
-        max-width: 1207px;
+        margin-left: 57px;
         margin-right: 36px;
         position: relative;
         @include b(1268) {
@@ -41,6 +41,7 @@
 
         @include b(400) {
             margin-right: 10px;
+            margin-left: 20px;
         }
         
     }
