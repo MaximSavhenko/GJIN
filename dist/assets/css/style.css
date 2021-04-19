@@ -2425,7 +2425,7 @@ img {
     }
 }
 
-.event .form {
+.event .input-group {
     padding-top: 50px;
 }
 
@@ -2555,7 +2555,7 @@ img {
     max-width: 991px;
 }
 
-.form-group {
+.input-group {
     padding: 20px 0 0 0;
     width: 100%;
     display: -ms-flexbox;
@@ -2564,78 +2564,64 @@ img {
     justify-content: center;
 }
 
-.form-group input {
+.input-group input {
     width: 100%;
     margin-bottom: 32px;
 }
 
 @media (max-width: 767px) {
-    .form-group input {
+    .input-group input {
         height: 50px;
     }
 }
 
 @media (max-width: 500px) {
-    .form-group input::-webkit-input-placeholder {
+    .input-group input::-webkit-input-placeholder {
         font-size: 16px;
     }
 
-    .form-group input::-moz-placeholder {
+    .input-group input::-moz-placeholder {
         font-size: 16px;
     }
 
-    .form-group input:-ms-input-placeholder {
+    .input-group input:-ms-input-placeholder {
         font-size: 16px;
     }
 
-    .form-group input::-ms-input-placeholder {
+    .input-group input::-ms-input-placeholder {
         font-size: 16px;
     }
 
-    .form-group input::placeholder {
+    .input-group input::placeholder {
         font-size: 16px;
     }
 }
 
 @media (max-width: 500px) {
-    .form-group textarea::-webkit-input-placeholder {
+    .input-group textarea::-webkit-input-placeholder {
         font-size: 16px;
     }
 
-    .form-group textarea::-moz-placeholder {
+    .input-group textarea::-moz-placeholder {
         font-size: 16px;
     }
 
-    .form-group textarea:-ms-input-placeholder {
+    .input-group textarea:-ms-input-placeholder {
         font-size: 16px;
     }
 
-    .form-group textarea::-ms-input-placeholder {
+    .input-group textarea::-ms-input-placeholder {
         font-size: 16px;
     }
 
-    .form-group textarea::placeholder {
+    .input-group textarea::placeholder {
         font-size: 16px;
     }
 }
 
-.form-group--text {
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-@media (max-width: 767px) {
-    .form-group--text input {
-        margin-bottom: 13px;
-    }
-}
-
-.form-group--text .form-group__header {
+.input-group__header {
     padding-bottom: 101px;
     width: 100%;
-    max-width: 1118px;
     padding-left: 280px;
     display: -ms-flexbox;
     display: flex;
@@ -2643,12 +2629,12 @@ img {
     justify-content: center;
 }
 
-.form-group--text .form-group__header span {
+.input-group__header span {
     display: block;
 }
 
 @media (max-width: 1264px) {
-    .form-group--text .form-group__header {
+    .input-group__header {
         -ms-flex-pack: start;
         justify-content: flex-start;
         padding-left: 0;
@@ -2656,17 +2642,17 @@ img {
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__header {
+    .input-group__header {
         padding-bottom: 67px;
     }
 }
 
-.form-group--text .form-group__header-wrap {
+.input-group__header-wrap {
     width: 100%;
     max-width: 504px;
 }
 
-.form-group--text .form-group__title {
+.input-group__title {
     color: #4dbbb8;
     font-size: 20px;
     font-weight: 700;
@@ -2676,12 +2662,12 @@ img {
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__title {
+    .input-group__title {
         font-size: 24px;
     }
 }
 
-.form-group--text .form-group__descr {
+.input-group__descr {
     color: #424242;
     font-size: 35px;
     font-weight: 700;
@@ -2690,27 +2676,40 @@ img {
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__descr {
+    .input-group__descr {
         font-size: 42px;
         letter-spacing: .3px;
         margin-bottom: 30px;
     }
 }
 
-.form-group--text .form-group__postscr {
+.input-group__postscr {
     font-weight: 300;
     line-height: 1.55;
     max-width: 405px;
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__postscr {
+    .input-group__postscr {
         font-size: 22px;
         max-width: 100%;
     }
 }
 
-.form-group--text .form-group__hints {
+.input-group--text {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .input-group--text input {
+        margin-bottom: 13px;
+    }
+}
+
+.input-group--text .input-group__hints {
     color: #45aaa7;
     font-size: 20px;
     text-transform: uppercase;
@@ -2718,29 +2717,29 @@ img {
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__hints {
+    .input-group--text .input-group__hints {
         font-size: 24px;
         margin-bottom: 15px;
     }
 }
 
 @media (max-width: 500px) {
-    .form-group--text .form-group__hints {
+    .input-group--text .input-group__hints {
         font-size: 16px;
     }
 }
 
-.form-group--text .form-group__wrap {
+.input-group--text .input-group__wrap {
     max-width: 1118px;
 }
 
-.form-group--text .form-group__inputs {
+.input-group--text .input-group__inputs {
     -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
 @media (max-width: 1023px) {
-    .form-group--text .form-group__inputs {
+    .input-group--text .input-group__inputs {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-bottom: 10px;
@@ -2748,12 +2747,12 @@ img {
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__inputs .form-group__hints {
+    .input-group--text .input-group__inputs .input-group__hints {
         max-width: 400px;
     }
 }
 
-.form-group--text .form-group__single-input {
+.input-group--text .input-group__single-input {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -2761,63 +2760,63 @@ img {
 }
 
 @media (max-width: 1023px) {
-    .form-group--text .form-group__single-input {
+    .input-group--text .input-group__single-input {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-bottom: 12px;
     }
 }
 
-.form-group--text .form-group__single-input input {
+.input-group--text .input-group__single-input input {
     max-width: 670px;
 }
 
-.form-group--text .form-group__left, .form-group--text .form-group__right {
+.input-group--text .input-group__left, .input-group--text .input-group__right {
     max-width: 321px;
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__left, .form-group--text .form-group__right {
+    .input-group--text .input-group__left, .input-group--text .input-group__right {
         width: 100%;
         max-width: 100%;
     }
 }
 
-.form-group--text .form-group__left input, .form-group--text .form-group__right input {
+.input-group--text .input-group__left input, .input-group--text .input-group__right input {
     width: 321px;
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__left input, .form-group--text .form-group__right input {
+    .input-group--text .input-group__left input, .input-group--text .input-group__right input {
         width: 100%;
         max-width: 100%;
     }
 }
 
-.form-group--text .form-group__left .jcf-select, .form-group--text .form-group__right .jcf-select {
+.input-group--text .input-group__left .jcf-select, .input-group--text .input-group__right .jcf-select {
     max-width: 321px;
     font-weight: 300;
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__left .jcf-select, .form-group--text .form-group__right .jcf-select {
+    .input-group--text .input-group__left .jcf-select, .input-group--text .input-group__right .jcf-select {
         max-width: 100%;
         margin-bottom: 13px;
         height: 50px;
     }
 }
 
-.form-group--text .form-group__left {
+.input-group--text .input-group__left {
     margin-right: 28px;
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__left {
+    .input-group--text .input-group__left {
         margin-right: 0;
     }
 }
 
-.form-group--text .form-group__textarea {
+.input-group--text .input-group__textarea {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -2826,7 +2825,7 @@ img {
 }
 
 @media (max-width: 1023px) {
-    .form-group--text .form-group__textarea {
+    .input-group--text .input-group__textarea {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-bottom: 20px;
@@ -2834,37 +2833,37 @@ img {
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__textarea .form-group__hints {
+    .input-group--text .input-group__textarea .input-group__hints {
         max-width: 350px;
     }
 }
 
-.form-group--text .form-group__textarea textarea {
+.input-group--text .input-group__textarea textarea {
     width: 670px;
     height: 512px;
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__textarea textarea {
+    .input-group--text .input-group__textarea textarea {
         height: 490px;
         width: 100%;
         max-width: 100%;
     }
 }
 
-.form-group--text .form-group__clarification {
+.input-group--text .input-group__clarification {
     width: 100%;
     max-width: 670px;
 }
 
-.form-group--text .form-group__clarification .form-group__hints {
+.input-group--text .input-group__clarification .input-group__hints {
     margin-bottom: 34px;
     display: -ms-flexbox;
     display: flex;
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__clarification .form-group__hints {
+    .input-group--text .input-group__clarification .input-group__hints {
         font-size: 21px;
         line-height: 1.24;
         max-width: 100%;
@@ -2873,12 +2872,12 @@ img {
 }
 
 @media (max-width: 500px) {
-    .form-group--text .form-group__clarification .form-group__hints {
+    .input-group--text .input-group__clarification .input-group__hints {
         font-size: 16px;
     }
 }
 
-.form-group--text .form-group__checkbox {
+.input-group--text .input-group__checkbox {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
@@ -2886,13 +2885,13 @@ img {
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__checkbox {
+    .input-group--text .input-group__checkbox {
         margin-bottom: 28px;
     }
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__checkbox .checkbox {
+    .input-group--text .input-group__checkbox .checkbox {
         -ms-flex-align: start;
         align-items: flex-start;
         font-size: 18px;
@@ -2901,13 +2900,13 @@ img {
 }
 
 @media (max-width: 767px) and (max-width: 500px) {
-    .form-group--text .form-group__checkbox .checkbox {
+    .input-group--text .input-group__checkbox .checkbox {
         font-size: 16px;
     }
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__checkbox .checkbox::before {
+    .input-group--text .input-group__checkbox .checkbox::before {
         content: '';
         min-width: 11px;
         margin: 7px 20px 0px 0px;
@@ -2915,37 +2914,37 @@ img {
 }
 
 @media (max-width: 767px) and (max-width: 500px) {
-    .form-group--text .form-group__checkbox .checkbox::before {
+    .input-group--text .input-group__checkbox .checkbox::before {
         margin-right: 10px;
     }
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__checkbox .checkbox:after {
+    .input-group--text .input-group__checkbox .checkbox:after {
         content: '';
         top: 9px;
     }
 }
 
-.form-group--text .form-group__btn {
+.input-group--text .input-group__btn {
     max-width: 670px;
     margin-left: auto;
 }
 
 @media (max-width: 1023px) {
-    .form-group--text .form-group__btn {
+    .input-group--text .input-group__btn {
         margin-left: 0;
     }
 }
 
-.form-group--text .form-group__btn .button {
+.input-group--text .input-group__btn .button {
     max-width: 120px;
     font-size: 16px;
     height: 37px;
 }
 
 @media (max-width: 767px) {
-    .form-group--text .form-group__btn .button {
+    .input-group--text .input-group__btn .button {
         font-size: 19px;
         font-weight: 300;
         max-width: 170px;
@@ -2954,7 +2953,7 @@ img {
     }
 }
 
-.form-group .jcf-select {
+.input-group .jcf-select {
     max-width: 100%;
     height: 43px;
     outline: none;
@@ -2968,12 +2967,12 @@ img {
 }
 
 @media (max-width: 767px) {
-    .form-group .jcf-select {
+    .input-group .jcf-select {
         height: 50px;
     }
 }
 
-.form-group .jcf-select-text {
+.input-group .jcf-select-text {
     font-weight: 300;
     font-size: 18px;
     text-transform: none;
@@ -2982,28 +2981,28 @@ img {
     position: relative;
 }
 
-.form-group .jcf-select-opener {
+.input-group .jcf-select-opener {
     position: static;
 }
 
-.form-group .jcf-select-opener:before {
+.input-group .jcf-select-opener:before {
     content: '';
     right: 18px;
     top: 50%;
 }
 
-.form-group .jcf-drop-active .jcf-select-opener::before {
+.input-group .jcf-drop-active .jcf-select-opener::before {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     top: 5px;
 }
 
-.form-group__wrap {
+.input-group__wrap {
     width: 100%;
     max-width: 776px;
 }
 
-.form-group__inputs {
+.input-group__inputs {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
@@ -3011,27 +3010,27 @@ img {
 }
 
 @media (max-width: 767px) {
-    .form-group__inputs {
+    .input-group__inputs {
         -ms-flex-direction: column;
         flex-direction: column;
     }
 }
 
-.form-group__left, .form-group__right {
+.input-group__left, .input-group__right {
     width: 48%;
 }
 
 @media (max-width: 767px) {
-    .form-group__left, .form-group__right {
+    .input-group__left, .input-group__right {
         width: 100%;
     }
 }
 
-.form-group__textarea {
+.input-group__textarea {
     margin-bottom: 37px;
 }
 
-.form-group__checkbox {
+.input-group__checkbox {
     color: #45aaa7;
     font-size: 14px;
     line-height: 1;
@@ -3039,7 +3038,7 @@ img {
     margin-bottom: 37px;
 }
 
-.form-group .button {
+.input-group .button {
     max-width: 108px;
     margin-bottom: 37px;
 }
@@ -3111,17 +3110,17 @@ img {
     border-bottom: 45px solid #fff;
 }
 
-.log-in .form .form__header {
+.log-in .input-group__header {
     padding-bottom: 58px;
 }
 
-.log-in .form .form__btn .button {
+.log-in .input-group .input-group__btn .button {
     max-width: 120px;
     font-size: 16px;
     height: 37px;
 }
 
-.log-in .form .form__one-input .form__hints {
+.log-in .input-group .input-group__one-input .input-group__hints {
     font-size: 21px;
     font-weight: 400;
     line-height: 2.2;
@@ -3139,17 +3138,17 @@ img {
     border-bottom: 45px solid #fff;
 }
 
-.forgot-password .form__header {
+.forgot-password .input-group__header {
     padding-bottom: 51px;
 }
 
-.forgot-password .form .form__btn .button {
+.forgot-password .input-group .input-group__btn .button {
     max-width: 120px;
     font-size: 16px;
     height: 37px;
 }
 
-.forgot-password .form .form__one-input .form__hints {
+.forgot-password .input-group .input-group__one-input .input-group__hints {
     font-size: 21px;
     font-weight: 400;
     line-height: 2.2;

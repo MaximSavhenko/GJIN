@@ -1,4 +1,4 @@
-.form-group {
+.input-group {
     padding: 20px 0 0 0;
     width: 100%;
     display: flex;
@@ -24,6 +24,69 @@
         }
     }
 
+    &__header {
+        padding-bottom: 101px;
+        width: 100%;
+        padding-left: 280px;
+        display: flex;
+        justify-content: center;
+        span {
+            display: block;
+        }
+
+        @include b(1264) {
+            justify-content: flex-start;
+            padding-left: 0;
+        }
+
+        @include b(mobile) {
+            padding-bottom: 67px;
+        }
+    }
+
+    &__header-wrap {
+        width: 100%;
+        max-width: 504px;
+    }
+
+    &__title {
+        color: #4dbbb8;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.75;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        @include b(mobile) {
+            font-size: 24px;
+
+        }
+    }
+
+    &__descr {
+        color: #424242;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 1.14;
+        margin-bottom: 19px;
+
+        @include b(mobile) {
+            font-size: 42px;
+            letter-spacing: .3px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__postscr {
+        font-weight: 300;
+        line-height: 1.55;
+        max-width: 405px;
+
+        @include b(mobile) {
+            font-size: 22px;
+            max-width: 100%;
+        }
+    }
+
 
     // mod for form on page "become_a_partner" class mod - "form--become" ---
     &--text {
@@ -35,70 +98,8 @@
             }
         }
 
-        .form-group__header {
-            padding-bottom: 101px;
-            width: 100%;
-            max-width: 1118px;
-            padding-left: 280px;
-            display: flex;
-            justify-content: center;
-            span {
-                display: block;
-            }
-
-            @include b(1264) {
-                justify-content: flex-start;
-                padding-left: 0;
-            }
-
-            @include b(mobile) {
-                padding-bottom: 67px;
-            }
-        }
-
-        .form-group__header-wrap {
-            width: 100%;
-            max-width: 504px;
-        }
-
-        .form-group__title {
-            color: #4dbbb8;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 1.75;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            @include b(mobile) {
-                font-size: 24px;
-
-            }
-        }
-    
-        .form-group__descr {
-            color: #424242;
-            font-size: 35px;
-            font-weight: 700;
-            line-height: 1.14;
-            margin-bottom: 19px;
-
-            @include b(mobile) {
-                font-size: 42px;
-                letter-spacing: .3px;
-                margin-bottom: 30px;
-            }
-        }
-    
-        .form-group__postscr {
-            font-weight: 300;
-            line-height: 1.55;
-            max-width: 405px;
-
-            @include b(mobile) {
-                font-size: 22px;
-                max-width: 100%;
-            }
-        }
-        .form-group__hints {
+        
+        .input-group__hints {
             color: #45aaa7;
             font-size: 20px;
             text-transform: uppercase;
@@ -112,24 +113,24 @@
             }
         }
 
-        .form-group__wrap {
+        .input-group__wrap {
             max-width: 1118px;
         }
 
-        .form-group__inputs {
+        .input-group__inputs {
             justify-content: flex-start;
             @include b(tablet) {
                 flex-wrap: wrap;
                 margin-bottom: 10px;
             }
-            .form-group__hints {
+            .input-group__hints {
                 @include b(mobile) {
                     max-width: 400px;
                 }
             }
         }
 
-        .form-group__single-input {
+        .input-group__single-input {
             display: flex;
             justify-content: space-between;
             @include b(tablet) {
@@ -142,7 +143,7 @@
         }
 
 
-        .form-group__left , .form-group__right {
+        .input-group__left , .input-group__right {
             max-width: 321px;
             @include b(mobile) {
                width: 100%;
@@ -169,14 +170,14 @@
             // style for defolt selector -----
         }
 
-        .form-group__left {
+        .input-group__left {
             margin-right: 28px;
             @include b(mobile) {
                 margin-right: 0;
             }
         } 
 
-        .form-group__textarea {
+        .input-group__textarea {
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -184,7 +185,7 @@
                 flex-wrap: wrap;
                 margin-bottom: 20px;
             }
-            .form-group__hints {
+            .input-group__hints {
                 @include b(mobile) {
                     max-width: 350px;
                 }
@@ -200,10 +201,10 @@
             }
         }
 
-        .form-group__clarification {
+        .input-group__clarification {
             width: 100%;
             max-width: 670px;
-            .form-group__hints {
+            .input-group__hints {
                 margin-bottom: 34px;
                 display: flex;
                 @include b(mobile) {
@@ -218,7 +219,7 @@
             }
         }
         
-        .form-group__checkbox {
+        .input-group__checkbox {
             display: flex;
             justify-content: flex-end;
             @include b(mobile) {
@@ -249,7 +250,7 @@
             }
         }
 
-        .form-group__btn{
+        .input-group__btn{
             max-width: 670px;
             margin-left: auto;
             @include b(tablet) {
