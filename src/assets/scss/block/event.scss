@@ -1,26 +1,18 @@
 .event {
-    padding: 233px 0 120px 0;
-    border-bottom: 35px solid #fff;
-    @include b(mobile) {
-        padding-top: 50px;
-    }
-
+    
     .input-group  {
         padding-top: 50px;
     }
 
-    span {
-        display: block;
-    }
-
-    &__wrap{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     &__header{
         margin-bottom: 34px;
+        padding: 233px 0 0 0;
+        @include b(mobile) {
+            padding-top: 50px;
+        }
+        span {
+            display: block;
+        }
     }
 
     &__header-title{
@@ -69,9 +61,6 @@
         margin-bottom: 54px;
     }
 
-    &__body{
-
-    }
 
     &__body-title{
         font-weight: 700;
@@ -103,6 +92,7 @@
         span {
             font-weight: 600;
             line-height: 1.55;
+            display: block;
         }
     }
 
@@ -114,6 +104,7 @@
     }
 
     &__footer{
+        padding: 0 0 120px 0;
         .button {
             max-width: 174px;
             height: 37px;
