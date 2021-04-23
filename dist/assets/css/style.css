@@ -2717,6 +2717,10 @@ img {
     }
 }
 
+.input-group--PB {
+    padding-bottom: 90px;
+}
+
 .input-group--text {
     -ms-flex-direction: column;
     flex-direction: column;
