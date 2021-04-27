@@ -1,7 +1,5 @@
-$(document).ready(function () {
-  $(function () {
-    jcf.replaceAll();
-  });
+jQuery(document).ready(function ($) {
+  jcf.replaceAll();
 
   jcf.setOptions("Select", {
     maxVisibleItems: 5,
@@ -11,18 +9,11 @@ $(document).ready(function () {
     fakeDropInBody: false,
   });
 
-  // $(".preloader span").each(function (i, e) {
-  //   setTimeout(function () {
-  //     $(e).addClass("animated");
-  //   }, i * 500);
-  // });
-  
-  var oTyped = new Typed('#typed-entry', {
-    strings: ["Because EVERY", "BUSINESS" , "<p>NEEDS SOMETHING</p>"],
+  var oTyped = new Typed("#typed-entry", {
+    strings: ["Because EVERY", "BUSINESS", "<p>NEEDS SOMETHING</p>"],
     typeSpeed: 20,
     backSpeed: 20,
     startDelay: 200,
-    backDelay: 1200
-});
-  
+    backDelay: 1200,
+  });
 });

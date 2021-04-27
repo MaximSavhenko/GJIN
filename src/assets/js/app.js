@@ -51,3 +51,26 @@ onload();
 // }
 
 // scrollUp();
+
+function filterFeedback() {
+  let block = document.querySelectorAll(".parsedHTML");
+  block.forEach((block) => {
+    let feedback = block.querySelector(".filter__card-feedback");
+    item = block.querySelectorAll(".parsedHTML > .filter__card-item");
+    closeBtn = block.querySelector(".filter__info-close-btn");
+
+    console.log(feedback);
+
+    item.forEach((items) => {
+      items.onclick = function (e) {
+        feedback.classList.toggle("active");
+      };
+    });
+
+    closeBtn.onclick = function (e) {
+      feedback.classList.remove("active");
+    };
+  });
+}
+
+filterFeedback();

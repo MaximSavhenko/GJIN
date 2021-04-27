@@ -1602,7 +1602,6 @@ img {
     display: -ms-flexbox;
     display: flex;
     padding: 0 15px;
-    height: 100%;
     width: 100%;
     min-height: 250px;
     margin: 10px 0px 33px 0px;
@@ -1701,18 +1700,33 @@ img {
     font-weight: 600;
 }
 
-.filter .col-xl-20 {
-    padding-bottom: 28px;
-}
-
-.filter .col-xl-20:nth-last-child(-n+5) {
-    padding-bottom: 0;
-}
-
 @media (max-width: 1199px) {
     .filter .col-xl-20 {
         padding-bottom: 0px;
     }
+}
+
+.filter .parsedHTML {
+    padding-bottom: 28px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.filter .parsedHTML:last-child {
+    padding-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+    .filter .parsedHTML {
+        padding-bottom: 0px;
+    }
+}
+
+.filter__card-item {
+    cursor: pointer;
 }
 
 @media (max-width: 1199px) {
