@@ -93,7 +93,18 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// js for burger\nfunction burger() {\n  header = document.querySelectorAll(\".header__wrap\");\n\n  header.forEach((header) => {\n    let btnMenu = header.querySelector(\".header__btn-menu\"),\n      burger = document.querySelector(\".burger\"),\n      navbar = header.querySelector(\".navbar-mobile\");\n\n    btnMenu.onclick = function () {\n      document.body.classList.toggle(\"overflow\");\n      burger.classList.toggle(\"activeBurger\");\n    };\n  });\n}\n\nburger();\n\n// js for preloader\n\nfunction onload() {\n  let prealoader = document.querySelector(\".preloader\");\n  if (prealoader) {\n    document.body.onload = function () {\n      setTimeout(function () {\n        if (!prealoader.classList.contains(\"loaded_hiding\")) {\n          prealoader.classList.add(\"loaded_hiding\");\n        }\n      }, 5000);\n    };\n  }\n}\n\nonload();\n\n// function scrollUp() {\n//   function scrollTo(element) {\n//     window.scroll({\n//       left: 0,\n//       top: element.offsetTop,\n//       behavior: \"smooth\",\n//     });\n//   }\n\n//   var button = document.querySelector(\".footer__scrollUp\");\n//   var header = document.querySelector(\"#up\");\n\n//   button.addEventListener(\"click\", () => {\n//     scrollTo(header);\n//   });\n// }\n\n// scrollUp();\n\nfunction filterFeedback() {\n  let block = document.querySelectorAll(\".parsedHTML\");\n  block.forEach((block) => {\n    let feedback = block.querySelector(\".filter__card-feedback\");\n    item = block.querySelectorAll(\".parsedHTML > .filter__card-item\");\n    closeBtn = block.querySelector(\".filter__info-close-btn\");\n\n    console.log(feedback);\n\n    item.forEach((items) => {\n      items.onclick = function (e) {\n        feedback.classList.toggle(\"active\");\n      };\n    });\n\n    closeBtn.onclick = function (e) {\n      feedback.classList.remove(\"active\");\n    };\n  });\n}\n\nfilterFeedback();\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("// js for burger\r\nfunction burger() {\r\n  header = document.querySelectorAll(\".header__wrap\");\r\n\r\n  header.forEach((header) => {\r\n    let btnMenu = header.querySelector(\".header__btn-menu\"),\r\n      burger = document.querySelector(\".burger\"),\r\n      navbar = header.querySelector(\".navbar-mobile\");\r\n\r\n    btnMenu.onclick = function () {\r\n      document.body.classList.toggle(\"overflow\");\r\n      burger.classList.toggle(\"activeBurger\");\r\n    };\r\n  });\r\n}\r\n\r\nburger();\r\n\r\n// js for preloader\r\n\r\nfunction onload() {\r\n  let prealoader = document.querySelector(\".preloader\");\r\n  if (prealoader) {\r\n    document.body.onload = function () {\r\n      setTimeout(function () {\r\n        if (!prealoader.classList.contains(\"loaded_hiding\")) {\r\n          prealoader.classList.add(\"loaded_hiding\");\r\n        }\r\n      }, 5000);\r\n    };\r\n  }\r\n}\r\n\r\nonload();\r\n\r\n// function scrollUp() {\r\n//   function scrollTo(element) {\r\n//     window.scroll({\r\n//       left: 0,\r\n//       top: element.offsetTop,\r\n//       behavior: \"smooth\",\r\n//     });\r\n//   }\r\n\r\n//   var button = document.querySelector(\".footer__scrollUp\");\r\n//   var header = document.querySelector(\"#up\");\r\n\r\n//   button.addEventListener(\"click\", () => {\r\n//     scrollTo(header);\r\n//   });\r\n// }\r\n\r\n// scrollUp();\r\n\r\nfunction filterFeedback() {\r\n  let block = document.querySelectorAll(\".parsedHTML\");\r\n  block.forEach((block) => {\r\n    let feedback = block.querySelector(\".filter__card-feedback\");\r\n    item = block.querySelectorAll(\".parsedHTML > .filter__card-item\");\r\n    closeBtn = block.querySelector(\".filter__info-close-btn\");\r\n\r\n\r\n    item.forEach((items) => {\r\n      items.onclick = function (e) {\r\n        feedback.classList.toggle(\"active\");\r\n      };\r\n    });\r\n\r\n    closeBtn.onclick = function (e) {\r\n      feedback.classList.remove(\"active\");\r\n    };\r\n  });\r\n}\r\n\r\nfilterFeedback();\r\n\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/filter.js":
+/*!*********************************!*\
+  !*** ./src/assets/js/filter.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/assets/js/filter.js?");
 
 /***/ }),
 
@@ -104,18 +115,18 @@ eval("// js for burger\nfunction burger() {\n  header = document.querySelectorAl
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("jQuery(document).ready(function ($) {\n  jcf.replaceAll();\n\n  jcf.setOptions(\"Select\", {\n    maxVisibleItems: 5,\n    useCustomScroll: true,\n    wrapNative: false,\n    wrapNativeOnMobile: false,\n    fakeDropInBody: false,\n  });\n\n  var oTyped = new Typed(\"#typed-entry\", {\n    strings: [\"Because EVERY\", \"BUSINESS\", \"<p>NEEDS SOMETHING</p>\"],\n    typeSpeed: 20,\n    backSpeed: 20,\n    startDelay: 200,\n    backDelay: 1200,\n  });\n});\n\n\n//# sourceURL=webpack:///./src/assets/js/jQuery.js?");
+eval("$(function() {\r\n  $(function() {\r\n    jcf.replaceAll();\r\n  });\r\n\r\n  jcf.setOptions(\"Select\", {\r\n    maxVisibleItems: 5,\r\n    useCustomScroll: true,\r\n    wrapNative: false,\r\n    wrapNativeOnMobile: false,\r\n    fakeDropInBody: false,\r\n  });\r\n\r\n  var typed = new Typed(\"#typed-entry\", {\r\n    strings: [\"Because EVERY\", \"BUSINESS\", \"<p>NEEDS SOMETHING</p>\"],\r\n    typeSpeed: 20,\r\n    backSpeed: 20,\r\n    startDelay: 200,\r\n    backDelay: 1200,\r\n  });\r\n\r\n});\r\n\n\n//# sourceURL=webpack:///./src/assets/js/jQuery.js?");
 
 /***/ }),
 
 /***/ 0:
-/*!**************************************************************!*\
-  !*** multi ./src/assets/js/app.js ./src/assets/js/jQuery.js ***!
-  \**************************************************************/
+/*!****************************************************************************************!*\
+  !*** multi ./src/assets/js/app.js ./src/assets/js/filter.js ./src/assets/js/jQuery.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /home/max/Рабочий стол/WORK/GJIN/src/assets/js/app.js */\"./src/assets/js/app.js\");\nmodule.exports = __webpack_require__(/*! /home/max/Рабочий стол/WORK/GJIN/src/assets/js/jQuery.js */\"./src/assets/js/jQuery.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/jQuery.js?");
+eval("__webpack_require__(/*! C:\\Users\\usp_m\\Desktop\\GJIN\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\n__webpack_require__(/*! C:\\Users\\usp_m\\Desktop\\GJIN\\src\\assets\\js\\filter.js */\"./src/assets/js/filter.js\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\usp_m\\Desktop\\GJIN\\src\\assets\\js\\jQuery.js */\"./src/assets/js/jQuery.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/filter.js_./src/assets/js/jQuery.js?");
 
 /***/ })
 

@@ -59,7 +59,6 @@ function filterFeedback() {
     item = block.querySelectorAll(".parsedHTML > .filter__card-item");
     closeBtn = block.querySelector(".filter__info-close-btn");
 
-    console.log(feedback);
 
     item.forEach((items) => {
       items.onclick = function (e) {

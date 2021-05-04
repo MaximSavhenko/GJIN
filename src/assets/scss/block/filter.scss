@@ -69,18 +69,16 @@
         padding: 0 15px;
         width: 100%;
         min-height: 250px;
-        margin: 10px 0px 33px 0px;
+        margin: 36px 0px 0px 0px;
+        transition: all .5s ease-out;
 
         &.active {
             display: flex;
         }
-
-        &.close {
-            display: none;
-        }
         
         @include b(tablet) {
             flex-direction: column;
+            margin: 32px 0px 32px 0px;
         }
     }
 
