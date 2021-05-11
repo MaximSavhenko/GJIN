@@ -1,26 +1,18 @@
 .event {
-    padding: 233px 0 20px 0;
-    border-bottom: 35px solid #fff;
-    @include b(mobile) {
+    
+    .input-group  {
         padding-top: 50px;
-    }
-
-    .form  {
-        padding-top: 50px;
-    }
-
-    span {
-        display: block;
-    }
-
-    &__wrap{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     &__header{
         margin-bottom: 34px;
+        padding: 233px 0 0 0;
+        @include b(mobile) {
+            padding-top: 50px;
+        }
+        span {
+            display: block;
+        }
     }
 
     &__header-title{
@@ -28,6 +20,7 @@
         font-weight: 700;
         line-height: 1.75;
         color: #4dbbb8;
+        text-transform: uppercase;
     }
 
     &__header-descr{
@@ -35,6 +28,7 @@
         font-size: 35px;
         text-transform: uppercase;
         font-weight: 700;
+        max-width: 700px;
     }
 
     &__date{
@@ -71,16 +65,12 @@
 
     &__body{
 
-    }
+        p {
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 37px;
+        }
 
-    &__body-title{
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 37px;
-    }
-
-    &__body-list{
-        margin-bottom: 29px;
         li { 
             font-weight: 300;
             line-height: 1.55;
@@ -96,24 +86,32 @@
                 margin-right:9px;
             }
         }
-    }
 
-    &__body-descr{
-        margin-bottom: 28px;
-        span {
+        ul {
+            margin-bottom: 29px;
+        }
+
+
+        strong {
             font-weight: 600;
             line-height: 1.55;
+            display: block;
+            &:last-child {
+                margin-bottom: 28px;
+            }
+        }
+    
+
+        span {
+            font-weight: 300;
+            margin-bottom: 6px;
+            line-height: 1.55;
+            display: block;
         }
     }
 
-
-    &__postscr{
-        font-weight: 300;
-        margin-bottom: 6px;
-        line-height: 1.55;
-    }
-
     &__footer{
+        padding: 0 0 120px 0;
         .button {
             max-width: 174px;
             height: 37px;

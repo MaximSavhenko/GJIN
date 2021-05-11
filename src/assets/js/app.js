@@ -26,15 +26,10 @@ function onload() {
         if (!prealoader.classList.contains("loaded_hiding")) {
           prealoader.classList.add("loaded_hiding");
         }
-      }, 7000);
+      }, 5000);
     };
   }
 }
-
-
-
-
-
 
 onload();
 
@@ -56,3 +51,25 @@ onload();
 // }
 
 // scrollUp();
+
+function filterFeedback() {
+  let block = document.querySelectorAll(".parsedHTML");
+  block.forEach((block) => {
+    let feedback = block.querySelector(".filter__card-feedback");
+    item = block.querySelectorAll(".parsedHTML > .filter__card-item");
+    closeBtn = block.querySelector(".filter__info-close-btn");
+
+
+    item.forEach((items) => {
+      items.onclick = function (e) {
+        feedback.classList.toggle("active");
+      };
+    });
+
+    closeBtn.onclick = function (e) {
+      feedback.classList.remove("active");
+    };
+  });
+}
+
+filterFeedback();

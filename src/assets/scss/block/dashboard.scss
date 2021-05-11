@@ -76,7 +76,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        align-items: flex-end;
         margin-bottom: -52px;
         padding-top: 28px;
         @include b(1440) {
@@ -97,6 +96,11 @@
         box-shadow: 0px 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
         background-color: #fff;
         padding: 50px 0px 0px 50px;
+        transition: transform 0.3s;
+        &:hover {
+            transform: scale(0.95);
+            transition: transform 0.3s;
+        }
         @include b(mobile) {
             width: 100%;
         }
@@ -107,22 +111,15 @@
     }
 
     &__percent {
-        margin-bottom: 152px;
-        @include b(1440) {
+        position: relative;
+        top: 300px;
+        @include b(1515) {
             margin-bottom: 20px;
+            top: auto;
         }
     }
 
-    &__board-wrapp {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        @include b(mobile) {
-            justify-content: flex-start;
-            width: 100%;
-        }
-    }
+   
 
     &__percent-title {
         font-size: 20px;
@@ -149,7 +146,7 @@
         flex-direction: column;
         margin-bottom: 23px;
         margin-left: 21px;
-        @include b(mobile) {
+        @include b(940) {
            margin-left: 0;
         }
         img {

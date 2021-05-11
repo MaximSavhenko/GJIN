@@ -1,22 +1,11 @@
 .account {
 
-    padding: 202px 0px 93px 0px;
-    border-bottom: 48px solid #fff;
-    @include b(mobile) {
-        padding: 74px 0px 57px 0px;
-        border-bottom: 32px solid #fff;
-    }
-    .container {
-        max-width: 1356px;
-    }
-
-    &__wrap {
-    }
-
     &__logo {
+        padding-top: 202px;
         padding-bottom: 113px;
         @include b(mobile) {
             padding-bottom: 123px;
+            padding-top: 74px;
         }
     }
 
@@ -218,11 +207,17 @@
 
     &__btn {
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 93px;
+        border-bottom: 48px solid #fff;
         @include b(mobile) {
             align-items: center;
             width: 100%;
+            border-bottom: 32px solid #fff;
+            padding-bottom: 57px;
         }
+
     }
 
     &__btn-wrap {

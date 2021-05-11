@@ -66,13 +66,20 @@
 
     &__card-feedback {
         display: flex;
+        order: 2;
         padding: 0 15px;
-        height: 100%;
         width: 100%;
         min-height: 250px;
-        margin: 10px 0px 33px 0px;
+        margin: 36px 0px 0px 0px;
+        transition: all .5s ease-out;
+
+        @include b(mobile) {
+            order: 0;
+        }
+        
         @include b(tablet) {
             flex-direction: column;
+            margin: 32px 0px 32px 0px;
         }
     }
 
@@ -147,16 +154,28 @@
     }
 
     .col-xl-20 {
+        
+        @include b(1199) {
+            padding-bottom: 0px;
+        }
+    }
+
+    .parsedHTML {
         padding-bottom: 28px; 
-        &:nth-last-child(-n+5) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        &:last-child {
             padding-bottom: 0;
-        } 
+        }
+        
         @include b(1199) {
             padding-bottom: 0px;
         }
     }
     
     &__card-item {
+        cursor: pointer;
         @include b(1199) {
             margin-bottom: 29px;
         }
