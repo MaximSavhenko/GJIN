@@ -503,6 +503,29 @@ img {
   max-width: 100%;
   max-height: 100%; }
 
+.form-control {
+  border-radius: 0; }
+
+.form-text {
+  margin: 0; }
+
+.form-item, .form-actions {
+  margin: 0; }
+
+.bef-datepicker {
+  outline: 1px solid #4dbbb8;
+  border: none;
+  width: 200px;
+  height: 35px; }
+  .bef-datepicker::placeholder {
+    font-size: 15px;
+    color: #4dbbb8; }
+  .bef-datepicker::focus {
+    border: none; }
+  @media (max-width: 487px) {
+    .bef-datepicker {
+      max-width: 100%; } }
+
 .preloader {
   position: fixed;
   top: 0;
@@ -1917,6 +1940,18 @@ img {
       font-size: 16px;
       height: 37px;
       margin-bottom: 216px; }
+  .input-group--account .input-group__hints {
+    color: #45aaa7;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.3; }
+    @media (max-width: 767px) {
+      .input-group--account .input-group__hints {
+        font-size: 24px;
+        margin-bottom: 15px; } }
+    @media (max-width: 500px) {
+      .input-group--account .input-group__hints {
+        font-size: 16px; } }
 
 .become__header {
   padding: 225px 0px 336px 0px;
@@ -1948,7 +1983,7 @@ img {
   line-height: 1.55;
   max-width: 405px; }
 
-.become .logo__btn .button {
+.become__btn .button {
   margin: 0 0 0 14px; }
 
 .account__logo {

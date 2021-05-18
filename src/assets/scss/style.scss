@@ -455,6 +455,35 @@ img {
   max-height: 100%;
 }
 
+.form-control {
+  border-radius: 0;
+}
+
+.form-text {
+  margin: 0;
+}
+
+.form-item, .form-actions {
+  margin: 0;
+} 
+
+.bef-datepicker {
+  outline: 1px solid #4dbbb8;
+  border: none;
+  width: 200px;
+  height: 35px;
+  &::placeholder {
+      font-size: 15px;
+      color: #4dbbb8;
+  }
+  &::focus {
+    border: none;
+  }
+  @include b(487) {
+    max-width: 100%;
+  }
+  }
+
 @import "block/preloader.scss";
 @import "block/jcf.scss";
 @import "block/header.scss";
@@ -473,6 +502,7 @@ img {
 @import "block/news.scss";
 @import "block/fix-bootstrap.scss";
 @import "block/kontaktiere.scss";
+@import "block/personal-form.scss";
 
 
 

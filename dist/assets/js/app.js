@@ -115,7 +115,7 @@ eval("$(function() {\n  $(function() {\n    jcf.replaceAll();\n  });\n\n  jcf.se
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! /home/max/GJIN/src/assets/js/app.js */\"./src/assets/js/app.js\");\nmodule.exports = __webpack_require__(/*! /home/max/GJIN/src/assets/js/jQuery.js */\"./src/assets/js/jQuery.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/jQuery.js?");
+eval("__webpack_require__(/*! /home/max/Рабочий стол/WORK/GJIN/src/assets/js/app.js */\"./src/assets/js/app.js\");\nmodule.exports = __webpack_require__(/*! /home/max/Рабочий стол/WORK/GJIN/src/assets/js/jQuery.js */\"./src/assets/js/jQuery.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/jQuery.js?");
 
 /***/ })
 

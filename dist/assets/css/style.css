@@ -727,6 +727,60 @@ img {
     max-height: 100%;
 }
 
+.form-control {
+    border-radius: 0;
+}
+
+.form-text {
+    margin: 0;
+}
+
+.form-item, .form-actions {
+    margin: 0;
+}
+
+.bef-datepicker {
+    outline: 1px solid #4dbbb8;
+    border: none;
+    width: 200px;
+    height: 35px;
+}
+
+.bef-datepicker::-webkit-input-placeholder {
+    font-size: 15px;
+    color: #4dbbb8;
+}
+
+.bef-datepicker::-moz-placeholder {
+    font-size: 15px;
+    color: #4dbbb8;
+}
+
+.bef-datepicker:-ms-input-placeholder {
+    font-size: 15px;
+    color: #4dbbb8;
+}
+
+.bef-datepicker::-ms-input-placeholder {
+    font-size: 15px;
+    color: #4dbbb8;
+}
+
+.bef-datepicker::placeholder {
+    font-size: 15px;
+    color: #4dbbb8;
+}
+
+.bef-datepicker::focus {
+    border: none;
+}
+
+@media (max-width: 487px) {
+    .bef-datepicker {
+        max-width: 100%;
+    }
+}
+
 .preloader {
     position: fixed;
     top: 0;
@@ -1599,7 +1653,10 @@ img {
 }
 
 .filter__card-feedback {
-    display: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-order: 2;
+    order: 2;
     padding: 0 15px;
     width: 100%;
     min-height: 250px;
@@ -1607,9 +1664,11 @@ img {
     transition: all .5s ease-out;
 }
 
-.filter__card-feedback.active {
-    display: -ms-flexbox;
-    display: flex;
+@media (max-width: 767px) {
+    .filter__card-feedback {
+        -ms-flex-order: 0;
+        order: 0;
+    }
 }
 
 @media (max-width: 1023px) {
@@ -3145,7 +3204,7 @@ img {
     max-width: 405px;
 }
 
-.become .logo__btn .button {
+.become__btn .button {
     margin: 0 0 0 14px;
 }
 
