@@ -59,6 +59,7 @@
 
     &__card {
        padding-bottom: 77px;
+       transition: all 2s;
        @include b(mobile) {
            padding-bottom: 54px;
        }
@@ -66,12 +67,11 @@
 
     &__card-feedback {
         display: flex;
-        order: 2;
-        padding: 0 15px;
+        // order: 2;
+        // padding: 0 15px;
         width: 100%;
         min-height: 250px;
-        margin: 36px 0px 0px 0px;
-        transition: all .5s ease-out;
+        margin: 0px 0px 36px 0px;
 
         @include b(mobile) {
             order: 0;
@@ -160,28 +160,35 @@
         }
     }
 
-    .parsedHTML {
-        padding-bottom: 28px; 
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        &:last-child {
-            padding-bottom: 0;
-        }
+    // .parsedHTML {
+    //     padding-bottom: 28px; 
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     width: 100%;
+    //     &:last-child {
+    //         padding-bottom: 0;
+    //     }
         
-        @include b(1199) {
-            padding-bottom: 0px;
-        }
-    }
+    //     @include b(1199) {
+    //         padding-bottom: 0px;
+    //     }
+    // }
     
     &__card-item {
         cursor: pointer;
+        padding-bottom: 28px;
+        //  transition: all 2s;
+        // &:nth-last-child(-n+5) {
+        //     padding-bottom: 0;
+        // }
         @include b(1199) {
             margin-bottom: 29px;
         }
     }
 
     &__card-item-inner{
+        // transition: all .6s ease-out;
+
         height: 100%;
         min-height: 250px;
         padding: 44px 0px 38px 30px;

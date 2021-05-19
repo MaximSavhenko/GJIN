@@ -469,19 +469,22 @@ img {
 
 .bef-datepicker {
   outline: 1px solid #4dbbb8;
-  border: none;
-  width: 200px;
-  height: 35px;
+  border: none !important;
+  width: 200px !important;
+  height: 35px !important;
+  margin-right: 1px;
   &::placeholder {
-      font-size: 15px;
-      color: #4dbbb8;
+      font-size: 15px !important;
+      color: #4dbbb8 !important;
   }
-  &::focus {
-    border: none;
-  }
-  @include b(487) {
-    max-width: 100%;
-  }
+    &:focus {
+      border: none !important;
+    }
+    @include b(487) {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-right: 0;
+    }
   }
 
 @import "block/preloader.scss";
@@ -503,6 +506,8 @@ img {
 @import "block/fix-bootstrap.scss";
 @import "block/kontaktiere.scss";
 @import "block/personal-form.scss";
+@import "block/animation.scss";
+
 
 
 

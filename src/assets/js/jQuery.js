@@ -11,13 +11,13 @@ $(function() {
     fakeDropInBody: false,
   });
 
-  var typed = new Typed("#typed-entry", {
-    strings: ["Because EVERY", "BUSINESS", "<p>NEEDS SOMETHING</p>"],
-    typeSpeed: 20,
-    backSpeed: 20,
-    startDelay: 200,
-    backDelay: 1200,
-  });
+  // var typed = new Typed("#typed-entry", {
+  //   strings: ["Because EVERY", "BUSINESS", "<p>NEEDS SOMETHING</p>"],
+  //   typeSpeed: 20,
+  //   backSpeed: 20,
+  //   startDelay: 200,
+  //   backDelay: 1200,
+  // });
 
   function filterFeedback() {
       
@@ -57,6 +57,6 @@ $(function() {
     
 }
 
-filterFeedback();
+// filterFeedback();
 
 });
