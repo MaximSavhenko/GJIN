@@ -378,6 +378,10 @@
     // mod for form on page "personal_account" class mod - "form--account" ---
 
     &--account {
+        .input-group__wrap {
+            margin: 100px 0 0 0;
+        }
+
         .input-group__hints {
             color: #45aaa7;
             font-size: 20px;

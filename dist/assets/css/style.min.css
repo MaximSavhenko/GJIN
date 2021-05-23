@@ -1932,6 +1932,8 @@ img {
       font-size: 16px;
       height: 37px;
       margin-bottom: 216px; }
+  .input-group--account .input-group__wrap {
+    margin: 100px 0 0 0; }
   .input-group--account .input-group__hints {
     color: #45aaa7;
     font-size: 20px;
