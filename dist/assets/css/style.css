@@ -1647,6 +1647,9 @@ img {
 
 .filter__card {
     padding-bottom: 77px;
+    transition: all 2s;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 @media (max-width: 767px) {
@@ -1658,8 +1661,9 @@ img {
 .filter__card-feedback {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-order: 2;
-    order: 2;
+    width: 100%;
+    min-height: 250px;
+    margin: 0px 0px 36px 0px;
 }
 
 @media (max-width: 767px) {
@@ -1772,16 +1776,18 @@ img {
 .filter__card-item {
     cursor: pointer;
     padding-bottom: 28px;
-}
-
-.filter__card-item:nth-last-child(-n+5) {
-    padding-bottom: 0;
+    width: 20%;
+    max-width: 20%;
 }
 
 @media (max-width: 1199px) {
     .filter__card-item {
         margin-bottom: 29px;
     }
+}
+
+.filter .grid-sizer {
+    width: 20%;
 }
 
 .filter__card-item-inner {
@@ -3734,37 +3740,6 @@ img {
 
 .active {
     width: 100%;
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
     max-width: 100%;
-    padding-bottom: 0;
-    -ms-flex-order: -1;
-    order: -1;
-    overflow: hidden;
-}
-
-.hide {
-    display: none;
-}
-
-.activeFeedBack {
-    transition: width .5s linear;
-    width: 100%;
-    min-height: 250px;
-    margin: 0px 0px 36px 0px;
-    opacity: 1;
-    position: relative;
-    z-index: 0;
-}
-
-.hideFeedback {
-    height: 0;
-    opacity: 0;
-    position: relative;
-    z-index: -1;
-}
-
-.activeCard {
-    display: -ms-flexbox;
-    display: flex;
+    z-index: 2;
 }

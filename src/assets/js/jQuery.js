@@ -59,4 +59,33 @@ $(function() {
 
 // filterFeedback();
 
+function masonry() {
+
+ let masonryItems = $('.filter__card-item');
+
+
+ let masonryLauout =  $('.filter__card').masonry({
+    itemSelector: '.filter__card-item',
+    columnWidth:300,
+    gutter:30,
+    horizontalOrder: true,
+    stamp: '.active'
+  });
+
+  masonryLauout.on( 'click', '.filter__card-item', function() {
+    masonryLauout.masonry('layout');
+  });
+
+  $('.filter__info-close-btn').each( function () {
+    $(this).on('click' ,  function () {
+      masonryLauout.masonry( masonryItems);
+    }) 
+  })
+
+
+}
+
+masonry();
+
+
 });

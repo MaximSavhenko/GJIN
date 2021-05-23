@@ -73,8 +73,7 @@ $(function () {
                       $(this).addClass('active');
                       $(this).children('.filter__card-item-inner').hide();
                       $(this).children('.filter__card-feedback').show();
-                      //console.log('rrt');
-                      
+                    
                       return;
                     }                     
                     
@@ -88,8 +87,6 @@ $(function () {
                 $(this).parents('.filter__card-feedback').hide();
                 $(this).parents('.filter__card-item').find('.filter__card-item-inner').show();
                 event.stopPropagation();
-                console.log('ebnai animaci');
-                
               })
             })
   }
