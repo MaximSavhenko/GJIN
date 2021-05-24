@@ -43,10 +43,10 @@
             max-width: 31px;
             max-height: 31px;
             display: flex;
-            @include b(mobile) {
-                max-width: 56px;
-                max-height: 56px;
-            }
+            // @include b(mobile) {
+            //     max-width: 56px;
+            //     max-height: 56px;
+            // }
         }
     }
 
@@ -80,7 +80,7 @@
             color: #424242;
             font-weight: 300;
             @include b(mobile) {
-                font-size: 24px;
+                font-size: 16px;
             }
             span {
                 font-weight: 600;

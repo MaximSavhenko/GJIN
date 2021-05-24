@@ -270,6 +270,7 @@
             @include b(tablet) {
                 margin-left: 0;
             }
+            
             .button {
                 max-width: 120px;
                 font-size: 16px;
@@ -371,7 +372,7 @@
             max-width: 120px;
             font-size: 16px;
             height: 37px;
-            margin-bottom: 216px;
+            margin-bottom: 100px;
         }
     }
 
@@ -390,6 +391,15 @@
             @include b(500) {
                 font-size: 16px;
             }
+        }
+        .input-group__wrap {
+            margin: 100px 0 0 0;
+        }
+    }
+
+     &__textarea-wrap {
+        @include b(mobile) {
+            width: 100%;
         }
     }
 }

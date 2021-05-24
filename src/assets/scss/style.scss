@@ -469,20 +469,34 @@ img {
 
 .bef-datepicker {
   outline: 1px solid #4dbbb8;
-  border: none;
-  width: 200px;
-  height: 35px;
+  border: none !important;
+  width: 200px !important;
+  height: 35px !important;
+  margin-right: 1px;
   &::placeholder {
-      font-size: 15px;
-      color: #4dbbb8;
+      font-size: 15px !important;
+      color: #4dbbb8 !important;
   }
-  &::focus {
-    border: none;
+    &:focus {
+      border: none !important;
+    }
+    @include b(487) {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-right: 0;
+    }
+}
+
+#edit-reset {
+  height: 35px;
+  outline: 1px solid #4dbbb8;
+  @include b(mobile) {
+      max-width: 100%;
+      width: 100%;
   }
-  @include b(487) {
-    max-width: 100%;
-  }
-  }
+}
+
+
 
 @import "block/preloader.scss";
 @import "block/jcf.scss";

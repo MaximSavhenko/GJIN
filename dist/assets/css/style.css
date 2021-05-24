@@ -741,43 +741,58 @@ img {
 
 .bef-datepicker {
     outline: 1px solid #4dbbb8;
-    border: none;
-    width: 200px;
-    height: 35px;
+    border: none !important;
+    width: 200px !important;
+    height: 35px !important;
+    margin-right: 1px;
 }
 
 .bef-datepicker::-webkit-input-placeholder {
-    font-size: 15px;
-    color: #4dbbb8;
+    font-size: 15px !important;
+    color: #4dbbb8 !important;
 }
 
 .bef-datepicker::-moz-placeholder {
-    font-size: 15px;
-    color: #4dbbb8;
+    font-size: 15px !important;
+    color: #4dbbb8 !important;
 }
 
 .bef-datepicker:-ms-input-placeholder {
-    font-size: 15px;
-    color: #4dbbb8;
+    font-size: 15px !important;
+    color: #4dbbb8 !important;
 }
 
 .bef-datepicker::-ms-input-placeholder {
-    font-size: 15px;
-    color: #4dbbb8;
+    font-size: 15px !important;
+    color: #4dbbb8 !important;
 }
 
 .bef-datepicker::placeholder {
-    font-size: 15px;
-    color: #4dbbb8;
+    font-size: 15px !important;
+    color: #4dbbb8 !important;
 }
 
-.bef-datepicker::focus {
-    border: none;
+.bef-datepicker:focus {
+    border: none !important;
 }
 
 @media (max-width: 487px) {
     .bef-datepicker {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-right: 0;
+    }
+}
+
+#edit-reset {
+    height: 35px;
+    outline: 1px solid #4dbbb8;
+}
+
+@media (max-width: 767px) {
+    #edit-reset {
         max-width: 100%;
+        width: 100%;
     }
 }
 
@@ -1464,13 +1479,6 @@ img {
     display: flex;
 }
 
-@media (max-width: 767px) {
-    .footer__social img {
-        max-width: 56px;
-        max-height: 56px;
-    }
-}
-
 .footer__nav {
     margin-bottom: 30px;
 }
@@ -1520,7 +1528,7 @@ img {
 
 @media (max-width: 767px) {
     .footer__nav a {
-        font-size: 24px;
+        font-size: 16px;
     }
 }
 
@@ -1581,6 +1589,12 @@ img {
 @media (max-width: 767px) {
     .filter {
         padding-bottom: 72px;
+    }
+}
+
+@media (max-width: 767px) {
+    .filter__wrapp .input-group__btn {
+        width: 100%;
     }
 }
 
@@ -3162,7 +3176,37 @@ img {
     max-width: 120px;
     font-size: 16px;
     height: 37px;
-    margin-bottom: 216px;
+    margin-bottom: 100px;
+}
+
+.input-group--account .input-group__hints {
+    color: #45aaa7;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+
+@media (max-width: 767px) {
+    .input-group--account .input-group__hints {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .input-group--account .input-group__hints {
+        font-size: 16px;
+    }
+}
+
+.input-group--account .input-group__wrap {
+    margin: 100px 0 0 0;
+}
+
+@media (max-width: 767px) {
+    .input-group__textarea-wrap {
+        width: 100%;
+    }
 }
 
 .become__header {
