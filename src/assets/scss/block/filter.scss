@@ -165,19 +165,19 @@
         }
     }
 
-    // .parsedHTML {
-    //     padding-bottom: 28px; 
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     width: 100%;
-    //     &:last-child {
-    //         padding-bottom: 0;
-    //     }
+    .parsedHTML {
+        padding-bottom: 28px; 
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        &:last-child {
+            padding-bottom: 0;
+        }
         
-    //     @include b(1199) {
-    //         padding-bottom: 0px;
-    //     }
-    // }
+        @include b(1199) {
+            padding-bottom: 0px;
+        }
+    }
     
     &__card-item {
         cursor: pointer;
