@@ -65,6 +65,10 @@ function masonry() {
 //  variables for MASONRY
  var masonryItems = $('.filter__card-item'),
               container = $('.filter__card');
+
+  masonryItems.each( function (i) {
+    $(this).attr('data-card', 'card' + '_' + (i++));
+  });
         
     // here we change the elements in the array
               
@@ -77,6 +81,8 @@ function masonry() {
     //     container.append(clone)
     //   } 
     // })
+
+    
 
 
 
