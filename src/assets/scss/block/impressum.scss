@@ -5,7 +5,7 @@
         @include b(mobile) {
             padding-top: 70px;
         }
-        span {
+        h1 {
           font-size: 20px;
           font-weight: 600;
           color: #4dbbb8;
@@ -19,7 +19,7 @@
               margin-bottom: 10px;
           }
         }
-        p {
+        h2 {
            font-size: 35px;
            font-weight: 600; 
            text-transform: uppercase;
@@ -69,6 +69,7 @@
 
     &__kontakt-title {
         padding: 0px 0px 35px 0px;
+        text-transform: uppercase;
     }
 
     &__kontakt-link {
@@ -77,7 +78,7 @@
 
     &__text-block {
         margin-bottom: 65px;
-        span {
+        h2 {
             margin-bottom: 35px;
             font-weight: 500;
             text-transform: uppercase;
