@@ -75,14 +75,49 @@ $(function () {
       gutter: 30,
     });
 
+    // nodes in row, can be changed on resize action if needed
+    function getNodesInRow(){
+      if(window.width <= 320){
+        // return 1 for disabling change node position
+        return 1
+      }
+      return 4
+    }
+
+    function insertNode(elem) {
+      const nodesInRow = getNodesInRow();
+      const currentIndex = parseInt(elem[0].dataset.card); // index clicked card
+
+      // if first in row, don't change element position
+      if(!Number.isInteger(currentIndex / nodesInRow) ){
+        const removedNode = $(elem).detach()
+        const newBeforeIndex = Math.floor(currentIndex/nodesInRow) * nodesInRow;
+        const newPreviewsElem = $(`[data-card='${newBeforeIndex}']`)
+        removedNode.insertBefore(newPreviewsElem);
+      }
+    }
+
+    function resetPositionsByIndex(elem){
+      const nodesInRow = getNodesInRow();
+      const node = elem.closest('.filter__card-item');
+      const currentIndex = parseInt(node.attr("data-card"));
+
+      // if first in row, don't change element position
+      if(!Number.isInteger(currentIndex / nodesInRow) ) {
+        const removedNode = $(node).detach()
+        const newPreviewsElem = $(`[data-card='${currentIndex - 1}']`)
+        removedNode.insertAfter(newPreviewsElem);
+      }
+
+    }
+
     masonryItems.each(function () {
       let fruitCount = $(this).attr("data-card");
       $(this)
         .find(".filter__card-item-inner")
         .append("<p> " + fruitCount + "</p>");
       $(this).on("click", function () {
-        let deleteElement = $(this).detach();
-        masonryLauout.prepend(deleteElement);
+        insertNode($(this))
         masonryLauout.masonry("reloadItems");
         masonryLauout.masonry(masonryItems);
       });
@@ -92,7 +127,10 @@ $(function () {
 
     $(".filter__info-close-btn").each(function () {
       $(this).on("click", function () {
+        resetPositionsByIndex($(this))
+        masonryLauout.masonry("reloadItems");
         masonryLauout.masonry(masonryItems);
+        // masonryLauout.masonry(masonryItems);
       });
     });
   }
