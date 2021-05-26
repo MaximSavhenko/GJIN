@@ -2042,8 +2042,8 @@ img {
       margin-right: 0;
       padding: 17px 0 19px 0; } }
   .account__logo-img img {
-    max-width: 154px;
-    max-height: 154px; }
+    max-width: 350px;
+    max-height: 350px; }
     @media (max-width: 767px) {
       .account__logo-img img {
         max-width: 93px;
