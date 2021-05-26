@@ -24,6 +24,9 @@
     &__description {    
         width: 100%;
         max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         span {
             color: #4dbbb8;
             font-weight: 600;
@@ -31,6 +34,8 @@
             font-size: 20px;
             margin-bottom: 15px;
             display: block;
+            width: 500px;
+            max-width: 100%;
         }
 
         p {

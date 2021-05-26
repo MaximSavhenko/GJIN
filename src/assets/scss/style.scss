@@ -487,6 +487,17 @@ img {
   }
 }
 
+#block-footerinfoblock {
+    .focusable {
+      position: relative !important;
+      top: -67px;
+      z-index: 100;
+    }
+    .contextual-links {
+      top: -172px;
+    }
+}
+
 
 
 @import "block/preloader.scss";
