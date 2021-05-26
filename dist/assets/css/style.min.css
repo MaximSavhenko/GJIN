@@ -1133,7 +1133,8 @@ img {
         padding-bottom: 0px; } }
   .filter__card-item {
     cursor: pointer;
-    padding-bottom: 28px; }
+    padding-bottom: 28px;
+    width: 20%; }
     @media (max-width: 1199px) {
       .filter__card-item {
         margin-bottom: 29px; } }
@@ -1142,8 +1143,6 @@ img {
       max-width: 100%;
       margin-bottom: 0;
       flex: 0 0 100%; }
-  .filter__inner {
-    width: 100%; }
   .filter__card-item-inner {
     transition: width 0.4s, height 0.4s;
     width: 100%;

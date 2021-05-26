@@ -1813,6 +1813,10 @@ img {
     flex: 0 0 100%;
 }
 
+.filter__inner {
+    width: 100%;
+}
+
 .filter__card-item-inner {
     transition: width 0.4s, height 0.4s;
     width: 100%;

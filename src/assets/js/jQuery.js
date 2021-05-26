@@ -77,8 +77,9 @@ $(function () {
 
     // nodes in row, can be changed on resize action if needed
     function getNodesInRow(){
-      if(window.width <= 320){
+      if($(window).width() <= 320){
         // return 1 for disabling change node position
+        console.log('qqqqqq');
         return 1
       }
       return 4
@@ -130,7 +131,7 @@ $(function () {
         resetPositionsByIndex($(this))
         masonryLauout.masonry("reloadItems");
         masonryLauout.masonry(masonryItems);
-        // masonryLauout.masonry(masonryItems);
+        
       });
     });
   }
