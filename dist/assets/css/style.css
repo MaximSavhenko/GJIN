@@ -1797,7 +1797,6 @@ img {
 .filter__card-item {
     cursor: pointer;
     padding-bottom: 28px;
-    width: 300px;
 }
 
 @media (max-width: 1199px) {
@@ -1810,10 +1809,8 @@ img {
     width: 100%;
     max-width: 100%;
     margin-bottom: 0;
-}
-
-.filter .grid-sizer {
-    width: 20%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
 }
 
 .filter__card-item-inner {

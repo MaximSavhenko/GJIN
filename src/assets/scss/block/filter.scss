@@ -182,7 +182,7 @@
     &__card-item {
         cursor: pointer;
         padding-bottom: 28px;
-        width: 300px;
+        // width: 300px;
         @include b(1199) {
             margin-bottom: 29px;
         }
@@ -190,12 +190,12 @@
             width: 100%;
             max-width: 100%;
             margin-bottom: 0;
+            flex: 0 0 100%;
         }
     }
 
-    .grid-sizer  {
-        width: 20%;
-    }
+    &__inner{width: 100%;}
+
 
     &__card-item-inner{
         // transition: all .6s ease-out;
