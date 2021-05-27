@@ -1,5 +1,5 @@
-$(function() {
-  $(function() {
+$(function () {
+  $(function () {
     jcf.replaceAll();
   });
 
@@ -19,44 +19,102 @@ $(function() {
   //   backDelay: 1200,
   // });
 
-  function filterFeedback() {
+
+  function masonry() {
+    var masonryItems = $(".filter__card-item");
+    let width = 300;
+    
+    masonryItems.each(function (i) {
+      $(this).attr("data-card", i++);
+    });
+
+    let masonryLauout = $(".filter__card").masonry({
+      itemSelector: ".filter__card-item",
+      columnWidth: width,
+      gutter: 30,
+      fitWidth: true
+    });
+  
+    // nodes in row, can be changed on resize action if needed
+    // return 1 for disabling change node position
+    function getNodesInRow(){
+
+
+      if ($(window).width() <= 1106) {
+        console.log('767');
+        return 1
+      } 
+
+      if ($(window).width() <= 1436) {
+        console.log('1436');
+        return 3
+      } 
+
+      if($(window).width() <= 1766){
+        return 4
+      } else {
+        return 5
+      }
       
-    $('.filter__card-item').each( function (i) {
-        $(this).attr('id', 'filter' + '_' + (++i));
+    }
+
+  
+
+    function insertNode(elem) {
+      const nodesInRow = getNodesInRow();
+      const currentIndex = parseInt(elem.attr("data-card"));// index clicked card
+      const activeNode = $(`[data-active='true']`);
+      
+      if(activeNode.length){
+        resetPositionsByIndex(activeNode)
+      }
+      // if first in row, don't change element position
+      if(!Number.isInteger(currentIndex / nodesInRow) ){
+        const removedNode = $(elem).detach()
+        const newBeforeIndex = Math.floor(currentIndex/nodesInRow) * nodesInRow;
+        const newPreviewsElem = $(`[data-card='${newBeforeIndex}']`);
+        removedNode.attr('data-active', 'true');
+        removedNode.insertBefore(newPreviewsElem);
+      }
+    }
+
+    function resetPositionsByIndex(node){
+      const nodesInRow = getNodesInRow();
+      const currentIndex = parseInt(node.attr("data-card"));
+
+      // if first in row, don't change element position
+      if(!Number.isInteger(currentIndex / nodesInRow) ) {
+        node.removeAttr("data-active");
+        const removedNode = $(node).detach()
+        const newPreviewsElem = $(`[data-card='${currentIndex - 1}']`)
+        removedNode.insertAfter(newPreviewsElem);
+      }
+
+    }
+
+    masonryItems.each(function () {
+      let fruitCount = $(this).attr("data-card");
+      // $(this)
+      //   .find(".filter__card-item-inner")
+      //   .append("<p> " + fruitCount + "</p>");
+      $(this).on("click", function () {
+        insertNode($(this))
+        masonryLauout.masonry("reloadItems");
+        masonryLauout.masonry(masonryItems);
+      });
+
     });
 
-    $('.filter__card-feedback').each( function (i) {
-        $(this).attr('data-filter', 'filter' + '_' + (++i));
+    // reorganization of elements when clicking on BTN close
+
+    $(".filter__info-close-btn").each(function () {
+      $(this).on("click", function () {
+        resetPositionsByIndex($(this).closest('.filter__card-item'));
+        masonryLauout.masonry("reloadItems");
+        masonryLauout.masonry(masonryItems);
+      });
     });
+  }
 
-    let cardId = $("div[id^='filter']");
-    
-    $('.filter__card-feedback').hide();
-
-    $(cardId).each(function () {
-        $(this).on('click' , function () {
-          if (!$(this).is('.active')) {
-            $(cardId).removeClass('active');
-            $(".filter__card-feedback").slideUp(1);
-            let thisId = this.id;
-            $(".filter__card-feedback[data-filter='"+thisId+"']").slideToggle(100);
-            $(this).addClass('active')
-            return;
-          }
-          $(cardId).removeClass('active');
-          let thisId = this.id;
-          $(".filter__card-feedback[data-filter='"+thisId+"']").slideToggle(100);
-        })
-    });
-
-    $('.filter__info-close-btn').each(function () {
-      $(this).on('click', function () {
-        $(this).parents(".filter__card-feedback").slideUp(100);
-      })
-    }) 
-    
-}
-
-filterFeedback();
-
+  masonry();
 });
