@@ -21,12 +21,11 @@
 <body>
     <div class="wrapper">
         <div class="decoration region">
-          <!-- <div class="preloader">
-    <h1 class="endpoint">
-        <span id="typed-entry"></span>
-    </h1>
-</div> -->
-            <header class="header" id="up">
+           <div class="preloader">
+               <h1 class="endpoint">
+                   <span id="typed-entry"></span>
+               </h1>
+           </div>            <header class="header" id="up">
                 <div class="header__wrap">
                     <div class="header__logo">
                         <img src="./assets/images/index/nav_logo.png" alt="">
@@ -41,7 +40,16 @@
                         <p>needs something</p>
                     </div>
                     <div class="header__btn-login">
-                        <a href="#" class="header__checkin">Registrieren</a>
+                        <div class="dropdown">
+                            <a class="header__checkin" href="#">More</a>
+                            <span>
+                                <ul>
+                                    <li><a href="/user/40/edit">Accoutdetails</a></li>
+                                    <li><a href="/user/40">Mein Profil</a></li><li></li>
+                                </ul>
+                            </span>
+                        </div>
+                        <!-- <a href="#" class="header__checkin">Registrieren</a> -->
                         <a href="#" class="header__logout button button--grin">Einloggen</a>
                     </div>
                 </div>
@@ -623,7 +631,10 @@
                                     
                                     
                                 </div>
-                                <button type="button" href="#" class="button filter__btn">MEHR LADEN</и>
+                                <div class="pager__item"></div>
+                                <div class="pager__item">
+                                    <a type="button" href="#" class="button filter__btn">MEHR LADEN</a>
+                                </div>
                             </div>
                         </div>
                     </div>

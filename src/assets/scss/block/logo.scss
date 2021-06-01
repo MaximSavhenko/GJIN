@@ -97,7 +97,7 @@
         }
         .button {
             margin: 0 auto;
-            max-width: 152px;
+            max-width: 200px;
             @include b(mobile) {
                 max-width: 180px;
             }

@@ -6,8 +6,9 @@ $(function () {
       btnCloseItem = $(".filter__info-close-btn");
 
     card.each(function (i) {
-      feedback.hide();
       $(this).on("click", function () {
+        console.log('click function animation() ITEM');
+        
         card.removeClass("active");
         feedback.hide();
         card.find(".filter__card-item-inner").show();
@@ -24,6 +25,7 @@ $(function () {
 
     btnCloseItem.each(function () {
       $(this).on("click", function (event) {
+        console.log('click function animation() BTN');
         $(this).parents(".filter__card-item").removeClass("active");
         $(this).parents(".filter__card-feedback").hide();
         $(this)

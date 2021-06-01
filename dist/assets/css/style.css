@@ -1192,6 +1192,61 @@ img {
     max-width: 150px;
 }
 
+.header .dropdown {
+    width: 100%;
+    max-width: 150px;
+    background-color: #f4f4f4;
+    border: 1px solid #4dbbb8;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 20px;
+    position: relative;
+    transition: all .5s;
+}
+
+.header .dropdown.active {
+    border-bottom: none;
+    transition: all .5s;
+}
+
+.header .dropdown .header__checkin {
+    font-size: 14px;
+    color: #4dbbb8;
+    height: auto;
+    text-transform: none;
+    width: 100%;
+    padding: 9px 0;
+    text-align: center;
+}
+
+.header .dropdown span {
+    display: block;
+    width: 100%;
+}
+
+.header .dropdown ul {
+    display: none;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: calc(100% + 2px);
+    padding-left: 10px;
+    position: absolute;
+    top: 35px;
+    left: -1px;
+    border: 1px solid #4dbbb8;
+    border-top: none;
+}
+
+.header .dropdown ul li {
+    font-size: 14px;
+}
+
+.header .dropdown ul li a {
+    color: #4dbbb8;
+}
+
 .burger {
     position: fixed;
     top: 0;
@@ -1568,6 +1623,10 @@ img {
     }
 }
 
+.footer__descr-desc a {
+    color: #fff;
+}
+
 .footer__descr-resp {
     display: none;
     font-size: 18px;
@@ -1685,10 +1744,6 @@ img {
     display: -ms-flexbox;
     display: flex;
     min-height: 250px;
-    transition: width 0.4s, height 0.4s;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
 }
 
 @media (max-width: 767px) {
@@ -1874,6 +1929,25 @@ img {
     margin: 0 auto;
     font-size: 16px;
     height: 35px;
+}
+
+.filter .pager_items a {
+    max-width: 126px;
+    margin: 0 auto;
+    font-size: 16px;
+    height: 35px;
+}
+
+.filter .input-group__btn .button--otherProp {
+    height: 35px;
+    outline: 1px solid #4dbbb8;
+}
+
+@media (max-width: 767px) {
+    .filter .input-group__btn .button--otherProp {
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 .list {
@@ -2394,7 +2468,7 @@ img {
 
 .logo__text .button {
     margin: 0 auto;
-    max-width: 152px;
+    max-width: 200px;
 }
 
 @media (max-width: 767px) {

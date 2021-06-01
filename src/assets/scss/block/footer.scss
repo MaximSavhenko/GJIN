@@ -114,6 +114,9 @@
         @include b(mobile) {
             display: none;
         }
+        a {
+            color: #fff;
+        }
     }
 
     &__descr-resp{

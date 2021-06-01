@@ -11,18 +11,22 @@ $(function () {
     fakeDropInBody: false,
   });
 
-  // var typed = new Typed("#typed-entry", {
-  //   strings: ["Because EVERY", "BUSINESS", "<p>NEEDS SOMETHING</p>"],
-  //   typeSpeed: 20,
-  //   backSpeed: 20,
-  //   startDelay: 200,
-  //   backDelay: 1200,
-  // });
+  var typed = new Typed("#typed-entry", {
+    strings: ["Because EVERY", "BUSINESS", "<p>NEEDS SOMETHING</p>"],
+    typeSpeed: 20,
+    backSpeed: 20,
+    startDelay: 200,
+    backDelay: 1200,
+  });
 
 
   function masonry() {
-    var masonryItems = $(".filter__card-item");
-    let width = 300;
+    var masonryItems = $(".filter__card-item"),
+        feedback = $(".filter__card-feedback"),
+        width = 300;
+
+    feedback.hide();
+    
     
     masonryItems.each(function (i) {
       $(this).attr("data-card", i++);
@@ -57,8 +61,6 @@ $(function () {
       }
       
     }
-
-  
 
     function insertNode(elem) {
       const nodesInRow = getNodesInRow();
@@ -98,6 +100,7 @@ $(function () {
       //   .find(".filter__card-item-inner")
       //   .append("<p> " + fruitCount + "</p>");
       $(this).on("click", function () {
+        console.log('click function masonry() ITM');
         insertNode($(this))
         masonryLauout.masonry("reloadItems");
         masonryLauout.masonry(masonryItems);
@@ -109,12 +112,52 @@ $(function () {
 
     $(".filter__info-close-btn").each(function () {
       $(this).on("click", function () {
+        console.log('click function masonry() BTN CLOSE');
         resetPositionsByIndex($(this).closest('.filter__card-item'));
         masonryLauout.masonry("reloadItems");
         masonryLauout.masonry(masonryItems);
       });
     });
-  }
+    }
 
   masonry();
+
+  function dropdownHeader(params) {
+    let dropBtn = $('.header__checkin'),
+        list = $('.dropdown ul');
+        container = $('.dropdown')
+
+        dropBtn.on('click' , function (e) {
+            e.preventDefault();
+            
+            if (!container.is('.active')) {
+                container.addClass('active');
+                list.slideDown(400);
+            } else {
+              list.slideUp(400);
+              setTimeout(() => { 
+                container.removeClass('active');
+              }, 400); 
+            }
+
+        })
+
+        $(document).on("click", function (e) {
+          
+          if (
+            !dropBtn.is(e.target) &&
+            dropBtn.has(e.target).length === 0 &&
+            !list.is(e.target) &&
+            list.has(e.target).length === 0
+            ) {
+              list.slideUp(400); 
+              setTimeout(() => { 
+                container.removeClass('active');
+              }, 400);
+            }
+          });
+
+  }
+
+  dropdownHeader();
 });
