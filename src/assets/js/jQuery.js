@@ -11,13 +11,13 @@ $(function () {
     fakeDropInBody: false,
   });
 
-  var typed = new Typed("#typed-entry", {
-    strings: ["Because EVERY", "BUSINESS", "<p>NEEDS SOMETHING</p>"],
-    typeSpeed: 20,
-    backSpeed: 20,
-    startDelay: 200,
-    backDelay: 1200,
-  });
+  // var typed = new Typed("#typed-entry", {
+  //   strings: ["Because EVERY", "BUSINESS", "<p>NEEDS SOMETHING</p>"],
+  //   typeSpeed: 20,
+  //   backSpeed: 20,
+  //   startDelay: 200,
+  //   backDelay: 1200,
+  // });
 
 
   function masonry() {
@@ -122,7 +122,7 @@ $(function () {
 
   masonry();
 
-  function dropdownHeader(params) {
+  function dropdownHeader() {
     let dropBtn = $('.header__checkin'),
         list = $('.dropdown ul');
         container = $('.dropdown')
@@ -133,11 +133,15 @@ $(function () {
             if (!container.is('.active')) {
                 container.addClass('active');
                 list.slideDown(400);
+                console.log('open');
+                
             } else {
               list.slideUp(400);
               setTimeout(() => { 
                 container.removeClass('active');
               }, 400); 
+              console.log('close');
+              
             }
 
         })
@@ -154,9 +158,10 @@ $(function () {
               setTimeout(() => { 
                 container.removeClass('active');
               }, 400);
+              console.log('other');
+              
             }
           });
-
   }
 
   dropdownHeader();

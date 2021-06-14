@@ -797,6 +797,35 @@ img {
     top: -172px;
 }
 
+.form-textarea {
+    background-color: transparent;
+}
+
+.form-textarea::-webkit-input-placeholder {
+    color: #424242;
+    font-size: 18px;
+}
+
+.form-textarea::-moz-placeholder {
+    color: #424242;
+    font-size: 18px;
+}
+
+.form-textarea:-ms-input-placeholder {
+    color: #424242;
+    font-size: 18px;
+}
+
+.form-textarea::-ms-input-placeholder {
+    color: #424242;
+    font-size: 18px;
+}
+
+.form-textarea::placeholder {
+    color: #424242;
+    font-size: 18px;
+}
+
 .preloader {
     position: fixed;
     top: 0;
@@ -3224,6 +3253,8 @@ img {
     content: '';
     right: 18px;
     top: 50%;
+    -webkit-transform: translateY(-7%);
+    transform: translateY(-7%);
 }
 
 .input-group .jcf-drop-active .jcf-select-opener::before {
@@ -3356,7 +3387,30 @@ img {
 }
 
 .become__btn .button {
-    margin: 0 0 0 14px;
+    margin: 0 0 0 13px;
+}
+
+.mc-field-group {
+    padding-bottom: 0;
+}
+
+.mc-field-group ul li {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.mc-field-group li {
+    font-weight: 400;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .account__logo {

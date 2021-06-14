@@ -498,6 +498,14 @@ img {
     }
 }
 
+.form-textarea {
+  background-color: transparent;
+  &::placeholder {
+    color: #424242;
+    font-size: 18px;
+  }
+}
+
 
 
 @import "block/preloader.scss";
