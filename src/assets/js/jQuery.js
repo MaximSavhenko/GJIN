@@ -157,12 +157,20 @@ $(function () {
               list.slideUp(400); 
               setTimeout(() => { 
                 container.removeClass('active');
-              }, 400);
-              console.log('other');
-              
+              }, 400);              
             }
           });
   }
 
   dropdownHeader();
+
+  function muteSocialLink() {
+      let link = $('.footer__social a');
+
+      link.on('click' , function (event) {
+        event.preventDefault();
+      })
+  }
+
+  muteSocialLink();
 });

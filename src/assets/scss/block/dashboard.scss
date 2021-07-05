@@ -90,7 +90,8 @@
     }
 
     &__percent , &__auf , &__interes {
-        width: 400px;
+        width: 100%;
+        max-width: 400px;
         height: 100%;
         min-height: 400px;
         box-shadow: 0px 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
@@ -101,8 +102,19 @@
             transform: scale(0.95);
             transition: transform 0.3s;
         }
+        @include b(1520) {
+            max-width: 300px;
+            min-height: 300px;
+            padding: 20px;
+        }
+        @include b(1388) {
+            max-width: 400px;
+            min-height: 400px;
+            padding: 50px 0px 0px 50px;
+        }
         @include b(mobile) {
             width: 100%;
+            max-width: 100%;
         }
 
         @include b(400) {
@@ -113,7 +125,7 @@
     &__percent {
         position: relative;
         top: 300px;
-        @include b(1515) {
+        @include b(1388) {
             margin-bottom: 20px;
             top: auto;
         }
@@ -132,6 +144,12 @@
         line-height: 0.9;
         color: #45aaa7 ;
         margin-bottom: 17px;
+        @include b(1520) {
+            font-size: 50px;
+        }
+        @include b(1388) {
+            font-size: 94px; 
+        }
     }
 
     &__percent-postscr {
@@ -141,7 +159,6 @@
     }
 
     &__auf {
-        background-color: #45aaa7;
         display: flex;
         flex-direction: column;
         margin-bottom: 23px;
@@ -162,30 +179,25 @@
         font-size: 20px;
         display: block;
         margin-bottom: 22px;
-        color: #fff;
         font-weight: 600;
     }
 
     &__auf-descr {
         font-size: 25px;
-        color: #fff;
         display: block;
         margin-bottom: 17px;
         font-weight: 600;
     }
 
     &__auf-postscr {
-        color: #fff;
         font-size: 14px;
         line-height: 1.42;
         max-width: 280px;
     }
 
     &__interes {
-        background-color: #777777;
         span {
             font-size: 20px;
-            color: #fff;
             font-weight: 600;
             margin-bottom: 23px;
             display: block;
@@ -194,7 +206,6 @@
         p {
             font-size: 14px;
             max-width: 271px;
-            color: #fff;
         }
     }
 

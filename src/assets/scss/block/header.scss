@@ -31,15 +31,21 @@
 
         .header__logo {
           margin: -42px 0px 0px 0px;
-          @include b(400) {
+          @include b(600) {
             margin: -21px 0px 0px 0px;
           }
         }
 
         .header__title {
             @include b(348) {
-              margin: -30px 0px 0px 25px;
+              // margin: -30px 0px 0px 0px;
             }
+
+            .text-formatted {
+              span {
+                color: #424242;
+              }
+            } 
         }
 
       }
@@ -58,15 +64,16 @@
     position: relative;
     
     @include b(mobile) {
-        margin-top: -21px;
-        margin-left: -10px;
+        margin-top: 0;
+        margin-left: 0;
         width: 158px;
         height: 158px;
     }
 
     @include b(500) {
-        width: 80px;
-        height: 80px;
+        width: 55px;
+        height: 55px;
+        margin-left: 0;
         img {
           max-width: 50px;
           max-height: 50px;
@@ -80,6 +87,13 @@
     width: 40px;
     margin: -30px 0px 0px 30px;
     cursor: pointer;
+    @include b(500) {
+      margin: 0px 0px 0px 30px;
+    }
+
+    @include b(346) {
+      margin: 0px 0px 0px 11px;
+    }
 
     &.animationClose {
       span {
@@ -129,11 +143,9 @@
       @include b(tablet) {
           padding-top: 0px;
       }
+
       @include b(500) {
-        margin: -30px 0px 0px 12px;
-      }
-      @include b(348) {
-        margin: 0px 0px 0px 0px;
+        margin: -10px 0px 0px 5px;
       }
       p,span {
           font-size: 15px;
@@ -222,6 +234,7 @@
       border-top:  none;
       li {
         font-size: 14px;
+        margin-bottom: 10px;
         a {
           color: #4dbbb8;
         }

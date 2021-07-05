@@ -13,6 +13,17 @@
                 width: 100%;
             }
         }
+        .js-pager__items {
+            .pager__item {
+                a {
+                    max-width: 126px;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    height: 35px;
+                }
+            }
+        }
+        
     }
 
     &__select-wrapp {
@@ -214,8 +225,11 @@
         position: absolute;
         top: 0;
         right: 0;
-        max-width: 50px;
-        max-height: 50px;
+        max-width: 45px;
+        max-height: 45px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 3px;
     }
 
 

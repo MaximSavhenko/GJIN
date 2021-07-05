@@ -127,8 +127,10 @@
         img {
             max-width: 190px;
             max-height: 190px;
+            @include b(1000) {
+                max-width: 87px;
+                max-height: 87px;
+            }
         }
     }
-
-    
 }

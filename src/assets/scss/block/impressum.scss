@@ -74,6 +74,9 @@
 
     &__kontakt-link {
         padding: 0px 0px 23px 0px;
+        a {
+            color: $main-color;
+        }
     }
 
     &__text-block {
