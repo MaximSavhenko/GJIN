@@ -429,8 +429,12 @@ p {
     text-transform: none;
 }
 
+.button--grin:hover {
+    color: #4dbbb8;
+}
+
 .button:hover {
-    color: inherit;
+    color: #ffff;
 }
 
 input[type="search"],
@@ -2272,7 +2276,7 @@ img {
 
 .dashboard__postscr span {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 28px;
     display: block;
 }
 
@@ -2284,7 +2288,7 @@ img {
 
 .dashboard__postscr p {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 28px;
     color: #45aaa7;
     font-weight: 600;
 }
@@ -3472,7 +3476,7 @@ img {
 
 .become__header {
     padding: 225px 0px 336px 0px;
-    max-width: 504px;
+    max-width: 550px;
     margin: 0 auto;
 }
 

@@ -276,10 +276,13 @@ p {
     height: auto;
     padding: 9px 0;
     text-transform: none;
+    &:hover {
+      color: #4dbbb8;
+    }
   }
 
   &:hover {
-    color: inherit;
+    color: #ffff;
   }
 }
 
