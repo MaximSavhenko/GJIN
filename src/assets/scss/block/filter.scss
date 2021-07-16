@@ -82,6 +82,7 @@
        transition: all 2s;
        display: flex;
        margin: 0 auto;
+       
        @include b(1106) {
            margin: 0;
            padding-bottom: 54px;
@@ -197,7 +198,7 @@
     &__card-item {
         cursor: pointer;
         padding-bottom: 28px;
-        width: 380px;
+        width: 388px;
         @include b(1106) {
             width: 100%;
         }

@@ -1238,7 +1238,7 @@ img {
   .filter__card-item {
     cursor: pointer;
     padding-bottom: 28px;
-    width: 380px; }
+    width: 388px; }
     @media (max-width: 1106px) {
       .filter__card-item {
         width: 100%; } }
