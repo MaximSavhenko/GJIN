@@ -23,7 +23,7 @@ $(function () {
   function masonry() {
     var masonryItems = $(".filter__card-item"),
         feedback = $(".filter__card-feedback"),
-        width = 300;
+        width = 380;
 
     feedback.hide();
     
@@ -35,7 +35,7 @@ $(function () {
     let masonryLauout = $(".filter__card").masonry({
       itemSelector: ".filter__card-item",
       columnWidth: width,
-      gutter: 30,
+      gutter: 22,
       fitWidth: true
     });
   
@@ -57,7 +57,7 @@ $(function () {
       if($(window).width() <= 1766){
         return 4
       } else {
-        return 5
+        return 4
       }
       
     }
