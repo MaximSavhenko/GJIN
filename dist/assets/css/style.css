@@ -831,6 +831,22 @@ img {
     font-size: 18px;
 }
 
+.user-login-form .form-item--error-message {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.user-login-form .form-item--error-message:before {
+    content: '';
+    display: none;
+}
+
 .preloader {
     position: fixed;
     top: 0;
@@ -1516,7 +1532,7 @@ img {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 225px 0px 328px 0px;
+    padding: 225px 0px 150px 0px;
 }
 
 @media (max-width: 767px) {
@@ -1988,7 +2004,7 @@ img {
 .filter__card-item {
     cursor: pointer;
     padding-bottom: 28px;
-    width: 300px;
+    width: 388px;
 }
 
 @media (max-width: 1106px) {
@@ -2335,7 +2351,7 @@ img {
     min-height: 400px;
     box-shadow: 0px 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
     background-color: #fff;
-    padding: 50px 0px 0px 50px;
+    padding: 50px 50px 10px 50px;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -2361,7 +2377,7 @@ img {
     .dashboard__percent, .dashboard__auf, .dashboard__interes {
         max-width: 400px;
         min-height: 400px;
-        padding: 50px 0px 0px 50px;
+        padding: 50px 50px 10px 50px;
     }
 }
 
@@ -2374,7 +2390,7 @@ img {
 
 @media (max-width: 400px) {
     .dashboard__percent, .dashboard__auf, .dashboard__interes {
-        padding: 30px 0 0 30px;
+        padding: 30px 30px 10px 30px;
     }
 }
 
@@ -2418,7 +2434,6 @@ img {
 .dashboard__percent-postscr {
     display: block;
     font-size: 22px;
-    max-width: 230px;
 }
 
 .dashboard__auf {
@@ -2463,7 +2478,6 @@ img {
 .dashboard__auf-postscr {
     font-size: 14px;
     line-height: 1.42;
-    max-width: 280px;
 }
 
 .dashboard__interes span {
@@ -2475,7 +2489,6 @@ img {
 
 .dashboard__interes p {
     font-size: 14px;
-    max-width: 271px;
 }
 
 .dashboard .button {
