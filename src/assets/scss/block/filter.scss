@@ -271,6 +271,7 @@
         .button--otherProp {
             height: 35px;
             outline: 1px solid #4dbbb8;
+            min-width: 200px;
             @include b(mobile) {
                 max-width: 100%;
                 width: 100%;

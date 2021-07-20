@@ -277,7 +277,7 @@ p {
     padding: 9px 0;
     text-transform: none;
     &:hover {
-      color: #4dbbb8;
+      color: #4dbbb8 !important;
     }
   }
 
@@ -507,6 +507,21 @@ img {
   &::placeholder {
     color: #424242;
     font-size: 18px;
+  }
+}
+
+.user-login-form {
+  .form-item--error-message {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 17px;
+    margin-bottom: 10px;
+
+    &:before {
+      content:'';
+      display: none;
+    }
   }
 }
 
