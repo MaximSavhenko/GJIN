@@ -417,6 +417,7 @@ p {
     color: #ffff;
     font-weight: 400;
     cursor: pointer;
+    margin: 0;
     transition: all .3s;
 }
 
@@ -948,23 +949,21 @@ img {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
-    max-width: 200px;
+    min-width: 200px;
     margin: 0 1px 1px 0;
     outline: 1px solid #4dbbb8;
     cursor: pointer;
     color: #4dbbb8;
     text-transform: uppercase;
     font-size: 15px;
-    width: 100%;
-    padding: 0 0 0 14px;
+    padding: 0 14px 0 14px;
     height: 35px;
     position: relative;
 }
 
 @media (max-width: 487px) {
     .jcf-select {
-        max-width: 100%;
+        min-width: 100%;
         margin-bottom: 15px;
     }
 }
@@ -991,16 +990,12 @@ img {
     display: block;
 }
 
-.jcf-select-opener {
-    position: relative;
-}
-
 .jcf-select-opener::before {
     content: '';
     display: inline-block;
-    position: absolute;
-    top: -15px;
-    right: -24px;
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
     border: 10px solid transparent;
     border-top: 10px solid #45aaa7;
     -webkit-transform: rotate(180deg);
@@ -1010,7 +1005,7 @@ img {
 .jcf-drop-active .jcf-select-opener::before {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    top: -5px;
+    top: 6px;
 }
 
 .header {
@@ -1019,7 +1014,7 @@ img {
 
 @media (max-width: 1023px) {
     .header {
-        border-top: 21px solid rgba(255, 255, 255, 0.5);
+        border-top: 21px solid #fff;
     }
 }
 
@@ -1087,6 +1082,12 @@ img {
     width: 158px;
     height: 156px;
     position: relative;
+}
+
+@media (max-width: 1023px) {
+    .header__logo {
+        margin-top: -21px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1224,12 +1225,12 @@ img {
 .header__btn-login {
     display: -ms-flexbox;
     display: flex;
-    margin: -30px 60px 0 auto;
+    margin: -30px 90px 0 auto;
 }
 
 @media (max-width: 1366px) {
     .header__btn-login {
-        margin: -30px 0 0 auto;
+        margin: -30px 15px 0 auto;
     }
 }
 
@@ -1241,6 +1242,12 @@ img {
 
 .header__logout {
     min-width: 150px;
+}
+
+@media (max-width: 836px) {
+    .header__logout {
+        min-width: 100px;
+    }
 }
 
 .header .dropdown {
@@ -1322,6 +1329,12 @@ img {
     left: 0;
 }
 
+@media (max-width: 1023px) {
+    .burger {
+        padding-top: 21px;
+    }
+}
+
 @media (max-width: 600px) {
     .burger {
         padding-top: 23px;
@@ -1351,6 +1364,12 @@ img {
     position: relative;
 }
 
+@media (max-width: 1023px) {
+    .burger__wrapp {
+        margin-left: 24px;
+    }
+}
+
 @media (max-width: 1268px) {
     .burger__wrapp {
         padding-left: 0;
@@ -1363,6 +1382,12 @@ img {
     .burger__wrapp {
         margin-right: 0px;
         margin-left: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .burger__wrapp {
+        margin-left: 10px;
     }
 }
 
@@ -1437,6 +1462,10 @@ img {
     margin-right: 14px;
 }
 
+.burger__sicial a {
+    cursor: default;
+}
+
 .burger__link {
     display: -ms-flexbox;
     display: flex;
@@ -1477,6 +1506,12 @@ img {
 
 .burger .header__checkin {
     margin-bottom: 13px;
+}
+
+@media (max-width: 1023px) {
+    .burger .header__logo {
+        margin-top: -21px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1632,6 +1667,7 @@ img {
 .footer__social a {
     margin-right: 20px;
     display: inline-block;
+    cursor: default;
 }
 
 @media (max-width: 767px) {
@@ -1888,7 +1924,7 @@ img {
     background-color: #45aaa7;
     padding: 46px 0px 0px 23px;
     width: 100%;
-    max-width: 300px;
+    max-width: 388px;
 }
 
 @media (max-width: 1023px) {
@@ -2590,8 +2626,6 @@ img {
     min-height: 100%;
     -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 @media (max-width: 767px) {
@@ -2620,7 +2654,7 @@ img {
 }
 
 .logo__text .button {
-    margin: 0 auto;
+    margin: auto auto 0 auto;
     max-width: 200px;
 }
 
@@ -2642,7 +2676,7 @@ img {
     -o-object-fit: contain;
     object-fit: contain;
     padding: 0px 67px 0px 67px;
-    margin: 0px 40px 0px 67px;
+    margin: 0px 40px 0px 40px;
 }
 
 @media (max-width: 767px) {
@@ -3488,7 +3522,7 @@ img {
     margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
     .become__header {
         padding: 50px 0px 50px 0px;
     }
@@ -3496,6 +3530,15 @@ img {
 
 .become__header span {
     display: block;
+}
+
+.become__header h1 {
+    color: #4dbbb8;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.75;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .become__title {

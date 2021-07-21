@@ -3,7 +3,7 @@
 
 
   @include b(tablet) {
-      border-top: 21px solid rgba(255, 255, 255, .5);
+      border-top: 21px solid #fff;
   }
 
   &__wrap {
@@ -62,6 +62,10 @@
     width: 158px;
     height: 156px;
     position: relative;
+
+    @include b(tablet) {
+      margin-top: -21px;
+    }
     
     @include b(mobile) {
         margin-top: 0;
@@ -172,9 +176,9 @@
 
   &__btn-login{
     display: flex;
-    margin: -30px 60px 0 auto;
+    margin: -30px 90px 0 auto;
     @include b(desktop) {
-      margin: -30px 0 0 auto;
+      margin: -30px 15px 0 auto;
     }
     @include b(800) {
         display: none;
@@ -183,6 +187,9 @@
 
   &__logout{
     min-width: 150px;
+    @include b(836) {
+      min-width: 100px;
+    }
   }
 
   .dropdown{

@@ -4,11 +4,21 @@
         padding: 225px 0px 336px 0px;
         max-width: 550px;
         margin: 0 auto;
-        @include b(mobile) {
+        @include b(1023) {
             padding: 50px 0px 50px 0px;
         }
+
         span {
             display: block;
+        }
+
+        h1 {
+            color: #4dbbb8;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.75;
+            text-transform: uppercase;
+            margin-bottom: 10px;
         }
     }
 

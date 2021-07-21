@@ -17,6 +17,10 @@
         left: 0;
     }
 
+    @include b(tablet) {
+        padding-top: 21px;
+    }
+
     @include b(600) {
         padding-top: 23px;
         border-right: none;
@@ -39,6 +43,12 @@
         margin-left: 57px;
         margin-right: 36px;
         position: relative;
+
+        @include b(tablet) {
+            margin-left: 24px;
+        }
+
+        
         @include b(1268) {
             padding-left: 0;
             align-items: center;
@@ -48,6 +58,11 @@
             margin-right: 0px;
             margin-left: 24px;
         }
+
+        @include b(400) {
+            margin-left: 10px;
+        }
+
         
     }
 
@@ -99,6 +114,9 @@
                 margin-right: 14px;
             }
         }
+        a {
+            cursor: default;
+        }
     }
 
     &__link {
@@ -137,6 +155,9 @@
             margin-bottom: 13px;
 		}
         &__logo{
+            @include b(tablet) {
+                margin-top: -21px;
+            }
             @include b(600) {
                 margin: 0px 0px 0px 0px;
             }

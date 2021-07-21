@@ -3,20 +3,19 @@
 .jcf-select {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 200px;
+    // width: 100%;
+    min-width: 200px;
     margin: 0 1px 1px 0;
     outline: 1px solid #4dbbb8;
     cursor: pointer;
     color: #4dbbb8;
     text-transform: uppercase;
     font-size: 15px;
-    width: 100%;
-    padding: 0 0 0 14px;
+    padding: 0 14px 0 14px;
     height: 35px;
     position: relative;
     @include b(487) {
-        max-width: 100%;
+        min-width: 100%;
         margin-bottom: 15px;
     }
 }
@@ -52,13 +51,12 @@
 
 
 .jcf-select-opener {
-    position: relative;
     &::before {
         content: ''; 
         display: inline-block;
-        position: absolute;
-        top: -15px;
-        right: -24px;
+        position: relative;
+        top: -3px;
+        margin-left: 10px;
         border: 10px solid transparent; 
         border-top: 10px solid #45aaa7; 
         transform: rotate(180deg);
@@ -69,7 +67,7 @@
     .jcf-select-opener {
         &::before {
             transform: rotate(0deg);
-            top: -5px;
+            top: 6px;
         }
     }
 }
