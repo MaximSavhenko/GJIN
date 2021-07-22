@@ -102,9 +102,10 @@ body {
   @include b(tablet) {
     border-right: 9px solid #45aaa7;
   }
-    &.overflow {
-        overflow: hidden;
-    }
+
+  &.overflow {
+    overflow: hidden;
+  }
 }
 
 @include b(tablet) {
@@ -123,9 +124,10 @@ body {
 a {
   text-decoration: none;
   color: #000;
-   &:hover {
-     text-decoration: none;
-   }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 button {
@@ -172,14 +174,14 @@ p {
   }
 
   @include b(400) {
-      padding: 0 15px;
+    padding: 0 15px;
   }
 
   &--page {
     max-width: 1644px;
   }
 
-  &--comments_slider  {
+  &--comments_slider {
     max-width: 1339px;
   }
 
@@ -190,11 +192,11 @@ p {
   &--1068w {
     max-width: 1068px;
     @include b(mobile) {
-        padding: 0 28px;
+      padding: 0 28px;
     }
   }
 
-  &--1356w{
+  &--1356w {
     max-width: 1356px;
   }
 }
@@ -220,13 +222,13 @@ p {
   border-right: 34px solid #fff;
   border-left: 58px solid #fff;
   background-image: url(../images/index/bg.png);
-  background-position: center -120px ;
+  background-position: center -120px;
   background-repeat: no-repeat;
   @include b(tablet) {
-      border-right: 23px solid #fff;
-      border-left: 24px solid #fff;
-      background-size: 368px 460px;
-      background-position: center 241px ;
+    border-right: 23px solid #fff;
+    border-left: 24px solid #fff;
+    background-size: 368px 460px;
+    background-position: center 241px;
   }
   @include b(400) {
     background-size: 250px 250px;
@@ -237,13 +239,13 @@ p {
   &--left {
     background-position: 52px -120px;
     @include b(1118) {
-      background-position: center 241px ;
+      background-position: center 241px;
     }
   }
 
   &--none {
     @include b(mobile) {
-        background: none;
+      background: none;
     }
   }
 
@@ -277,6 +279,7 @@ p {
     height: auto;
     padding: 9px 0;
     text-transform: none;
+
     &:hover {
       color: #4dbbb8 !important;
     }
@@ -288,11 +291,10 @@ p {
 }
 
 input[type="search"],
-input[type="text"], 
+input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="number"]
-{
+input[type="number"] {
   display: block;
   width: 100%;
   height: 43px;
@@ -306,6 +308,7 @@ input[type="number"]
   @include b(mobile) {
     font-size: 22px;
   }
+
   &::placeholder {
     color: #424242;
     font-weight: 300;
@@ -314,20 +317,22 @@ input[type="number"]
       font-size: 22px;
     }
   }
+
   // &:focus {
   //   box-shadow: 0 0 3px 1px #68a8e0;
   // }
 }
 
 input[type="search"] {
-    border-radius: 0;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    padding-left: 17px;
-    &:focus {
-      box-shadow: none;
-    }
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-left: 17px;
+
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 input[type="file"] {
@@ -342,9 +347,11 @@ input[type="file"] {
   text-transform: uppercase;
   font-family: inherit;
   transition: all 0.2s;
+
   &::placeholder {
     color: #ffffff;
   }
+
   &:focus {
     border-color: #282b31;
   }
@@ -355,11 +362,13 @@ input[type="text"]::-ms-clear {
   width: 0;
   height: 0;
 }
+
 input[type="text"]::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
 }
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -371,6 +380,7 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -380,8 +390,6 @@ textarea {
   width: 100%;
   height: 300px;
   resize: none;
-  padding: 16px;
-  border: none;
   padding: 16px 0 14px 18px;
   border: 1px solid #424242;
   background: none;
@@ -391,7 +399,7 @@ textarea {
   transition: all 0.2s;
   @include b(mobile) {
     font-size: 22px;
-    padding: 8px 0px 0px 18px;
+    padding: 8px 0 0 18px;
   }
 
   &::placeholder {
@@ -401,6 +409,7 @@ textarea {
       font-size: 22px;
     }
   }
+
   // &:focus {
   //   box-shadow: 0 0 3px 1px #68a8e0;
   // }
@@ -408,9 +417,11 @@ textarea {
 
 input[type=checkbox] {
   display: none;
+
   &:checked ~ label::after {
-      opacity: 1;
+    opacity: 1;
   }
+
   // &:checked ~ label::before {
   //     background-color: #FF3494;
   // }
@@ -420,34 +431,37 @@ input[type=checkbox] {
   position: relative;
   display: flex;
   align-items: center;
+
   &:before {
-      content:'';
-      display: inline-block;
-      background-color: #424242;
-      width: 11px;
-      height: 11px;
-      margin-right: 8px;
-      transition: all .1s;
+    content: '';
+    display: inline-block;
+    background-color: #424242;
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+    transition: all .1s;
   }
+
   &::after {
-      content:'';
-      position: absolute;
-      width: 8px;
-      height:5px;
-      border-bottom: 2px solid #fff;
-      border-left: 2px solid #fff;
-      transform: rotate(-45deg);
-      opacity: 0;
-      top: 4px;
-      left: 2px;
-      transition: all .2s;
-      display: block;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(-45deg);
+    opacity: 0;
+    top: 4px;
+    left: 2px;
+    transition: all .2s;
+    display: block;
   }
 }
 
 img {
   max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
 }
 
 .form-control {
@@ -460,7 +474,7 @@ img {
 
 .form-item, .form-actions {
   margin: 0;
-} 
+}
 
 .bef-datepicker {
   outline: 1px solid #4dbbb8;
@@ -468,43 +482,48 @@ img {
   width: 200px !important;
   height: 35px !important;
   margin-right: 1px;
+
   &::placeholder {
-      font-size: 15px !important;
-      color: #4dbbb8 !important;
+    font-size: 15px !important;
+    color: #4dbbb8 !important;
   }
-    &:focus {
-      border: none !important;
-    }
-    @include b(487) {
-      width: 100% !important;
-      max-width: 100% !important;
-      margin-right: 0;
-      margin-bottom: 15px;
-    }
+
+  &:focus {
+    border: none !important;
+  }
+
+  @include b(487) {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
 #edit-reset {
   height: 35px;
   outline: 1px solid #4dbbb8;
   @include b(mobile) {
-      max-width: 100%;
-      width: 100%;
+    max-width: 100%;
+    width: 100%;
   }
 }
 
 #block-footerinfoblock {
-    .focusable {
-      position: relative !important;
-      top: -67px;
-      z-index: 100;
-    }
-    .contextual-links {
-      top: -172px;
-    }
+  .focusable {
+    position: relative !important;
+    top: -67px;
+    z-index: 100;
+  }
+
+  .contextual-links {
+    top: -172px;
+  }
 }
 
 .form-textarea {
   background-color: transparent;
+
   &::placeholder {
     color: #424242;
     font-size: 18px;
@@ -520,12 +539,11 @@ img {
     margin-bottom: 10px;
 
     &:before {
-      content:'';
+      content: '';
       display: none;
     }
   }
 }
-
 
 
 @import "block/preloader.scss";
@@ -547,6 +565,10 @@ img {
 @import "block/fix-bootstrap.scss";
 @import "block/kontaktiere.scss";
 @import "block/personal-form.scss";
+@import "block/cms-block.scss";
+
+
+
 
 
 

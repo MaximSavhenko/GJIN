@@ -3,53 +3,54 @@
 
 
   @include b(tablet) {
-      border-top: 21px solid #fff;
+    border-top: 21px solid #fff;
   }
 
   &__wrap {
-      display: flex;
+    display: flex;
+    align-items: center;
+    transition: all .2s;
+    @include b(tablet) {
       align-items: center;
-      transition: all .2s;
-      @include b(tablet) {
-        align-items: center;
+    }
+    @include b(359) {
+      flex-wrap: wrap;
+    }
+    //BURGER logo ----------
+    &--burger {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include b(428) {
+        width: 100%;
       }
-      @include b(359) {
-        flex-wrap: wrap;
+
+      .header__btn-menu {
+        z-index: 300;
       }
-      //BURGER logo ----------
-      &--burger {
-        position: absolute;
-        top: 0;
-        left: 0;
-        @include b(428) {
-          width: 100%;
+
+      .header__logo {
+        margin: -42px 0px 0px 0px;
+        @include b(600) {
+          margin: -21px 0px 0px 0px;
         }
-        
-        .header__btn-menu {
-          z-index: 300;
+      }
+
+      .header__title {
+        @include b(348) {
+          // margin: -30px 0px 0px 0px;
         }
 
-        .header__logo {
-          margin: -42px 0px 0px 0px;
-          @include b(600) {
-            margin: -21px 0px 0px 0px;
+        .text-formatted {
+          span {
+            color: #424242;
           }
         }
-
-        .header__title {
-            @include b(348) {
-              // margin: -30px 0px 0px 0px;
-            }
-
-            .text-formatted {
-              span {
-                color: #424242;
-              }
-            } 
-        }
-
       }
-      //BURGER logo ----------
+
+    }
+
+    //BURGER logo ----------
 
   }
 
@@ -66,22 +67,22 @@
     @include b(tablet) {
       margin-top: -21px;
     }
-    
+
     @include b(mobile) {
-        margin-top: 0;
-        margin-left: 0;
-        width: 158px;
-        height: 158px;
+      margin-top: 0;
+      margin-left: 0;
+      width: 158px;
+      height: 158px;
     }
 
     @include b(500) {
-        width: 55px;
-        height: 55px;
-        margin-left: 0;
-        img {
-          max-width: 50px;
-          max-height: 50px;
-        }
+      width: 55px;
+      height: 55px;
+      margin-left: 0;
+      img {
+        max-width: 50px;
+        max-height: 50px;
+      }
     }
   }
 
@@ -92,11 +93,11 @@
     margin: -30px 0px 0px 30px;
     cursor: pointer;
     @include b(500) {
-      margin: 0px 0px 0px 30px;
+      margin: 0 0 0 30px;
     }
 
     @include b(346) {
-      margin: 0px 0px 0px 11px;
+      margin: 0 0 0 11px;
     }
 
     &.animationClose {
@@ -127,9 +128,11 @@
       width: 40px;
       height: 3px;
       background-color: #4ec4c0;
+
       &:nth-child(2) {
         top: 10px;
       }
+
       &:nth-child(3) {
         top: 20px;
       }
@@ -138,61 +141,65 @@
         width: 30px;
         height: 2px;
       }
-      
+
     }
   }
-  &__title{
-      position: relative;
-      margin: -30px 0px 0px 25px;
-      @include b(tablet) {
-          padding-top: 0px;
-      }
 
+  &__title {
+    position: relative;
+    margin: -30px 0px 0px 25px;
+    @include b(tablet) {
+      padding-top: 0px;
+    }
+
+    @include b(500) {
+      margin: -10px 0px 0px 5px;
+    }
+
+    p, span {
+      font-size: 15px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: .8px;
       @include b(500) {
-        margin: -10px 0px 0px 5px;
+        font-size: 14px;
       }
-      p,span {
-          font-size: 15px;
-          line-height: 1.2;
-          text-transform: uppercase;
-          font-weight: 600;
-          letter-spacing: .8px;
-          @include b(500) {
-            font-size: 14px;
-          }
+    }
+
+    span {
+      font-weight: 300;
+    }
+
+    p {
+      color: #45aaa7;
+      letter-spacing: 1px;
+      font-size: 16px;
+      @include b(500) {
+        font-size: 14px;
       }
-      span {
-        font-weight: 300;
-      }
-      p {
-        color:#45aaa7;
-        letter-spacing: 1px;
-        font-size: 16px;
-        @include b(500) {
-          font-size: 14px;
-        }
-      }
+    }
   }
 
-  &__btn-login{
+  &__btn-login {
     display: flex;
     margin: -30px 90px 0 auto;
     @include b(desktop) {
       margin: -30px 15px 0 auto;
     }
     @include b(800) {
-        display: none;
+      display: none;
     }
   }
 
-  &__logout{
+  &__logout {
     min-width: 150px;
     @include b(836) {
       min-width: 100px;
     }
   }
 
-  .dropdown{
+  .dropdown {
     width: 100%;
     min-width: 150px;
     background-color: #f4f4f4;
@@ -202,13 +209,14 @@
     margin-right: 20px;
     position: relative;
     transition: all .5s;
-      &.active {
-        border-bottom: none;
-        transition: all .5s;
-      }
-  
+
+    &.active {
+      border-bottom: none;
+      transition: all .5s;
+    }
+
     .header__checkin {
-      font-size: 14px;  
+      font-size: 14px;
       color: #4dbbb8;
       height: auto;
       text-transform: none;
@@ -221,6 +229,7 @@
       display: block;
       width: 100%;
     }
+
     ul {
       display: none;
       align-items: flex-start;
@@ -230,15 +239,18 @@
       top: 35px;
       left: -1px;
       border: 1px solid #4dbbb8;
-      border-top:  none;
+      border-top: none;
+      z-index: 100;
+
       li {
         font-size: 14px;
         margin-bottom: 10px;
+
         a {
           color: #4dbbb8;
         }
       }
     }
   }
-  
+
 }

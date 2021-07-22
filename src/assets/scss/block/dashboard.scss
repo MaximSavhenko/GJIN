@@ -15,14 +15,18 @@
 
     &__text {
         max-width: 623px;
-        width: 40%;
+        width: 41%;
         margin-left: 96px;
         @include b(1672) {
             margin-left: 0;
         }
-        @include b(mobile) {
+        @include b(tablet) {
             width: 100%;
             max-width: 100%;
+            padding-top: 20px;
+        }
+        @include b(mobile) {
+            padding-top: 0;
         }
     }
 
@@ -42,6 +46,7 @@
             font-size: 48px;
             line-height: 1.27;
             margin-bottom: 25px;
+            font-weight: 300;
             @include b(mobile) {
                 margin-bottom: 63px;
             }
@@ -118,7 +123,7 @@
         }
 
         @include b(400) {
-            padding: 30px 30px 10px 30px;
+            padding: 20px;
         }
     }
 
@@ -131,16 +136,15 @@
         }
     }
 
-   
+
 
     &__percent-title {
-        font-size: 20px;
         text-transform: uppercase;
         font-weight: 600;
     }
 
     &__percent-num {
-        font-size: 94px; 
+        font-size: 94px;
         line-height: 0.9;
         color: #45aaa7 ;
         margin-bottom: 17px;
@@ -148,13 +152,12 @@
             font-size: 50px;
         }
         @include b(1388) {
-            font-size: 94px; 
+            font-size: 94px;
         }
     }
 
     &__percent-postscr {
         display: block;
-        font-size: 22px;
     }
 
     &__auf {
@@ -189,7 +192,7 @@
     }
 
     &__auf-postscr {
-        font-size: 14px;
+        //font-size: 14px;
         line-height: 1.42;
     }
 
@@ -199,10 +202,6 @@
             font-weight: 600;
             margin-bottom: 23px;
             display: block;
-        }
-
-        p {
-            font-size: 14px;
         }
     }
 
@@ -215,4 +214,4 @@
     }
 }
 
-  
+

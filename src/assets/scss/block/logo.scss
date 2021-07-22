@@ -27,11 +27,11 @@
             width: 100%;
             max-width: 324px;
             margin: 0 auto;
-           
             .button {
                 padding: 12px 0px 12px 0px;
                 height: auto;
                 font-size: 26px;
+                text-align: center;
             }
         }
 
@@ -57,7 +57,7 @@
 
     // mod for form on page "become_a_partner" class mod - "logo--form" ---
 
-    
+
     &__wrap {
         display: flex;
         justify-content: center;
@@ -80,7 +80,7 @@
         span {
             font-weight: 600;
             font-size: 20px;
-            margin-bottom: 52px; 
+            margin-bottom: 52px;
             display: block;
             text-transform: uppercase;
         }

@@ -1,282 +1,296 @@
 .filter {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 
-    .container {
-        max-width: 1651px;
-    }
-    @include b(mobile) {
-        padding-bottom: 72px;
-    }
-    &__wrapp {
-        .input-group__btn {
-            @include b(mobile) {
-                width: 100%;
-            }
-        }
-        .js-pager__items {
-            .pager__item {
-                a {
-                    max-width: 126px;
-                    margin: 0 auto;
-                    font-size: 16px;
-                    height: 35px;
-                }
-            }
-        }
-        
-    }
+  .container {
+    max-width: 1651px;
+  }
 
-    &__select-wrapp {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  @include b(mobile) {
+    padding-bottom: 72px;
+  }
 
-    &__description {    
-        width: 100%;
-        max-width: 800px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        span {
-            color: #4dbbb8;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 20px;
-            margin-bottom: 15px;
-            display: block;
-            width: 500px;
-            max-width: 100%;
-        }
-
-        p {
-            line-height: 1.55;
-            color: #424242;
-            font-weight: 300;
-            margin-bottom: 35px;
-            max-width: 500px;
-            @include b(mobile) {
-                margin-bottom: 45px;
-            }
-        }
-
-    }
-
-    &__select {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-bottom: 36px;
-        .select {
-            width: 100%;
-            max-width: 200px;
-            margin: 0px 1px 0px 0px;
-            @include b(mobile) {
-                margin: 1px 1px 0px 0px;
-            }
-        }
-    }
-
-    &__card {
-       padding-bottom: 77px;
-       transition: all 2s;
-       display: flex;
-       margin: 0 auto;
-       
-       @include b(1106) {
-           margin: 0;
-           padding-bottom: 54px;
-           width: 100% !important;
-       }
-    }
-
-    &__card-feedback {
-        display: flex;
-        min-height: 250px;
-
-        @include b(mobile) {
-            order: 0;
-        }
-        
-        @include b(tablet) {
-            flex-direction: column;
-            margin: 32px 0px 32px 0px;
-        }
-    }
-
-    &__card-feedback-descr {
-        background-color: #45aaa7;
-        padding: 46px 0px 0px 23px;
-        width: 100%;
-        max-width: 388px;
-        @include b(tablet) {
-            max-width: 100%;
-            padding-left: 26px;
-        }
-        span , p { 
-            font-size: 18px;
-            display: block;
-            text-transform: uppercase;
-            color: #fff;
-        }
-    }
-
-    &__card-feedback-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0px 0px 0px 34px;
-        background-color: #fff;
-        width: 100%;
-        position: relative;
-        @include b(tablet) {
-            padding: 40px 0px 47px 26px;
-        }
-        .button {
-            max-width: 144px;
-            height: 37px;
-            margin: 0;
-        }
-        time {
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        span {
-            font-size: 18px;
-            display: block;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-        }
-
-        p {
-            margin-bottom: 28px;
-            max-width: 861px;
-        }
-    }
-
-    &__info-close-btn{
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 38px;
-        height: 38px;
-        background-color: #45aaa7;
-        cursor: pointer;
-        span {
-            color: #fff;
-            margin: 0;
-            font-weight: 600;
-        }
-    }
-
-    .col-xl-20 {
-        
-        @include b(1199) {
-            padding-bottom: 0px;
-        }
-    }
-
-    .parsedHTML {
-        padding-bottom: 28px; 
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        &:last-child {
-            padding-bottom: 0;
-        }
-        
-        @include b(1199) {
-            padding-bottom: 0px;
-        }
-    }
-    
-    &__card-item {
-        cursor: pointer;
-        padding-bottom: 28px;
-        width: 388px;
-        @include b(1106) {
-            width: 100%;
-        }
-        &.active {
-            width: 100%;
-            max-width: 100%;
-            margin-bottom: 0;
-        }
-    }
-
-    &__card-item-inner{
-        transition: width 0.4s, height 0.4s;
-        width: 100%;
-        height: 100%;
-        min-height: 250px;
-        padding: 44px 0px 38px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 0px 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
-        position: relative;
-    }
-
-    &__card-item-logo{
-        position: absolute;
-        top: 0;
-        right: 0;
-        max-width: 45px;
-        max-height: 45px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 3px;
-    }
-
-
-    &__card-descr {
-        font-size: 18px;
-        text-transform: uppercase;
-        p {
-            color: #4dbbb8;
-        }
-        span {
-            font-weight: 600;
-            color: #424242;
-        }
-    }
-
-    &__card-postscrip {
-        max-width: 257px;
-        color: #424242;
-    }
-
-    &__btn {
-        max-width: 126px;
-        margin: 0 auto;
-        font-size: 16px;
-        height: 35px;
-    }
-
-    .pager_items {
-        a {
-            max-width: 126px;
-            margin: 0 auto;
-            font-size: 16px;
-            height: 35px;
-        }
-    }
-    
+  &__wrapp {
     .input-group__btn {
-        .button--otherProp {
-            height: 35px;
-            outline: 1px solid #4dbbb8;
-            min-width: 200px;
-            @include b(mobile) {
-                max-width: 100%;
-                width: 100%;
-            }
-        }
+      @include b(mobile) {
+        width: 100%;
+      }
     }
-    
+
+    .js-pager__items {
+      .pager__item {
+        a {
+          max-width: 126px;
+          margin: 0 auto;
+          font-size: 16px;
+          height: 35px;
+        }
+      }
+    }
+
+  }
+
+  &__select-wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      color: #4dbbb8;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 15px;
+      display: block;
+      width: 500px;
+      max-width: 100%;
+    }
+
+    p {
+      line-height: 1.55;
+      color: #424242;
+      font-weight: 300;
+      margin-bottom: 35px;
+      max-width: 500px;
+      @include b(mobile) {
+        margin-bottom: 45px;
+      }
+    }
+
+  }
+
+  &__select {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 36px;
+
+    .select {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 1px 0 0;
+      @include b(mobile) {
+        margin: 1px 1px 0 0;
+      }
+    }
+  }
+
+  &__card {
+    padding-bottom: 77px;
+    transition: all 2s;
+    display: flex;
+    margin: 0 auto;
+
+    @include b(1106) {
+      margin: 0;
+      padding-bottom: 54px;
+      width: 100% !important;
+    }
+  }
+
+  &__card-feedback {
+    display: flex;
+    min-height: 250px;
+
+    @include b(mobile) {
+      order: 0;
+    }
+
+    @include b(tablet) {
+      flex-direction: column;
+      margin: 32px 0 32px 0;
+    }
+  }
+
+  &__card-feedback-descr {
+    background-color: #45aaa7;
+    padding: 46px 0 0 23px;
+    width: 100%;
+    max-width: 388px;
+    @include b(tablet) {
+      max-width: 100%;
+      padding-left: 26px;
+      padding-bottom: 100px;
+    }
+
+    span, p {
+      font-size: 18px;
+      display: block;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+
+  &__card-feedback-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 34px;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    @include b(tablet) {
+      padding: 40px 0 47px 26px;
+    }
+
+    .button {
+      max-width: 144px;
+      height: 37px;
+      margin: 0;
+    }
+
+    time {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    span {
+      font-size: 18px;
+      display: block;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 28px;
+      max-width: 861px;
+    }
+  }
+
+  &__info-close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-color: #45aaa7;
+    cursor: pointer;
+
+    span {
+      color: #fff;
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+
+  .col-xl-20 {
+
+    @include b(1199) {
+      padding-bottom: 0;
+    }
+  }
+
+  .parsedHTML {
+    padding-bottom: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+    @include b(1199) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__card-item {
+    cursor: pointer;
+    padding-bottom: 28px;
+    width: 388px;
+    @include b(1106) {
+      width: 100%;
+    }
+
+    &.active {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__card-item-inner {
+    transition: width 0.4s, height 0.4s;
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    padding: 44px 0 38px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
+    position: relative;
+  }
+
+  &__card-item-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 3px;
+  }
+
+
+  &__card-descr {
+    font-size: 18px;
+    text-transform: uppercase;
+
+    p {
+      color: #4dbbb8;
+    }
+
+    span {
+      font-weight: 600;
+      color: #424242;
+    }
+  }
+
+  &__card-postscrip {
+    max-width: 257px;
+    color: #424242;
+  }
+
+  &__btn {
+    max-width: 126px;
+    margin: 0 auto;
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .pager_items {
+    a {
+      max-width: 126px;
+      margin: 0 auto;
+      font-size: 16px;
+      height: 35px;
+    }
+  }
+
+  .input-group__btn {
+    .button--otherProp {
+      height: 35px;
+      outline: 1px solid #4dbbb8;
+      min-width: 200px;
+      @include b(mobile) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+
 }
