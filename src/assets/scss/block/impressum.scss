@@ -13,6 +13,9 @@
           text-transform: uppercase;
           font-size: 18px;
           display: block;
+          @include b(652) {
+              font-size: 26px;
+          }
           @include b(mobile) {
               font-size: 24px;
               line-height: 1;
@@ -66,6 +69,9 @@
         margin-bottom: 35px;
         a {
             display: block;
+            margin-bottom: 7px;
+        }
+        p {
             margin-bottom: 7px;
         }
     }

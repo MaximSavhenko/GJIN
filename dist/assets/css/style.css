@@ -2239,6 +2239,10 @@ img {
     font-size: 35px;
     font-weight: 300;
     text-transform: uppercase;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 @media (max-width: 500px) {
@@ -2804,6 +2808,10 @@ img {
     margin-bottom: 7px;
 }
 
+.impressum__kontakt p {
+    margin-bottom: 7px;
+}
+
 .impressum__kontakt-title {
     padding: 0px 0px 35px 0px;
     text-transform: uppercase;
@@ -2924,7 +2932,8 @@ img {
 .event__date-title {
     font-weight: 300;
     line-height: 1.55;
-    margin-bottom: 54px;
+    margin-bottom: 34px;
+    display: block;
 }
 
 .event__body p {

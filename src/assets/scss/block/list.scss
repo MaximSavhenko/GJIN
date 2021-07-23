@@ -89,6 +89,8 @@
       font-size: 35px;
       font-weight: 300;
       text-transform: uppercase;
+      display: flex;
+      align-items: center;
       @include b(500) {
         font-size: 30px;
       }
