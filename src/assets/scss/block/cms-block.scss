@@ -1,5 +1,8 @@
 #form__personal_account {
     width: 100%;
+    @include b(600) {
+        margin-bottom: 20px;
+    }
 }
 
 #edit-h-link {

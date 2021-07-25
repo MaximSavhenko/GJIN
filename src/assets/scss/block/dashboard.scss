@@ -50,7 +50,7 @@
             @include b(mobile) {
                 margin-bottom: 63px;
             }
-            @include b(400) {
+            @include b(500) {
                 font-size: 30px;
             }
         }
