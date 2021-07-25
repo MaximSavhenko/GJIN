@@ -1,73 +1,68 @@
 
-
 .jcf-select {
-    display: flex;
-    align-items: center;
-    // width: 100%;
-    min-width: 200px;
-    margin: 0 1px 1px 0;
-    outline: 1px solid #4dbbb8;
-    cursor: pointer;
-    color: #4dbbb8;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 0 14px 0 14px;
-    height: 35px;
-    position: relative;
-    @include b(487) {
-        min-width: 100%;
-        margin-bottom: 15px;
-    }
+  display: flex;
+  align-items: center;
+  // width: 100%;
+  min-width: 200px;
+  margin: 0 1px 1px 0;
+  outline: 1px solid #4dbbb8;
+  cursor: pointer;
+  color: #4dbbb8;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 0 14px 0 14px;
+  height: 35px;
+  position: relative;
+  @include b(487) {
+    min-width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 
 .jcf-select-drop {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 1px;
-    background-color: #fff;
-    z-index: 2;
-    border-radius: 4px;
-    box-shadow: 3px 5px 20px rgba(141, 141, 141, 0.1);
-    border: 1px solid rgba(228, 228, 228, 0.5);
-    padding: 11px 0 11px 13px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 1px;
+  background-color: #fff;
+  z-index: 2;
+  border-radius: 4px;
+  box-shadow: 3px 5px 20px rgba(141, 141, 141, 0.1);
+  border: 1px solid rgba(228, 228, 228, 0.5);
+  padding: 11px 0 11px 13px;
 }
 
 
-
-
-
 .jcf-option {
-    font-size: 14px;
-    cursor: pointer;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 
 .jcf-list-content {
-    display: block;
+  display: block;
 }
-
 
 
 .jcf-select-opener {
-    &::before {
-        content: ''; 
-        display: inline-block;
-        position: relative;
-        top: -3px;
-        margin-left: 10px;
-        border: 10px solid transparent; 
-        border-top: 10px solid #45aaa7; 
-        transform: rotate(180deg);
-    }
+  &::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #45aaa7;
+    transform: rotate(180deg);
+  }
 }
 
 .jcf-drop-active {
-    .jcf-select-opener {
-        &::before {
-            transform: rotate(0deg);
-            top: 6px;
-        }
+  .jcf-select-opener {
+    &::before {
+      transform: rotate(0deg);
+      top: 6px;
     }
+  }
 }

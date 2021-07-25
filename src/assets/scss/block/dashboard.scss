@@ -1,217 +1,223 @@
 .dashboard {
-    height: 100%;
-    .container {
-        max-width: 1646px;
+  height: 100%;
+
+  .container {
+    max-width: 1646px;
+  }
+
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include b(tablet) {
+      flex-direction: column;
+      justify-content: flex-start;
     }
-    &__wrapp {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @include b(tablet) {
-            flex-direction: column;
-            justify-content: flex-start;
-        }
+  }
+
+  &__text {
+    max-width: 623px;
+    width: 41%;
+    margin-left: 96px;
+    @include b(1672) {
+      margin-left: 0;
     }
-
-    &__text {
-        max-width: 623px;
-        width: 41%;
-        margin-left: 96px;
-        @include b(1672) {
-            margin-left: 0;
-        }
-        @include b(tablet) {
-            width: 100%;
-            max-width: 100%;
-            padding-top: 20px;
-        }
-        @include b(mobile) {
-            padding-top: 0;
-        }
+    @include b(tablet) {
+      width: 100%;
+      max-width: 100%;
+      padding-top: 20px;
     }
-
-    &__descr {
-        span {
-            text-transform: uppercase;
-            font-size: 20px;
-            margin-bottom: 13px;
-            color: #45aaa7;
-            font-weight: 600;
-            display: block;
-            @include b(mobile) {
-                margin-bottom: 22px;
-            }
-        }
-        p {
-            font-size: 48px;
-            line-height: 1.27;
-            margin-bottom: 25px;
-            font-weight: 300;
-            @include b(mobile) {
-                margin-bottom: 63px;
-            }
-            @include b(500) {
-                font-size: 30px;
-            }
-        }
+    @include b(mobile) {
+      padding-top: 0;
     }
+  }
 
-    &__postscr {
-        span {
-            text-transform: uppercase;
-            font-size: 28px;
-            display: block;
-            @include b(mobile) {
-                font-size: 22px;
-            }
-        }
-        p {
-            text-transform: uppercase;
-            font-size: 28px;
-            color: #45aaa7;
-            font-weight: 600;
-            @include b(mobile) {
-                font-size: 22px;
-            }
-        }
-    }
-
-    &__board {
-        width: 60%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        margin-bottom: -52px;
-        padding-top: 28px;
-        @include b(1440) {
-            margin-bottom: 20px;
-            width: 50%;
-        }
-        @include b(mobile) {
-            width: 100%;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-    }
-
-    &__percent , &__auf , &__interes {
-        width: 100%;
-        max-width: 400px;
-        height: 100%;
-        min-height: 400px;
-        box-shadow: 0px 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
-        background-color: #fff;
-        padding: 50px 50px 10px 50px;
-        transition: transform 0.3s;
-        &:hover {
-            transform: scale(0.95);
-            transition: transform 0.3s;
-        }
-        @include b(1520) {
-            max-width: 300px;
-            min-height: 300px;
-            padding: 20px;
-        }
-        @include b(1388) {
-            max-width: 400px;
-            min-height: 400px;
-            padding: 50px 50px 10px 50px;
-        }
-        @include b(mobile) {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        @include b(400) {
-            padding: 20px;
-        }
-    }
-
-    &__percent {
-        position: relative;
-        top: 300px;
-        @include b(1388) {
-            margin-bottom: 20px;
-            top: auto;
-        }
-    }
-
-
-
-    &__percent-title {
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-
-    &__percent-num {
-        font-size: 94px;
-        line-height: 0.9;
-        color: #45aaa7 ;
-        margin-bottom: 17px;
-        @include b(1520) {
-            font-size: 50px;
-        }
-        @include b(1388) {
-            font-size: 94px;
-        }
-    }
-
-    &__percent-postscr {
-        display: block;
-    }
-
-    &__auf {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 23px;
-        margin-left: 21px;
-        @include b(940) {
-           margin-left: 0;
-        }
-        img {
-            max-width: 120px;
-            max-height: 120px;
-            object-fit: contain;
-            display: flex;
-            margin-bottom: 29px;
-        }
-    }
-
-    &__auf-title {
-        font-size: 20px;
-        display: block;
+  &__descr {
+    span {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-bottom: 13px;
+      color: #45aaa7;
+      font-weight: 600;
+      display: block;
+      @include b(mobile) {
         margin-bottom: 22px;
-        font-weight: 600;
+      }
     }
 
-    &__auf-descr {
-        font-size: 25px;
-        display: block;
-        margin-bottom: 17px;
-        font-weight: 600;
+    p {
+      font-size: 48px;
+      line-height: 1.27;
+      margin-bottom: 25px;
+      font-weight: 300;
+      @include b(mobile) {
+        margin-bottom: 63px;
+      }
+      @include b(500) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__postscr {
+    span {
+      text-transform: uppercase;
+      font-size: 28px;
+      display: block;
+      @include b(mobile) {
+        font-size: 22px;
+      }
     }
 
-    &__auf-postscr {
-        //font-size: 14px;
-        line-height: 1.42;
+    p {
+      text-transform: uppercase;
+      font-size: 28px;
+      color: #45aaa7;
+      font-weight: 600;
+      @include b(mobile) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__board {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: -52px;
+    padding-top: 28px;
+    @include b(1440) {
+      margin-bottom: 20px;
+      width: 50%;
+    }
+    @include b(mobile) {
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  &__percent, &__auf, &__interes {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    min-height: 400px;
+    box-shadow: 0px 6px 18.69px 2.31px rgba(0, 0, 0, 0.21);
+    background-color: #fff;
+    padding: 50px 50px 10px 50px;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(0.95);
+      transition: transform 0.3s;
     }
 
-    &__interes {
-        span {
-            font-size: 20px;
-            font-weight: 600;
-            margin-bottom: 23px;
-            display: block;
-        }
+    @include b(1520) {
+      max-width: 300px;
+      min-height: 300px;
+      padding: 20px;
+    }
+    @include b(1388) {
+      max-width: 400px;
+      min-height: 400px;
+      padding: 50px 50px 10px 50px;
+    }
+    @include b(mobile) {
+      width: 100%;
+      max-width: 100%;
     }
 
-    .button {
-        max-width: 150px;
-        margin-bottom: 103px;
-        @include b(mobile) {
-            margin-bottom: 63px;
-        }
+    @include b(400) {
+      padding: 20px;
     }
+  }
+
+  &__percent {
+    position: relative;
+    top: 300px;
+    @include b(1388) {
+      margin-bottom: 20px;
+      top: auto;
+    }
+  }
+
+
+  &__percent-title {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__percent-num {
+    font-size: 94px;
+    line-height: 0.9;
+    color: #45aaa7;
+    margin-bottom: 17px;
+    @include b(1520) {
+      font-size: 50px;
+    }
+    @include b(1388) {
+      font-size: 94px;
+    }
+  }
+
+  &__percent-postscr {
+    display: block;
+  }
+
+  &__auf {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+    margin-left: 21px;
+    @include b(940) {
+      margin-left: 0;
+    }
+
+    img {
+      max-width: 120px;
+      max-height: 120px;
+      object-fit: contain;
+      display: flex;
+      margin-bottom: 29px;
+    }
+  }
+
+  &__auf-title {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 22px;
+    font-weight: 600;
+  }
+
+  &__auf-descr {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 17px;
+    font-weight: 600;
+  }
+
+  &__auf-postscr {
+    //font-size: 14px;
+    line-height: 1.42;
+  }
+
+  &__interes {
+    span {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 23px;
+      display: block;
+    }
+  }
+
+  .button {
+    max-width: 150px;
+    margin-bottom: 103px;
+    @include b(mobile) {
+      margin-bottom: 63px;
+    }
+  }
 }
 
 

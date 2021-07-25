@@ -23,7 +23,7 @@
     @include b(600) {
         border-right: none;
     }
-    
+
     &__wrapp {
         display: flex;
         justify-content: center;
@@ -40,14 +40,14 @@
             min-height: calc(100vh - 23px);
         }
 
-        
+
         @include b(1268) {
             padding-left: 0;
             align-items: center;
         }
 
         @include b(600) {
-            margin-right: 0px;
+            margin-right: 0;
             margin-left: 24px;
         }
 
@@ -55,7 +55,7 @@
             margin-left: 10px;
         }
 
-        
+
     }
 
     &__inner {
@@ -129,7 +129,7 @@
     }
 
     // login btn --- responsive option
-    
+
     .header {
 
 		&__btn-login {
@@ -153,7 +153,7 @@
                 margin-top: -21px;
             }
             @include b(600) {
-                margin: 0px 0px 0px 0px;
+                margin: 0;
             }
         }
 
@@ -162,7 +162,7 @@
                 margin: -42px 0px 0px 42px;
             }
             @include b(500) {
-                margin: 0px 0px 0px 30px;
+                margin: 0 0 0 30px;
             }
         }
 

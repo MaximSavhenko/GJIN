@@ -1,131 +1,142 @@
 .footer {
 
-    padding-top: 36px;
+  padding-top: 36px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -9999px;
+    bottom: 0;
+    left: -9999px;
+    background-color: #f4f4f4;
+    z-index: 1;
+  }
+
+  @include b(mobile) {
+    padding-top: 41px;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     position: relative;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -9999px;
-        bottom: 0;
-        left: -9999px;
-        background-color: #f4f4f4;
-        z-index: 1;
-    }
+    z-index: 2;
+  }
+
+  &__social {
+    margin-bottom: 21px;
     @include b(mobile) {
-        padding-top: 41px;
+      margin-bottom: 24px;
     }
-    
-    &__wrap {
-        display: flex;
-        align-items: center;
+
+    a {
+      margin-right: 20px;
+      display: inline-block;
+      cursor: default;
+      @include b(mobile) {
+        margin-right: 49px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    img {
+      max-width: 31px;
+      max-height: 31px;
+      display: flex;
+      // @include b(mobile) {
+      //     max-width: 56px;
+      //     max-height: 56px;
+      // }
+    }
+  }
+
+  &__nav {
+    margin-bottom: 30px;
+    @include b(mobile) {
+      margin-bottom: 47px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      @include b(mobile) {
         flex-direction: column;
-        position: relative;
-        z-index: 2;
+      }
     }
 
-    &__social {
-        margin-bottom: 21px;
-        @include b(mobile) {
-            margin-bottom: 24px;
-        }
-        a {
-            margin-right: 20px;
-            display: inline-block;
-            cursor: default;
-            @include b(mobile) {
-                margin-right: 49px;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-        img {
-            max-width: 31px;
-            max-height: 31px;
-            display: flex;
-            // @include b(mobile) {
-            //     max-width: 56px;
-            //     max-height: 56px;
-            // }
-        }
+    li {
+      margin-right: 20px;
+      @include b(mobile) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
-    &__nav {
-        margin-bottom: 30px;
-        @include b(mobile) {
-            margin-bottom: 47px;
-        }   
+    a {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #424242;
+      font-weight: 300;
+      @include b(mobile) {
+        font-size: 16px;
+      }
 
-        ul {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            @include b(mobile) {
-                flex-direction: column;
-            }
-        }
-        li {
-            margin-right: 20px;
-            @include b(mobile) {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-        a {
-            font-size: 18px;
-            text-transform: uppercase;
-            color: #424242;
-            font-weight: 300;
-            @include b(mobile) {
-                font-size: 16px;
-            }
-            span {
-                font-weight: 600;
-            }
-        }
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__descr {
+    padding: 8px 0 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+    z-index: 5;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -9999px;
+      bottom: 0;
+      left: -9999px;
+      background-color: #5fb6b3;
+      z-index: -1;
+    }
+  }
+
+  &__descr-desc {
+    @include b(mobile) {
+      display: none;
     }
 
-    &__descr {
-        padding: 8px 0px 5px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-transform: uppercase;
-        color: #fff;
-        font-size: 12px;
-        position: relative;
-        z-index: 5;
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: -9999px;
-            bottom: 0;
-            left: -9999px;
-            background-color: #5fb6b3;
-            z-index: -1;
-        }
+    a {
+      color: #fff;
     }
+  }
 
-    &__descr-desc{
-        @include b(mobile) {
-            display: none;
-        }
-        a {
-            color: #fff;
-        }
+  &__descr-resp {
+    display: none;
+    font-size: 18px;
+    @include b(mobile) {
+      display: block;
     }
-
-    &__descr-resp{
-        display: none;
-        font-size: 18px;
-        @include b(mobile) {
-            display: block;
-        }
-    }
+  }
 }
 

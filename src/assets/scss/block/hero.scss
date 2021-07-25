@@ -1,50 +1,53 @@
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding: 225px 0px 150px 0px;
-    @include b(mobile) {
-        padding: 72px 0px 172px 0px;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 225px 0 150px 0;
+  @include b(mobile) {
+    padding: 72px 0 172px 0;
+  }
+  @include b(400) {
+    padding: 40px 0 60px 0;
+  }
+
+  &__wrapp {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #4dbbb8;
+    margin-bottom: 14px;
+  }
+
+  &__descr {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.14;
+    margin-bottom: 21px;
+    color: #424242;
     @include b(400) {
-        padding: 40px 0 60px 0;
+      font-size: 20px;
     }
-    &__wrapp{
-        max-width: 550px;
-        margin: 0 auto;
-    }
+  }
 
-    &__title {
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: #4dbbb8;
-        margin-bottom: 14px;
-    }
-    &__descr {
-        font-size: 35px;
-        font-weight: 600;
-        line-height: 1.14;
-        margin-bottom: 21px;
-        color: #424242;
-        @include b(400) {
-            font-size: 20px;
-        }
-    }
-    &__postscr {
-        font-weight: 300;
-        color: #424242;
-        margin-bottom: 30px;
-        line-height: 1.55;
-        max-width: 470px;
-    }
+  &__postscr {
+    font-weight: 300;
+    color: #424242;
+    margin-bottom: 30px;
+    line-height: 1.55;
+    max-width: 470px;
+  }
 
-    .button {
-        max-width: 150px;
-        @include b(mobile) {
-            max-width: 180px;
-        }
+  .button {
+    max-width: 150px;
+    @include b(mobile) {
+      max-width: 180px;
     }
+  }
 
 }
 

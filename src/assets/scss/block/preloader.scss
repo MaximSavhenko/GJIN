@@ -22,8 +22,8 @@
 
   span {
     transition: 5s all;
-    
-    &.animated{
+
+    &.animated {
       opacity: 1;
     }
 
@@ -37,7 +37,7 @@
   &.loaded {
     display: none;
   }
-  
+
   #typed-entry {
     text-transform: uppercase;
     font-size: 30px;
@@ -48,26 +48,25 @@
     }
   }
 
-.typed-cursor {
+  .typed-cursor {
     font-size: 30px;
     color: #fff;
     animation: blink 0.7s infinite;
     @include b(mobile) {
       font-size: 30px;
     }
-}
+  }
 
 
-
-@keyframes blink {
+  @keyframes blink {
     0% {
-        opacity: 1;
+      opacity: 1;
     }
     50% {
-        opacity: 0;
+      opacity: 0;
     }
     100% {
-        opacity: 1;
+      opacity: 1;
     }
-}
+  }
 }

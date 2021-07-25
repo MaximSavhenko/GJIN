@@ -1,134 +1,140 @@
 .logo {
-    background-color: #fff;
-    padding: 135px 0px 120px 0px;
+  background-color: #fff;
+  padding: 135px 0 120px 0;
 
-    @include b(mobile) {
-        padding: 68px 0px 57px 0px;
+  @include b(mobile) {
+    padding: 68px 0 57px 0;
+  }
+
+  // mod for form on page "become_a_partner" class mod - "logo--form" ---
+
+  &--form {
+    background-color: transparent;
+    padding-top: 0;
+    @include b(1000) {
+      padding: 68px 0 57px 0;
     }
 
-    // mod for form on page "become_a_partner" class mod - "logo--form" ---
-
-    &--form {
-        background-color: transparent;
-        padding-top: 0;
-        @include b(1000) {
-            padding: 68px 0px 57px 0px;
-        }
-        .logo__wrap {
-            align-items: stretch;
-            padding-bottom: 113px;
-            @include b(1000) {
-                justify-content: flex-start;
-                align-items: flex-start;
-                flex-direction: column;
-            }
-        }
-        .logo__btn{
-            width: 100%;
-            max-width: 324px;
-            margin: 0 auto;
-            .button {
-                padding: 12px 0px 12px 0px;
-                height: auto;
-                font-size: 26px;
-                text-align: center;
-            }
-        }
-
-        .logo__img {
-            @include b(1000) {
-                order: -1;
-                border-left: none;
-                border-right: none;
-                margin: 0px 0px 0px 0px;
-                padding: 0px 0px 71px 0px;
-                margin: 0 auto;
-            }
-        }
-
-        .logo__text {
-            p {
-                @include b(1000) {
-                    max-width: 100%;
-                }
-            }
-        }
-    }
-
-    // mod for form on page "become_a_partner" class mod - "logo--form" ---
-
-
-    &__wrap {
-        display: flex;
-        justify-content: center;
-        @include b(mobile) {
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-        }
-    }
-
-    &__text {
-        display: flex;
-        min-height: 100%;
+    .logo__wrap {
+      align-items: stretch;
+      padding-bottom: 113px;
+      @include b(1000) {
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-direction: column;
-        @include b(mobile) {
-            &:first-child {
-                padding-bottom: 65px;
-            }
-        }
-        span {
-            font-weight: 600;
-            font-size: 20px;
-            margin-bottom: 52px;
-            display: block;
-            text-transform: uppercase;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.55;
-            max-width: 300px;
-            margin-bottom: 32px;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-        .button {
-            margin: auto auto 0 auto;
-            max-width: 200px;
-            @include b(mobile) {
-                max-width: 180px;
-            }
-        }
+      }
     }
 
-    &__postscr{
-        font-weight: 600;
+    .logo__btn {
+      width: 100%;
+      max-width: 324px;
+      margin: 0 auto;
+
+      .button {
+        padding: 12px 0 12px 0;
+        height: auto;
+        font-size: 26px;
+        text-align: center;
+      }
+    }
+
+    .logo__img {
+      @include b(1000) {
+        order: -1;
+        border-left: none;
+        border-right: none;
+        padding: 0 0 71px 0;
+        margin: 0 auto;
+      }
+    }
+
+    .logo__text {
+      p {
+        @include b(1000) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  // mod for form on page "become_a_partner" class mod - "logo--form" ---
+
+
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    @include b(mobile) {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    @include b(mobile) {
+      &:first-child {
+        padding-bottom: 65px;
+      }
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 52px;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.55;
+      max-width: 300px;
+      margin-bottom: 32px;
+
+      &:last-child {
         margin-bottom: 0;
+      }
     }
 
-    &__img {
-        display: block;
-        border-left: 2px solid #4dbbb8;
-        border-right: 2px solid #4dbbb8;
-        object-fit: contain;
-        padding: 0px 67px 0px 67px;
-        margin: 0px 40px 0px 40px;
-        @include b(mobile) {
-            order: -1;
-            border-left: none;
-            border-right: none;
-            margin: 0px 0px 0px 0px;
-            padding: 0px 0px 71px 0px;
-            margin: 0 auto;
-        }
-        img {
-            max-width: 190px;
-            max-height: 190px;
-            @include b(1000) {
-                max-width: 87px;
-                max-height: 87px;
-            }
-        }
+    .button {
+      margin: auto auto 0 auto;
+      max-width: 200px;
+      @include b(mobile) {
+        max-width: 180px;
+      }
     }
+  }
+
+  &__postscr {
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  &__img {
+    display: block;
+    border-left: 2px solid #4dbbb8;
+    border-right: 2px solid #4dbbb8;
+    object-fit: contain;
+    padding: 0 67px 0 67px;
+    margin: 0 40px 0 40px;
+    @include b(mobile) {
+      order: -1;
+      border-left: none;
+      border-right: none;
+      padding: 0 0 71px 0;
+      margin: 0 auto;
+    }
+
+    img {
+      max-width: 190px;
+      max-height: 190px;
+      @include b(1000) {
+        max-width: 87px;
+        max-height: 87px;
+      }
+    }
+  }
 }

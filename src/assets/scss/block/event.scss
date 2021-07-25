@@ -1,133 +1,139 @@
 .event {
-    
-    .input-group  {
-        padding-top: 50px;
+
+  .input-group {
+    padding-top: 50px;
+  }
+
+  &__header {
+    margin-bottom: 34px;
+    padding: 233px 0 0 0;
+    @include b(mobile) {
+      padding-top: 50px;
     }
 
-    &__header{
-        margin-bottom: 34px;
-        padding: 233px 0 0 0;
-        @include b(mobile) {
-            padding-top: 50px;
-        }
-        span {
-            display: block;
-        }
+    span {
+      display: block;
+    }
+  }
+
+  &__header-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.75;
+    color: #4dbbb8;
+    text-transform: uppercase;
+  }
+
+  &__header-descr {
+    line-height: 1.14;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 700px;
+  }
+
+  &__date {
+    margin-bottom: 80px;
+
+    ul {
+      border-top: 2px solid #4dbbb8;
+      border-bottom: 2px solid #4dbbb8;
+      padding: 10px 0 18px 0;
     }
 
-    &__header-title{
+    li {
+      display: flex;
+      align-items: center;
+
+      p {
         font-size: 20px;
         font-weight: 700;
-        line-height: 1.75;
-        color: #4dbbb8;
+        line-height: 1.95;
         text-transform: uppercase;
+        padding-left: 20px;
+      }
+
+      svg {
+        width: 26px;
+        height: 26px;
+        fill: #45aaa7;
+      }
+    }
+  }
+
+  &__date-title {
+    font-weight: 300;
+    line-height: 1.55;
+    margin-bottom: 34px;
+    display: block;
+  }
+
+  &__body {
+
+    p {
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 37px;
     }
 
-    &__header-descr{
-        line-height: 1.14;
-        font-size: 35px;
-        text-transform: uppercase;
-        font-weight: 700;
-        max-width: 700px;
+    li {
+      font-weight: 300;
+      line-height: 1.55;
+      display: flex;
+      align-items: center;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background-color: #000;
+        border-radius: 50%;
+        margin-right: 9px;
+      }
     }
 
-    &__date{
-        margin-bottom: 80px;
-        ul {
-            border-top: 2px solid #4dbbb8;
-            border-bottom: 2px solid #4dbbb8;
-            padding: 10px 0 18px 0;
-        }
-        li {
-            display: flex;
-            align-items: center;
-            p {
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 1.95;
-                text-transform: uppercase;
-                padding-left: 20px;
-            }
-
-            svg {
-                width: 26px;
-                height: 26px;
-                fill: #45aaa7;
-            }
-        }
+    ul {
+      margin-bottom: 29px;
     }
 
-    &__date-title{
-        font-weight: 300;
-        line-height: 1.55;
-        margin-bottom: 34px;
-        display: block;
+
+    strong {
+      font-weight: 600;
+      line-height: 1.55;
+      display: block;
+
+      &:last-child {
+        margin-bottom: 28px;
+      }
     }
 
-    &__body{
 
-        p {
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 37px;
-        }
-
-        li { 
-            font-weight: 300;
-            line-height: 1.55;
-            display: flex;
-            align-items: center;
-            &:before {
-                content:'';
-                display: inline-block;
-                width: 5px;
-                height: 5px;
-                background-color: #000;
-                border-radius: 50%;
-                margin-right:9px;
-            }
-        }
-
-        ul {
-            margin-bottom: 29px;
-        }
-
-
-        strong {
-            font-weight: 600;
-            line-height: 1.55;
-            display: block;
-            &:last-child {
-                margin-bottom: 28px;
-            }
-        }
-    
-
-        span {
-            font-weight: 300;
-            margin-bottom: 6px;
-            line-height: 1.55;
-            display: block;
-        }
+    span {
+      font-weight: 300;
+      margin-bottom: 6px;
+      line-height: 1.55;
+      display: block;
     }
+  }
 
-    &__footer{
-        padding: 0 0 120px 0;
-        .button {
-            max-width: 174px;
-            height: 37px;
-            font-size: 16px;
-        }
+  &__footer {
+    padding: 0 0 120px 0;
+
+    .button {
+      max-width: 174px;
+      height: 37px;
+      font-size: 16px;
     }
+  }
 
-    .logo {
-        background-color: transparent;
-    }
+  .logo {
+    background-color: transparent;
+  }
 
-    
 
-    .container {
-        max-width: 991px;
-    }
+  .container {
+    max-width: 991px;
+  }
 
 }
