@@ -46,7 +46,7 @@
     &--otherPB {
       padding-bottom: 51px;
       padding-top: 225px;
-      @include b(500) {
+      @include b(599) {
         padding-top: 100px;
       }
     }
@@ -169,14 +169,14 @@
 
     .input-group__left, .input-group__right {
       max-width: 321px;
-      @include b(mobile) {
+      @include b(785) {
         width: 100%;
         max-width: 100%;
       }
 
       input {
         width: 321px;
-        @include b(mobile) {
+        @include b(785) {
           width: 100%;
           max-width: 100%;
         }
@@ -186,7 +186,7 @@
       .jcf-select {
         max-width: 321px;
         font-weight: 300;
-        @include b(mobile) {
+        @include b(785) {
           max-width: 100%;
           margin-bottom: 13px;
           height: 50px;
@@ -198,7 +198,7 @@
 
     .input-group__left {
       margin-right: 28px;
-      @include b(mobile) {
+      @include b(785) {
         margin-right: 0;
       }
     }
