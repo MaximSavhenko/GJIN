@@ -34,7 +34,7 @@
       display: block;
     }
 
-    @include b(1264) {
+    @include b(1300) {
       justify-content: flex-start;
       padding-left: 0;
     }
@@ -56,6 +56,17 @@
     width: 100%;
     max-width: 504px;
     margin: 0 auto;
+    @include b(1300) {
+      max-width: 670px;
+    }
+
+    @include b(600) {
+      padding: 0 15px;
+    }
+    
+    @include b(500) {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -78,10 +89,19 @@
     line-height: 1.14;
     margin-bottom: 19px;
 
+    @include b(1300) {
+      max-width: 505px;
+    }
+
     @include b(mobile) {
+      max-width: 100%;
       font-size: 42px;
       letter-spacing: .3px;
       margin-bottom: 30px;
+    }
+
+    @include b(500) {
+      font-size: 30px;
     }
   }
 
@@ -107,6 +127,10 @@
     align-items: center;
     padding: 0 15px;
 
+    @include b(500) {
+      padding: 0;
+    }
+
     input {
       @include b(mobile) {
         margin-bottom: 13px;
@@ -119,9 +143,10 @@
       font-size: 20px;
       text-transform: uppercase;
       line-height: 1.3;
-      @include b(mobile) {
+      @include b(1300) {
         font-size: 24px;
         margin-bottom: 15px;
+
       }
       @include b(500) {
         font-size: 16px;
@@ -137,12 +162,20 @@
     .input-group__wrap {
       max-width: 1118px;
       margin: 0 auto;
+      @include b(1300) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     .input-group__inputs {
       justify-content: flex-start;
-      @include b(tablet) {
+      @include b(1300) {
+        width: 100%;
+        max-width: 670px;
         flex-wrap: wrap;
+        justify-content: center;
         margin-bottom: 10px;
       }
 
@@ -156,9 +189,11 @@
     .input-group__single-input {
       display: flex;
       justify-content: space-between;
-      @include b(tablet) {
+      @include b(1300) {
         flex-wrap: wrap;
         margin-bottom: 12px;
+        width: 100%;
+        max-width: 670px;
       }
 
       input {
@@ -176,6 +211,7 @@
 
       input {
         width: 321px;
+        height: 43px;
         @include b(785) {
           width: 100%;
           max-width: 100%;
@@ -207,9 +243,11 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      @include b(tablet) {
+      @include b(1300) {
         flex-wrap: wrap;
         margin-bottom: 20px;
+        width: 100%;
+        max-width: 670px;
       }
 
       .input-group__hints {
@@ -221,7 +259,7 @@
       textarea {
         width: 670px;
         height: 512px;
-        @include b(mobile) {
+        @include b(768) {
           height: 490px;
           width: 100%;
           max-width: 100%;
@@ -251,8 +289,11 @@
     .input-group__checkbox {
       display: flex;
       justify-content: flex-end;
-      @include b(mobile) {
+      @include b(1300) {
         margin-bottom: 28px;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 670px;
       }
 
       .checkbox {
@@ -283,8 +324,9 @@
     .input-group__btn {
       max-width: 670px;
       margin-left: auto;
-      @include b(tablet) {
+      @include b(1300) {
         margin-left: 0;
+        width: 100%;
       }
 
       .button {

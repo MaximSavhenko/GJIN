@@ -30,9 +30,9 @@
       margin-bottom: 14px;
       line-height: 1.55;
       @include b(mobile) {
-        font-size: 42px;
+        font-size: 24px;
       }
-      @include b(400) {
+      @include b(460) {
         font-size: 20px;
       }
     }

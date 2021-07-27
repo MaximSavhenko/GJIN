@@ -1,10 +1,16 @@
 #form__personal_account {
   width: 100%;
+}
+
+#edit-h-link {
+  text-align: end;
   @include b(600) {
     margin-bottom: 20px;
   }
 }
 
-#edit-h-link {
-  text-align: end;
+.form-textarea-wrapper {
+  @include b(768) {
+    width: 100%;
+  }
 }
