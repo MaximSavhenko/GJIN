@@ -456,6 +456,13 @@ input[type=checkbox] {
     transition: all .2s;
     display: block;
   }
+
+  a {
+    color: #45aaa7;
+    &:hover {
+      color: #45aaa7;
+    }
+  }
 }
 
 img {
