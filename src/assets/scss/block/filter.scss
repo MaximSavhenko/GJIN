@@ -114,6 +114,9 @@
     padding: 46px 0 0 23px;
     width: 100%;
     max-width: 388px;
+    // @include b(1764) {
+    //   max-width: 300px;
+    // }
     @include b(tablet) {
       max-width: 100%;
       padding-left: 26px;
@@ -210,6 +213,9 @@
     cursor: pointer;
     padding-bottom: 28px;
     width: 388px;
+    // @include b(1764) {
+    // width: 300px;
+    // }
     @include b(1106) {
       width: 100%;
     }
