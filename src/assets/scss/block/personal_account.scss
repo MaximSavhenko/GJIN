@@ -241,8 +241,8 @@
       line-height: 1;
       text-transform: uppercase;
       margin-left: 25px;
-      max-width: 273px;
       @include b(468) {
+        max-width: 273px;
         font-size: 18px;
         margin-left: 10px;
       }
