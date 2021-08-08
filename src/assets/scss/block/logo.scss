@@ -50,6 +50,7 @@
 
     .logo__text {
       p {
+        font-weight: 300;
         @include b(1000) {
           max-width: 100%;
         }
@@ -93,6 +94,7 @@
       line-height: 1.55;
       max-width: 300px;
       margin-bottom: 32px;
+      font-weight: 300;
 
       &:last-child {
         margin-bottom: 0;
@@ -109,7 +111,7 @@
   }
 
   &__postscr {
-    font-weight: 600;
+    font-weight: 600 !important;
     margin-bottom: 0;
   }
 

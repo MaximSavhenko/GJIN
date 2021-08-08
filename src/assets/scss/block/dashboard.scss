@@ -91,6 +91,9 @@
       margin-bottom: 20px;
       width: 50%;
     }
+    @include b(tablet) {
+      width: 100%;
+    }
     @include b(mobile) {
       width: 100%;
       justify-content: flex-start;
@@ -113,17 +116,12 @@
       transition: transform 0.3s;
     }
 
-    @include b(1520) {
-      max-width: 300px;
-      min-height: 300px;
-      padding: 20px;
-    }
     @include b(1388) {
       max-width: 400px;
       min-height: 400px;
       padding: 50px 50px 10px 50px;
     }
-    @include b(mobile) {
+    @include b(tablet) {
       width: 100%;
       max-width: 100%;
     }
@@ -136,7 +134,7 @@
   &__percent {
     position: relative;
     top: 300px;
-    @include b(1388) {
+    @include b(1529) {
       margin-bottom: 20px;
       top: auto;
     }
@@ -170,7 +168,7 @@
     flex-direction: column;
     margin-bottom: 23px;
     margin-left: 21px;
-    @include b(940) {
+    @include b(tablet) {
       margin-left: 0;
     }
 

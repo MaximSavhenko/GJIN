@@ -5,7 +5,7 @@
   }
 
   &__header {
-    margin-bottom: 34px;
+    margin-bottom: 19px;
     padding: 233px 0 0 0;
     @include b(mobile) {
       padding-top: 50px;
@@ -22,11 +22,11 @@
     line-height: 1.75;
     color: #4dbbb8;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 7px;
   }
 
   &__header-descr {
-    line-height: 1.14;
+    line-height: 1.13;
     font-size: 35px;
     text-transform: uppercase;
     font-weight: 700;
