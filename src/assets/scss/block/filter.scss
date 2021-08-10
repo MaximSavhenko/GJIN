@@ -114,9 +114,6 @@
     padding: 46px 0 0 23px;
     width: 100%;
     max-width: 388px;
-    // @include b(1764) {
-    //   max-width: 300px;
-    // }
     @include b(tablet) {
       max-width: 100%;
       padding-left: 26px;
@@ -164,6 +161,11 @@
     p {
       margin-bottom: 28px;
       max-width: 861px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
     }
   }
 
