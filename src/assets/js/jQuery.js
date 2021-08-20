@@ -120,7 +120,7 @@ $(function () {
     });
     }
 
-  masonry();
+  // masonry();
 
   function dropdownHeader() {
     let dropBtn = $('.header__checkin'),
@@ -173,4 +173,11 @@ $(function () {
   }
 
   muteSocialLink();
+
+  function checkboxDisabled() {
+    let checkbox = $('#edit-field-my-kategorie .input-group__checkbox');
+    console.log(checkbox);
+  }
+
+  checkboxDisabled();
 });

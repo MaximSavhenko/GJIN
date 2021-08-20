@@ -1,0 +1,28 @@
+#block-simplenewssubscription {
+
+    .input-group--text {
+        align-items: flex-start;
+    }
+
+    .form-item-field-my-location {
+        width: 100%;
+        max-width: 524px;
+    }
+
+    .form-wrapper {
+        .input-group__hints {
+            margin-bottom: 20px;
+        }
+    }
+
+    .input-group__checkbox {
+        border: 1px solid #000;
+
+        input [type=checkbox] {
+            &:disabled {
+                background-color: #eeee;
+            }
+        }
+        
+    }
+}
