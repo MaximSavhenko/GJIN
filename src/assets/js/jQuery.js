@@ -175,8 +175,18 @@ $(function () {
   muteSocialLink();
 
   function checkboxDisabled() {
-    let checkbox = $('#edit-field-my-kategorie .input-group__checkbox');
-    console.log(checkbox);
+    let checkbox = $('#edit-field-my-kategorie .input-group__checkbox input:checkbox');
+    let checkboxWrap = $('#edit-field-my-kategorie .input-group__clarification')
+    $(this).on('click' , function () {
+    const myCount =  $('#edit-field-my-kategorie .input-group__checkbox input:checkbox:checked').length;
+      checkbox.each( function () {
+        if (myCount >=  3) {
+          checkbox.not(':checked').prop('disabled', true).closest(checkboxWrap).addClass('disabled')
+          } else {
+            checkbox.prop('disabled', false).closest(checkboxWrap).removeClass('disabled')
+          }
+      })
+    })
   }
 
   checkboxDisabled();

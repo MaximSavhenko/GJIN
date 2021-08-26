@@ -89,6 +89,10 @@ video {
   vertical-align: baseline;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -431,6 +435,7 @@ input[type=checkbox] {
   position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   &:before {
     content: '';
