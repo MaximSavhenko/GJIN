@@ -19,16 +19,9 @@
       line-height: 1.75;
       text-transform: uppercase;
       margin-bottom: 10px;
+      max-width: 525px;
+      margin: auto;
     }
-  }
-
-  &__title {
-    color: #4dbbb8;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.75;
-    text-transform: uppercase;
-    margin-bottom: 10px;
   }
 
   &__descr {
@@ -37,6 +30,8 @@
     font-weight: 700;
     line-height: 1.14;
     margin-bottom: 19px;
+    max-width: 525px;
+    margin: 0 auto;
   }
 
   &__postscr {
