@@ -8,6 +8,10 @@
       padding: 50px 0 50px 0;
     }
 
+    @include b(mobile) {
+        max-width: 100%;
+    }
+
     span {
       display: block;
     }
@@ -21,6 +25,11 @@
       margin-bottom: 10px;
       max-width: 525px;
       margin: auto;
+
+      @include b(tablet) {
+          max-width: 100%;
+          margin: 0;
+      }
     }
   }
 
@@ -32,6 +41,10 @@
     margin-bottom: 19px;
     max-width: 525px;
     margin: 0 auto;
+    @include b(tablet) {
+      max-width: 100%;
+      margin: 0 0 20px 0;
+  }
   }
 
   &__postscr {
