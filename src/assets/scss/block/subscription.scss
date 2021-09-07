@@ -81,7 +81,6 @@
   }
 
   .input-group--text {
-    align-items: flex-end;
     width: 100%;
     max-width: 372px;
     margin-bottom: 40px;
@@ -205,6 +204,7 @@
   width: 100%;
   max-width: 776px;
   padding: 40px 0;
+  margin: 0 auto 0 0;
 
   #edit-subscriptions--wrapper {
     width: 100%;
