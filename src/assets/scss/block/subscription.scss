@@ -1,38 +1,15 @@
-#edit-user-form {
-  .input-group__btn {
-    width: 100%;
-    max-width: 372px;
-    margin-left: auto;
-
-    @include b(mobile) {
-      margin-left: 0;
-      max-width: 100%;
-
-      .button {
-        max-width: 100%;
-      }
-    }
-  }
-}
-
-#block-simplenewssubscription,
-.simplenews-subscriber-account-form {
+.simplenews-subscriptions-block-job-offer {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 775px;
   align-items: flex-end;
   position: relative;
-  padding: 0 15px;
+  padding: 0 15px 40px 15px;
+  margin: 0 auto 0 0;
 
   @include b(mobile) {
     align-items: flex-start;
-  }
-
-  .form-checkboxes .form-item,
-  .form-radios .form-item {
-    margin-top: 0.4em;
-    margin-bottom: 0.4em;
   }
 
   h2 {
@@ -41,7 +18,6 @@
     text-transform: uppercase;
     line-height: 1.3;
     max-width: 396px;
-    margin-bottom: -30px;
     position: absolute;
     top: 0;
     left: 15px;
@@ -53,31 +29,10 @@
     }
   }
 
-  .form-type-textfield,
-  .form-type-select {
-    .jcf-select {
-      width: 100%;
-      max-width: 372px;
-
-      @include b(mobile) {
-        max-width: 100%;
-      }
-    }
-
-    input {
-      max-width: 372px;
-
-      @include b(mobile) {
-        max-width: 100%;
-      }
-    }
-  }
-
-  .form-item-field-my-location {
-    label {
-      font-size: 21px;
-      line-height: 2.2;
-    }
+  .form-checkboxes .form-item,
+  .form-radios .form-item {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
   }
 
   .input-group--text {
@@ -85,6 +40,7 @@
     max-width: 372px;
     margin-bottom: 40px;
     padding: 0;
+    align-items: flex-start;
 
     .form-type-textfield {
       @include b(mobile) {
@@ -128,35 +84,6 @@
         }
       }
     }
-
-    #edit-manage {
-      margin-top: 20px;
-      min-width: 150px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-self: flex-start;
-      height: 37px;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-family: "Atlan", sans-serif, Arial;
-      background-color: #4dbbb8;
-      color: #ffff;
-      font-weight: 300;
-      cursor: pointer;
-      transition: all 0.3s;
-      padding: 0 14px;
-
-      @include b(mobile) {
-        font-size: 19px;
-        font-weight: 300;
-        height: auto;
-        padding: 10px 0 10px 0;
-        max-width: 100%;
-        margin-right: 0;
-        min-width: 100%;
-      }
-    }
   }
 
   .form-item-field-my-location {
@@ -173,38 +100,6 @@
       margin-bottom: 20px;
     }
   }
-
-  #edit-field-my-kategorie--wrapper {
-    width: 100%;
-    max-width: 372px;
-    display: flex;
-    flex-direction: column;
-
-    @include b(mobile) {
-      max-width: 100%;
-    }
-  }
-
-  .input-group__checkbox {
-    .input-group__clarification {
-      &.disabled {
-        color: #808080;
-        pointer-events: auto;
-        z-index: 100;
-        .checkbox {
-          cursor: not-allowed;
-        }
-      }
-    }
-  }
-}
-
-.simplenews-subscriber-account-form {
-  align-items: flex-end;
-  width: 100%;
-  max-width: 776px;
-  padding: 40px 0;
-  margin: 0 auto 0 0;
 
   #edit-subscriptions--wrapper {
     width: 100%;
@@ -267,6 +162,17 @@
     }
   }
 
+  #edit-field-my-kategorie--wrapper {
+    width: 100%;
+    max-width: 372px;
+    display: flex;
+    flex-direction: column;
+
+    @include b(mobile) {
+      max-width: 100%;
+    }
+  }
+
   .form-type-textfield {
     margin-bottom: 32px;
   }
@@ -292,6 +198,19 @@
         font-weight: 300;
         height: auto;
         padding: 10px 0 10px 0;
+      }
+    }
+  }
+
+  .input-group__checkbox {
+    .input-group__clarification {
+      &.disabled {
+        color: #808080;
+        pointer-events: auto;
+        z-index: 100;
+        .checkbox {
+          cursor: not-allowed;
+        }
       }
     }
   }
