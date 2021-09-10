@@ -1,3 +1,16 @@
 .grecaptcha-badge {
     z-index: 100;
 }
+
+.webform-submission-form {
+    .captcha {
+        width: 100%;
+        max-width: 670px;
+        margin-left: auto;
+        margin-bottom: 20px;
+
+        @include b(1300) {
+            margin-left: 0;
+        }
+    }
+}

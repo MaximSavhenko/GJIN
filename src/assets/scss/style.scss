@@ -557,6 +557,12 @@ img {
   }
 }
 
+#node-job-offer-form {
+  .filter-guidelines-basic_html {
+    display: none;
+  }
+}
+
 
 @import "block/preloader.scss";
 @import "block/jcf.scss";
