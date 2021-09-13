@@ -1,0 +1,13 @@
+.user-form {
+  .input-group__btn {
+    max-width: 372px;
+    margin-left: auto;
+
+    @include b(mobile) {
+      max-width: 100%;
+      input {
+        max-width: 100%;
+      }
+    }
+  }
+}
