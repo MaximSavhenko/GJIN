@@ -150,6 +150,10 @@
       max-width: 144px;
       height: 37px;
       margin: auto 0 0 0;
+
+      @include b(tablet) {
+        margin-top: 28px;
+      }
     }
 
     time {
@@ -172,9 +176,9 @@
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
 
-      @include b(mobile) {
-        margin-bottom: 28px;
-      }
+      // @include b(mobile) {
+      //   margin-bottom: 28px;
+      // }
     }
   }
 

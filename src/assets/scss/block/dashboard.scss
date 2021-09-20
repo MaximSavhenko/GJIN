@@ -19,6 +19,9 @@
     max-width: 623px;
     width: 41%;
     margin-left: 96px;
+    @include b(1440) {
+      width: 40%;
+    }
     @include b(1672) {
       margin-left: 0;
     }
@@ -87,9 +90,10 @@
     justify-content: flex-end;
     margin-bottom: -52px;
     padding-top: 28px;
-    @include b(1440) {
+    position: relative;
+    @include b(1529) {
       margin-bottom: 20px;
-      width: 50%;
+      width: 60%;
     }
     @include b(tablet) {
       width: 100%;
@@ -116,7 +120,13 @@
       transition: transform 0.3s;
     }
 
-    @include b(1388) {
+    @include b(1529) {
+      min-height: 0;
+      height: 350px;
+      width: 350px;
+    }
+
+    @include b(1348) {
       max-width: 400px;
       min-height: 400px;
       padding: 50px 50px 10px 50px;
@@ -136,7 +146,13 @@
     top: 300px;
     @include b(1544) {
       margin-bottom: 20px;
+    }
+    @include b(1348) {
       top: auto;
+    }
+    @include b(tablet) {
+      position: relative;
+      top:auto
     }
   }
 

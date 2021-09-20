@@ -322,9 +322,10 @@ input[type="number"] {
     }
   }
 
-  // &:focus {
-  //   box-shadow: 0 0 3px 1px #68a8e0;
-  // }
+  &:focus {
+    box-shadow: none;
+    background-color: #f4f4f4;
+  }
 }
 
 input[type="search"] {
@@ -414,9 +415,10 @@ textarea {
     }
   }
 
-  // &:focus {
-  //   box-shadow: 0 0 3px 1px #68a8e0;
-  // }
+  &:focus {
+    box-shadow: none;
+    background-color: #f4f4f4;
+  }
 }
 
 input[type=checkbox] {
@@ -587,6 +589,8 @@ img {
 @import "block/subscription.scss";
 @import "block/captcha.scss";
 @import "block/user-form.scss";
+@import "block/hide_info_block.scss";
+@import "block/hide_image_name.scss";
 
 
 
