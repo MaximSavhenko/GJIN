@@ -87,6 +87,10 @@
       margin-bottom: 52px;
       display: block;
       text-transform: uppercase;
+
+      @include b(1000) {
+        text-align: center;
+      }
     }
 
     p {
@@ -95,6 +99,10 @@
       max-width: 300px;
       margin-bottom: 32px;
       font-weight: 300;
+
+      @include b(1000) {
+        max-width: 100%;
+      }
 
       &:last-child {
         margin-bottom: 0;

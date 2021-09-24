@@ -131,6 +131,7 @@ a {
 
   &:hover {
     text-decoration: none;
+    color: #000;
   }
 }
 
@@ -202,6 +203,10 @@ p {
 
   &--1356w {
     max-width: 1356px;
+  }
+
+  .container {
+    padding: 0;
   }
 }
 
@@ -298,7 +303,8 @@ input[type="search"],
 input[type="text"],
 input[type="email"],
 input[type="password"],
-input[type="number"] {
+input[type="number"],
+input[type="date"] {
   display: block;
   width: 100%;
   height: 43px;
@@ -419,6 +425,7 @@ textarea {
   &:focus {
     box-shadow: none;
     background-color: #f4f4f4;
+    border-color: #424242;
   }
 }
 
@@ -481,6 +488,11 @@ img {
 
 .form-control {
   border-radius: 0;
+  &:focus {
+    color: initial;
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
 
 .form-text {
@@ -566,6 +578,29 @@ img {
   }
 }
 
+// for textarea
+
+.node-job-offer-form {
+  .input-group__textarea {
+    .text-format-wrapper {
+      margin-bottom: 32px;
+
+      @include b(600) {
+        margin-bottom: 13px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.user-form {
+  .form-composite > .fieldset-wrapper > .description, .form-item .description {
+    font-size: 18px ;
+  }
+}
 
 @import "block/preloader.scss";
 @import "block/jcf.scss";
@@ -593,7 +628,7 @@ img {
 @import "block/hide_info_block.scss";
 @import "block/hide_image_name.scss";
 @import "block/fix_hight_content_on_empty_page.scss";
-
+@import "block/CybotCookiebotDialog.scss";
 
 
 
