@@ -11,3 +11,18 @@
     }
   }
 }
+
+#form__partner {
+  .user-form {
+    .input-group__btn {
+      max-width: 670px;
+        
+      @include b(mobile) {
+        max-width: 100%;
+        input {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

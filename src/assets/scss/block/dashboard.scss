@@ -143,15 +143,20 @@
   &__percent {
     position: relative;
     top: 300px;
+
     @include b(1544) {
       margin-bottom: 20px;
+    }
+    @include b(1440) {
+      font-size: 14px;
     }
     @include b(1348) {
       top: auto;
     }
     @include b(tablet) {
       position: relative;
-      top:auto
+      top:auto;
+      font-size: 18px;
     }
   }
 
@@ -159,6 +164,7 @@
   &__percent-title {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 20px;
   }
 
   &__percent-num {
@@ -211,7 +217,6 @@
   }
 
   &__auf-postscr {
-    //font-size: 14px;
     line-height: 1.42;
   }
 
@@ -221,6 +226,13 @@
       font-weight: 600;
       margin-bottom: 23px;
       display: block;
+    }
+
+    @include b(1440) {
+      font-size: 14px;
+    }
+    @include b(tablet) {
+      font-size: 18px;
     }
   }
 

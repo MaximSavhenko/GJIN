@@ -308,7 +308,7 @@ input[type="date"] {
   display: block;
   width: 100%;
   height: 43px;
-  padding: 16px 0 14px 18px;
+  padding: 0 0 0 18px;
   border: 1px solid #424242;
   background: none;
   font-family: inherit;
@@ -429,6 +429,16 @@ textarea {
   }
 }
 
+// for textarea focus 
+
+.form-textarea-wrapper {
+  .form-control {
+    &:focus {
+      border-color: #424242;
+    }
+  }
+}
+
 input[type=checkbox] {
   display: none;
 
@@ -517,6 +527,7 @@ img {
 
   &:focus {
     border: none !important;
+    outline: 1px solid #4dbbb8 !important;
   }
 
   @include b(487) {
