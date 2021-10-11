@@ -6,6 +6,8 @@
   text-align: end;
   @include b(600) {
     margin-bottom: 20px;
+    width: 100%;
+    text-align: start;
   }
 }
 
