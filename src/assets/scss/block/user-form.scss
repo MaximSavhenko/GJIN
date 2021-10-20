@@ -13,6 +13,14 @@
 }
 
 #form__partner {
+
+  @include b(1300) {
+    padding-top: 225px;
+  }
+
+  @include b(tablet) {
+    padding-top: 50px;
+  }
   .user-form {
     .input-group__btn {
       max-width: 670px;
