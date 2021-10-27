@@ -119,7 +119,9 @@
 
   // mod for form on page "become_a_partner" class mod - "form--become" ---
   &--PB {
-    padding-bottom: 90px;
+    @include b(600) {
+      padding-bottom: 0;
+    }
   }
 
   &--text {

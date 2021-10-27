@@ -125,6 +125,10 @@
       width: 350px;
     }
 
+    @include b(1440) {
+      font-size: 16px;
+    }
+
     @include b(1348) {
       max-width: 400px;
       min-height: 400px;
@@ -148,7 +152,7 @@
       margin-bottom: 20px;
     }
     @include b(1440) {
-      font-size: 14px;
+      font-size: 16px;
     }
     @include b(1348) {
       top: auto;
@@ -229,7 +233,7 @@
     }
 
     @include b(1440) {
-      font-size: 14px;
+      font-size: 16px;
     }
     @include b(tablet) {
       font-size: 18px;
