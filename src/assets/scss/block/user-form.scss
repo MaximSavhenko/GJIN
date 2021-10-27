@@ -13,14 +13,33 @@
 }
 
 #form__partner {
+
+  @include b(1300) {
+    padding-top: 225px;
+  }
+
+  @include b(tablet) {
+    padding-top: 50px;
+  }
   .user-form {
     .input-group__btn {
       max-width: 670px;
-        
+      
+      @include b(1300) {
+        margin-left: 0;
+      }
+
       @include b(mobile) {
-        max-width: 100%;
         input {
           max-width: 100%;
+        }
+        
+        .button {
+          font-size: 19px;
+          font-weight: 300;
+          max-width: 170px;
+          height: auto;
+          padding: 10px 0 10px 0;
         }
       }
     }
