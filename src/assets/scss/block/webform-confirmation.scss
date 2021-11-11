@@ -1,13 +1,26 @@
-#block-gjintheme-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1 0 0;
+.thankyou__page {
+    .decoration {
+      background-size: 800px;
+
+      @include b(tablet) {
+        background-size: 368px 460px;
+        background-position: center 191px;
+      }
+
+      @include b(mobile) {
+        background-size: 250px 250px;
+      }
+    }
 }
 
 .webform-confirmation {
     max-width: 500px;
+    margin: 275px auto;
+    
+    @include b(600) {
+      margin: 150px auto;
+    }
+
   .feedback {
     &_title {
         color: #4dbbb8;
