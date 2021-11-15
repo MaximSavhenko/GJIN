@@ -4,11 +4,15 @@
 
       @include b(tablet) {
         background-size: 368px 460px;
-        background-position: center 191px;
+        background-position: center 162px;
+      }
+
+      @include b(435) {
+        background-size: 280px;
       }
 
       @include b(mobile) {
-        background-size: 250px 250px;
+        background-position: center 162px;
       }
     }
 }
@@ -17,7 +21,7 @@
     max-width: 500px;
     margin: 275px auto;
     
-    @include b(600) {
+    @include b(tablet) {
       margin: 150px auto;
     }
 
